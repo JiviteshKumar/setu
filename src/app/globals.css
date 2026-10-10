@@ -559,6 +559,32 @@ body {
   cursor: pointer;
   animation: sp-fadeup 0.4s ease-out 0.6s both;
 }
+.sp-sound {
+  z-index: 3;
+  left: calc(18px + env(safe-area-inset-left));
+  bottom: calc(18px + env(safe-area-inset-bottom));
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid color-mix(in srgb, var(--on-ink) 25%, transparent);
+  border-radius: 9999px;
+  padding: 6px 14px 6px 11px;
+  background: color-mix(in srgb, var(--ink) 60%, transparent);
+  color: color-mix(in srgb, var(--on-ink) 75%, transparent);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  animation: sp-fadeup 0.4s ease-out 0.6s both;
+}
+.sp-sound[aria-pressed="true"] {
+  border-color: color-mix(in srgb, var(--gold) 60%, transparent);
+  color: var(--gold);
+}
+:root[data-splash="calm"] .sp-sound {
+  display: none;
+}
 
 @keyframes sp-hide {
   to {

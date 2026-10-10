@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import { APP_NAME, APP_TAGLINE } from "@/lib/site";
+import { SplashSound } from "./SplashSound";
 
 // Opening motion graphic (~6.9 s), shown once per browser session. Pure SVG + CSS (styles: "sp-" classes in
 // globals.css), so it plays from the very first paint — before any JavaScript — and removes itself at the end.
@@ -14,7 +15,7 @@ import { APP_NAME, APP_TAGLINE } from "@/lib/site";
 //   6.0–6.85 EXIT      the screen splits open (like a bascule bridge) to reveal the app
 //
 // Skipped when already seen this session or when animations are off; a still version (final frame) when the device
-// asks for reduced motion. Tap, the Skip button or Esc ends it early (see SPLASH_SCRIPT).
+// asks for reduced motion. Tap, the Skip button or Esc ends it early (see SPLASH_SCRIPT). Optional sound: SplashSound.
 
 const ARC = "M60 250 Q180 70 300 250"; // the logo's arch; x is linear in t, so y(x) = 250 − 360·t(1 − t), t = (x − 60) / 240
 const arcY = (x: number) => {
@@ -187,6 +188,7 @@ export function Splash({ courses, universities }: { courses: number; universitie
         <span key={c} className="sp-band" style={v({ "--c": c, "--i": i })} />
       ))}
 
+      <SplashSound />
       <button type="button" className="sp-skip" data-splash-skip tabIndex={-1}>
         Skip
       </button>
@@ -197,7 +199,8 @@ export function Splash({ courses, universities }: { courses: number; universitie
 /**
  * Runs in <head> before the first paint: decides whether the intro plays (once per session — in the installed app that
  * means once per launch — not when animations are off, still when the device asks for reduced motion), wires up
- * skipping before React has loaded, and marks it finished afterwards (which releases the scroll lock).
+ * skipping before React has loaded, and marks it finished afterwards (which releases the scroll lock). The sound button
+ * replays the intro through window.__setuSplashRestart, which restarts the end timer.
  */
 export const SPLASH_SCRIPT = `(function(){try{
 var d=document.documentElement,k="setu:splash-seen",p="auto";
@@ -207,8 +210,10 @@ var seen=sessionStorage.getItem(k);
 if(seen||p==="off"){d.dataset.splash="skip";return}
 d.dataset.splash=(p!=="on"&&matchMedia("(prefers-reduced-motion: reduce)").matches)?"calm":"play";
 sessionStorage.setItem(k,"1");
-var end=function(){if(d.dataset.splash==="play"||d.dataset.splash==="calm")d.dataset.splash="done"};
-setTimeout(end,d.dataset.splash==="play"?6900:2900);
-document.addEventListener("click",function(e){var t=e.target;if(t&&t.closest&&t.closest("#splash"))end()},true);
+var end=function(){if(d.dataset.splash==="play"||d.dataset.splash==="calm")d.dataset.splash="done"},timer;
+var arm=function(ms){clearTimeout(timer);timer=setTimeout(end,ms)};
+arm(d.dataset.splash==="play"?6900:2900);
+window.__setuSplashRestart=function(){if(d.dataset.splash!=="play")return false;arm(6900);return true};
+document.addEventListener("click",function(e){var t=e.target;if(t&&t.closest&&t.closest("#splash")&&!t.closest("[data-splash-sound]"))end()},true);
 document.addEventListener("keydown",function(e){if(e.key==="Escape")end()});
 }catch(e){document.documentElement.dataset.splash="skip"}})();`;
