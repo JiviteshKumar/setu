@@ -27,7 +27,9 @@ jobs:
         with:
           node-version: 24
           cache: npm
-      - run: npm ci
+      # npm install, not npm ci: the lock file is written on Windows and lacks Linux-only optional packages
+      # (a known npm quirk); install still follows the lock file for everything it lists.
+      - run: npm install --no-audit --no-fund
       - id: pages
         uses: actions/configure-pages@v5
       - name: Checks
