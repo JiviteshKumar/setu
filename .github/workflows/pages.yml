@@ -1,0 +1,60 @@
+# Builds the static site and publishes it on GitHub Pages: on every push to main, daily (fresh exchange rate and
+# course status), and by hand (Actions → "Deploy to GitHub Pages" → Run workflow).
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "30 3 * * *" # 09:00 in India
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - id: pages
+        uses: actions/configure-pages@v5
+      - name: Checks
+        run: |
+          npx next typegen
+          npx tsc --noEmit
+          npm run lint
+          npm run test:data
+          npm run test:storage
+          npm run test:search
+          npm run test:intake
+          npm run test:sw
+      - name: Build static site
+        run: npm run build:static
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          NEXT_PUBLIC_REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

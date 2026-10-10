@@ -6,21 +6,50 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "data:institutions": "node scripts/fetch-institutions.ts",
+    "data:programmes": "node scripts/fetch-programmes.ts",
+    "data:build": "node scripts/build-programmes.ts",
+    "check:facts": "node scripts/check-facts.ts",
+    "data:map": "node scripts/build-map.ts",
+    "alerts:watch": "node scripts/watch-sources.ts",
+    "test:prep": "node scripts/test-prep.ts",
+    "data:cities": "node scripts/build-city-guides.ts",
+    "test:letters": "node scripts/test-letters.ts",
+    "test:intake": "node scripts/test-intake.ts",
+    "data:icons": "node scripts/build-icons.ts",
+    "test:sw": "node scripts/test-sw.ts",
+    "test:routes": "node scripts/test-routes.ts",
+    "test:data": "node scripts/test-data.ts",
+    "test:storage": "node scripts/test-storage.ts",
+    "test:search": "node scripts/test-search.ts",
+    "build:static": "node scripts/build-static.ts",
+    "predev": "node scripts/build-public.ts",
+    "prebuild": "node scripts/build-public.ts"
   },
   "dependencies": {
+    "motion": "^14.0.0",
     "next": "16.4.0",
+    "nodemailer": "^10.0.16",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "server-only": "^0.0.1",
+    "tesseract.js": "^7.0.0"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",
-    "@types/node": "^20",
+    "@types/node": "^24.19.1",
+    "@types/nodemailer": "^8.0.2",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/topojson-client": "^3.1.5",
+    "@types/topojson-specification": "^1.0.5",
     "eslint": "^9",
     "eslint-config-next": "16.4.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
-  }
+    "topojson-client": "^3.1.0",
+    "typescript": "^5",
+    "world-atlas": "^2.0.2"
+  },
+  "type": "module"
 }

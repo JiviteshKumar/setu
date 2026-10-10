@@ -39,3 +39,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# data pipeline raw cache (large, re-downloadable)
+/data/raw/
+
+# alert pipeline working files (snapshots, review queue)
+/data/watch/
+
+# community database (personal data — never commit)
+/data/community.db*
+
+# generated before each build (scripts/build-public.ts)
+/public/manifest.webmanifest
+/public/programme-status.json
+/public/fx.json

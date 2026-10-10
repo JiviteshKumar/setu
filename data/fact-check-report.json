@@ -1,0 +1,9 @@
+{
+ "checkedAt": "2026-10-10T07:29:03.965Z",
+ "facts": 21,
+ "sources": 31,
+ "skipped": [
+  "https://www.goethe.de/ins/in/en/spr/prf.html (goethe.de blocks automated requests)"
+ ],
+ "problems": []
+}
