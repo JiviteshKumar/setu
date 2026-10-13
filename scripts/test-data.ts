@@ -96,13 +96,38 @@ for (const [k, s] of Object.entries(SOURCES)) if (!s.url.startsWith("https://"))
 
 // ── Alerts ──
 if (existsSync(join(DATA, "alerts.json"))) {
-  const { alerts } = read<{ alerts: { id: string; title: string; summary: string; sources: { url: string }[]; publishedAt: string }[] }>("alerts.json");
+  const { alerts } = read<{
+    alerts: { id: string; title: string; summary: string; sources: { url: string }[]; publishedAt: string; kind: string; quotes?: { added: string[]; removed: string[] } }[];
+  }>("alerts.json");
+  const officialUrls = new Set(Object.values(SOURCES).map((s) => s.url));
+  const alertIds = new Set<string>();
   for (const a of alerts) {
+    if (alertIds.has(a.id)) fail(`alert ${a.id}: duplicate id`);
+    alertIds.add(a.id);
     if (!a.sources?.length) fail(`alert ${a.id}: no source`);
     if (!a.title || !a.summary) fail(`alert ${a.id}: empty text`);
     if (Number.isNaN(Date.parse(a.publishedAt))) fail(`alert ${a.id}: bad date`);
+    // Published without a person: must point to a watched official source and quote only short lines.
+    if (a.kind === "detected") {
+      if (!a.sources.every((s) => officialUrls.has(s.url))) fail(`alert ${a.id}: automatic alert cites a page that isn't an official source`);
+      if (!a.quotes || [...a.quotes.added, ...a.quotes.removed].some((q) => !q || q.length > 320)) fail(`alert ${a.id}: bad quotes`);
+    }
   }
   console.log(`alerts: ${alerts.length} published`);
+}
+
+// ── University course pages (weekly reading, for My plan) ──
+if (existsSync(join(DATA, "uni-pages.json"))) {
+  const { pages } = read<{ pages: Record<string, { url: string; status: string; snippets: string[]; dates: string[] }> }>("uni-pages.json");
+  const byId = new Map(programmes.map((p) => [String(p.id), p]));
+  for (const [id, pg] of Object.entries(pages)) {
+    if (!byId.has(id)) fail(`uni page ${id}: no such course`);
+    else if (byId.get(id)!.courseWebsite !== pg.url) notes.push(`uni page ${id}: course link changed since the last reading (re-read next week)`);
+    if (!["ok", "unreadable", "blocked", "error"].includes(pg.status)) fail(`uni page ${id}: unknown status ${pg.status}`);
+    if (pg.snippets.length > 6 || pg.snippets.some((s) => s.length > 420)) fail(`uni page ${id}: too much quoted text`);
+    if (pg.dates.some((d) => !validMd(d))) fail(`uni page ${id}: impossible date`);
+  }
+  console.log(`university pages: ${Object.keys(pages).length} read`);
 }
 
 for (const n of notes.slice(0, 8)) console.log(`· ${n}`);

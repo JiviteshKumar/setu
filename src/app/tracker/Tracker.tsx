@@ -14,6 +14,7 @@ import { withBase } from "@/lib/deploy";
 import { IntakePicker } from "@/components/IntakePicker";
 import { PlanUpdates } from "@/components/PlanUpdates";
 import { ApplicationTimeline } from "./ApplicationTimeline";
+import { UniPageCheck } from "./UniPageCheck";
 import { useEffect, useState, type ReactNode } from "react";
 import { EASE_OUT } from "@/components/motion";
 
@@ -183,6 +184,7 @@ export function Tracker({ phases }: { phases: PlanPhases }) {
             ))}
           </AnimatePresence>
         </motion.ul>
+        {loaded && <UniPageCheck saved={saved} deadlinesOf={deadlinesOf} />}
       </section>
 
       <section>

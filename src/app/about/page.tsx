@@ -24,10 +24,13 @@ export default function AboutPage() {
           <li>We don&apos;t guess. If a deadline is written as free text with conditions, we show the original wording instead of converting it into a date.</li>
           <li>Automatic checks flag conflicts — for example, a Baden-Württemberg course listed as tuition-free, although the state charges non-EU students.</li>
           <li>
-            AI never creates facts. A small AI model running on our own computer may draft a summary of a change on an official page — any draft that mentions
-            a number or date not found in the official text is rejected automatically, and a person reviews every alert before it is published.
+            AI never creates facts or alerts. When an official page changes, Setu publishes the changed lines word for word, with a link to the page, and
+            only once the change is still there on the next day&apos;s check. Alerts written by a person are marked as such.
           </li>
-          <li>Official sources are re-checked automatically every day; course data from DAAD is refreshed every week.</li>
+          <li>
+            Everything updates by itself in the cloud, for everyone using Setu: official sources and facts are re-checked every morning; course data from
+            DAAD and the course pages of the universities are re-read every week. If a fact&apos;s official page changes, the fact shows a warning at once.
+          </li>
           <li>Anyone can report a mistake. A person checks every report against the official source.</li>
         </ol>
       </section>

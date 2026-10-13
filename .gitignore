@@ -40,11 +40,15 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# data pipeline raw cache (large, re-downloadable)
-/data/raw/
+# data pipeline raw cache (large, re-downloadable); the small geocoding cache is kept so the weekly cloud run
+# doesn't have to look up every city again
+/data/raw/*
+!/data/raw/geocode-cache-v2.json
 
-# alert pipeline working files (snapshots, review queue)
-/data/watch/
+# alert pipeline working files (review queue, logs). The snapshots are committed: the daily cloud run compares
+# each official page with yesterday's copy.
+/data/watch/*
+!/data/watch/snapshots/
 
 # community database (personal data — never commit)
 /data/community.db*
@@ -53,3 +57,4 @@ next-env.d.ts
 /public/manifest.webmanifest
 /public/programme-status.json
 /public/fx.json
+/public/uni-pages.json

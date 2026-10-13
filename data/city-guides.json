@@ -1,5 +1,5 @@
 {
- "builtAt": "2026-10-10T08:09:35.421Z",
+ "builtAt": "2026-10-11T11:53:34.761Z",
  "source": "© OpenStreetMap contributors, ODbL — via the Overpass API",
  "cities": [
   {
@@ -3922,6 +3922,132 @@
    }
   },
   {
+   "city": "Cham",
+   "slug": "cham",
+   "lat": 49.2178194,
+   "lon": 12.6663832,
+   "supermarkets": {
+    "total": 12,
+    "brands": {
+     "Kaufland": 1,
+     "Norma": 1,
+     "Netto": 3,
+     "Aldi": 2,
+     "Edeka": 2,
+     "Rewe": 1,
+     "Denns": 1,
+     "Lidl": 1
+    },
+    "nearest": [
+     {
+      "name": "Denns BioMarkt",
+      "lat": 49.2191493,
+      "lon": 12.6687386,
+      "km": 0.2,
+      "osm": "https://www.openstreetmap.org/node/4304994753",
+      "brand": "Denns BioMarkt"
+     },
+     {
+      "name": "Netto Marken-Discount",
+      "lat": 49.2119656,
+      "lon": 12.6682519,
+      "km": 0.7,
+      "osm": "https://www.openstreetmap.org/node/2493199480",
+      "brand": "Netto Marken-Discount"
+     },
+     {
+      "name": "Netto Marken-Discount",
+      "lat": 49.225602,
+      "lon": 12.6696861,
+      "km": 0.9,
+      "osm": "https://www.openstreetmap.org/node/1361561178",
+      "brand": "Netto Marken-Discount"
+     },
+     {
+      "name": "NORMA",
+      "lat": 49.2083471,
+      "lon": 12.667004,
+      "km": 1.1,
+      "osm": "https://www.openstreetmap.org/node/1278324201",
+      "brand": "NORMA"
+     },
+     {
+      "name": "REWE",
+      "lat": 49.206695,
+      "lon": 12.6657691,
+      "km": 1.2,
+      "osm": "https://www.openstreetmap.org/node/2422334655",
+      "brand": "REWE"
+     },
+     {
+      "name": "Edeka Steinberger",
+      "lat": 49.2270548,
+      "lon": 12.6737388,
+      "km": 1.2,
+      "osm": "https://www.openstreetmap.org/way/232829440",
+      "brand": "Edeka"
+     },
+     {
+      "name": "Kaufland",
+      "lat": 49.2039394,
+      "lon": 12.6570611,
+      "km": 1.7,
+      "osm": "https://www.openstreetmap.org/node/826366976",
+      "brand": "Kaufland"
+     },
+     {
+      "name": "Lidl",
+      "lat": 49.2022018,
+      "lon": 12.661353,
+      "km": 1.8,
+      "osm": "https://www.openstreetmap.org/way/34181325",
+      "brand": "Lidl"
+     }
+    ]
+   },
+   "groceries": [],
+   "restaurants": [],
+   "worship": [],
+   "pharmacies": 9,
+   "hospitals": [
+    {
+     "name": "Asklepios MVZ Cham",
+     "lat": 49.2193577,
+     "lon": 12.6685756,
+     "km": 0.2,
+     "osm": "https://www.openstreetmap.org/node/12736423501"
+    },
+    {
+     "name": "Medizinisches Versorgungszentrum Cham (Onkologie)",
+     "lat": 49.2248669,
+     "lon": 12.6598354,
+     "km": 0.9,
+     "osm": "https://www.openstreetmap.org/node/2329692831"
+    },
+    {
+     "name": "Sana Klinik des Landkreises Cham",
+     "lat": 49.2254598,
+     "lon": 12.659144,
+     "km": 1,
+     "osm": "https://www.openstreetmap.org/way/224137469"
+    },
+    {
+     "name": "Bayerwald-Klinik",
+     "lat": 49.2352952,
+     "lon": 12.7171188,
+     "km": 4.2,
+     "osm": "https://www.openstreetmap.org/node/971128538"
+    }
+   ],
+   "station": {
+    "name": "Cham (Oberpf)",
+    "lat": 49.2218421,
+    "lon": 12.6568111,
+    "km": 0.8,
+    "osm": "https://www.openstreetmap.org/node/3791447348"
+   }
+  },
+  {
    "city": "Chemnitz",
    "slug": "chemnitz",
    "lat": 50.8323531,
@@ -5139,6 +5265,255 @@
     "lon": 8.8410366,
     "km": 0.6,
     "osm": "https://www.openstreetmap.org/node/1629097568"
+   }
+  },
+  {
+   "city": "Dortmund",
+   "slug": "dortmund",
+   "lat": 51.5142273,
+   "lon": 7.4652789,
+   "supermarkets": {
+    "total": 73,
+    "brands": {
+     "Edeka": 5,
+     "Netto": 11,
+     "Rewe": 13,
+     "Aldi": 5,
+     "Penny": 4,
+     "Kaufland": 2,
+     "Lidl": 9,
+     "Norma": 1,
+     "Denns": 1
+    },
+    "nearest": [
+     {
+      "name": "REWE",
+      "lat": 51.5151386,
+      "lon": 7.4665459,
+      "km": 0.1,
+      "osm": "https://www.openstreetmap.org/node/9795277900",
+      "brand": "Rewe"
+     },
+     {
+      "name": "Tains – mein-asiamarkt",
+      "lat": 51.515561,
+      "lon": 7.463802,
+      "km": 0.2,
+      "osm": "https://www.openstreetmap.org/node/4795156727"
+     },
+     {
+      "name": "Netto Marken-Discount",
+      "lat": 51.5168515,
+      "lon": 7.4686141,
+      "km": 0.4,
+      "osm": "https://www.openstreetmap.org/node/2422230358",
+      "brand": "Netto Marken-Discount"
+     },
+     {
+      "name": "Go Asia",
+      "lat": 51.5141498,
+      "lon": 7.4583811,
+      "km": 0.5,
+      "osm": "https://www.openstreetmap.org/node/387186008",
+      "brand": "Go Asia"
+     },
+     {
+      "name": "arena Einkaufszentrum",
+      "lat": 51.5193458,
+      "lon": 7.4668257,
+      "km": 0.6,
+      "osm": "https://www.openstreetmap.org/node/7136108385"
+     },
+     {
+      "name": "Lidl",
+      "lat": 51.5217694,
+      "lon": 7.464887,
+      "km": 0.8,
+      "osm": "https://www.openstreetmap.org/node/2633509224",
+      "brand": "Lidl"
+     },
+     {
+      "name": "Netto Marken-Discount",
+      "lat": 51.5072463,
+      "lon": 7.4609323,
+      "km": 0.8,
+      "osm": "https://www.openstreetmap.org/node/12345180124",
+      "brand": "Netto Marken-Discount"
+     },
+     {
+      "name": "REWE",
+      "lat": 51.513585,
+      "lon": 7.4792779,
+      "km": 1,
+      "osm": "https://www.openstreetmap.org/node/691531029",
+      "brand": "REWE"
+     }
+    ]
+   },
+   "groceries": [
+    {
+     "name": "Tains – mein-asiamarkt",
+     "lat": 51.515561,
+     "lon": 7.463802,
+     "km": 0.2,
+     "osm": "https://www.openstreetmap.org/node/4795156727"
+    },
+    {
+     "name": "Go Asia",
+     "lat": 51.5141498,
+     "lon": 7.4583811,
+     "km": 0.5,
+     "osm": "https://www.openstreetmap.org/node/387186008",
+     "brand": "Go Asia"
+    },
+    {
+     "name": "Hoa-An Asia Markt",
+     "lat": 51.5296923,
+     "lon": 7.4590293,
+     "km": 1.8,
+     "osm": "https://www.openstreetmap.org/node/13660366798"
+    }
+   ],
+   "restaurants": [
+    {
+     "name": "Bega Restaurant",
+     "lat": 51.5156112,
+     "lon": 7.4692887,
+     "km": 0.3,
+     "osm": "https://www.openstreetmap.org/node/13511015441"
+    },
+    {
+     "name": "Dixon's Kitchen",
+     "lat": 51.50831,
+     "lon": 7.4527141,
+     "km": 1.1,
+     "osm": "https://www.openstreetmap.org/node/5497579041"
+    },
+    {
+     "name": "Sweet Chilli",
+     "lat": 51.512821,
+     "lon": 7.4456099,
+     "km": 1.4,
+     "osm": "https://www.openstreetmap.org/node/1796384187"
+    },
+    {
+     "name": "Annam's Tamil Foods",
+     "lat": 51.513214,
+     "lon": 7.4456484,
+     "km": 1.4,
+     "osm": "https://www.openstreetmap.org/node/13516717037"
+    },
+    {
+     "name": "Curry Masala Dortmund",
+     "lat": 51.5008078,
+     "lon": 7.4586955,
+     "km": 1.6,
+     "osm": "https://www.openstreetmap.org/node/8347306016"
+    },
+    {
+     "name": "Kohinoor",
+     "lat": 51.4998431,
+     "lon": 7.4505394,
+     "km": 1.9,
+     "osm": "https://www.openstreetmap.org/node/674780988"
+    },
+    {
+     "name": "Royal Tandoori",
+     "lat": 51.4895118,
+     "lon": 7.5011629,
+     "km": 3.7,
+     "osm": "https://www.openstreetmap.org/node/9710595317"
+    },
+    {
+     "name": "Maharaja - The Royals",
+     "lat": 51.5171485,
+     "lon": 7.5194027,
+     "km": 3.8,
+     "osm": "https://www.openstreetmap.org/node/3258751958"
+    },
+    {
+     "name": "Flamingo am Zoo Dortmund",
+     "lat": 51.4744023,
+     "lon": 7.4681951,
+     "km": 4.4,
+     "osm": "https://www.openstreetmap.org/node/4742130295"
+    },
+    {
+     "name": "Der kleine Moghul",
+     "lat": 51.5269447,
+     "lon": 7.401844,
+     "km": 4.6,
+     "osm": "https://www.openstreetmap.org/node/8596723570"
+    },
+    {
+     "name": "Peacock",
+     "lat": 51.4725094,
+     "lon": 7.4715714,
+     "km": 4.7,
+     "osm": "https://www.openstreetmap.org/way/53764633"
+    },
+    {
+     "name": "Ful Kitchen",
+     "lat": 51.4753029,
+     "lon": 7.4336897,
+     "km": 4.8,
+     "osm": "https://www.openstreetmap.org/node/10289377304"
+    }
+   ],
+   "worship": [
+    {
+     "name": "Hindu Tamil Kultural Center Dortmund e.V.",
+     "lat": 51.4723271,
+     "lon": 7.4332859,
+     "km": 5.2,
+     "osm": "https://www.openstreetmap.org/node/7185711118",
+     "detail": "Hindu temple"
+    }
+   ],
+   "pharmacies": 33,
+   "hospitals": [
+    {
+     "name": "St.-Johannes-Hospital",
+     "lat": 51.5110291,
+     "lon": 7.4566492,
+     "km": 0.7,
+     "osm": "https://www.openstreetmap.org/way/418123569"
+    },
+    {
+     "name": "Städtische Kliniken",
+     "lat": 51.5083657,
+     "lon": 7.4574824,
+     "km": 0.8,
+     "osm": "https://www.openstreetmap.org/way/32487691"
+    },
+    {
+     "name": "Klinikzentrum Mitte",
+     "lat": 51.5079809,
+     "lon": 7.4569014,
+     "km": 0.9,
+     "osm": "https://www.openstreetmap.org/node/370769793"
+    },
+    {
+     "name": "Haus E",
+     "lat": 51.5075617,
+     "lon": 7.4589924,
+     "km": 0.9,
+     "osm": "https://www.openstreetmap.org/node/13253808939"
+    },
+    {
+     "name": "Haus D",
+     "lat": 51.5083897,
+     "lon": 7.4549677,
+     "km": 1,
+     "osm": "https://www.openstreetmap.org/node/13253829918"
+    }
+   ],
+   "station": {
+    "name": "Dortmund Hbf",
+    "lat": 51.5178935,
+    "lon": 7.4592831,
+    "km": 0.6,
+    "osm": "https://www.openstreetmap.org/node/1458488633"
    }
   },
   {
@@ -6879,6 +7254,244 @@
     "lon": 11.0015908,
     "km": 1.7,
     "osm": "https://www.openstreetmap.org/node/4530820005"
+   }
+  },
+  {
+   "city": "Essen",
+   "slug": "essen",
+   "lat": 51.4582235,
+   "lon": 7.0158171,
+   "supermarkets": {
+    "total": 106,
+    "brands": {
+     "Lidl": 14,
+     "Edeka": 10,
+     "Penny": 8,
+     "Kaufland": 2,
+     "Rewe": 13,
+     "Aldi": 17,
+     "Netto": 11
+    },
+    "nearest": [
+     {
+      "name": "Rewe",
+      "lat": 51.4571398,
+      "lon": 7.0160305,
+      "km": 0.1,
+      "osm": "https://www.openstreetmap.org/way/1302528940",
+      "brand": "REWE"
+     },
+     {
+      "name": "Melanamarket",
+      "lat": 51.4590149,
+      "lon": 7.0135508,
+      "km": 0.2,
+      "osm": "https://www.openstreetmap.org/node/9595409055"
+     },
+     {
+      "name": "Ariana",
+      "lat": 51.4585073,
+      "lon": 7.013358,
+      "km": 0.2,
+      "osm": "https://www.openstreetmap.org/node/9595409070"
+     },
+     {
+      "name": "Khalouf",
+      "lat": 51.4600272,
+      "lon": 7.0136161,
+      "km": 0.3,
+      "osm": "https://www.openstreetmap.org/node/9662145959"
+     },
+     {
+      "name": "Arabischer Lebensmittelmarkt",
+      "lat": 51.46056,
+      "lon": 7.0119376,
+      "km": 0.4,
+      "osm": "https://www.openstreetmap.org/node/1590256316"
+     },
+     {
+      "name": "Asia Center",
+      "lat": 51.4624502,
+      "lon": 7.0143299,
+      "km": 0.5,
+      "osm": "https://www.openstreetmap.org/node/696011541"
+     },
+     {
+      "name": "Lecker Lecker",
+      "lat": 51.4576952,
+      "lon": 7.0093028,
+      "km": 0.5,
+      "osm": "https://www.openstreetmap.org/node/12556802014"
+     },
+     {
+      "name": "Netto Marken-Discount",
+      "lat": 51.4579319,
+      "lon": 7.0064722,
+      "km": 0.6,
+      "osm": "https://www.openstreetmap.org/node/14157909340",
+      "brand": "Netto Marken-Discount"
+     }
+    ]
+   },
+   "groceries": [
+    {
+     "name": "Asia Center",
+     "lat": 51.4624502,
+     "lon": 7.0143299,
+     "km": 0.5,
+     "osm": "https://www.openstreetmap.org/node/696011541"
+    },
+    {
+     "name": "Asia Supermarkt",
+     "lat": 51.4584598,
+     "lon": 7.0072747,
+     "km": 0.6,
+     "osm": "https://www.openstreetmap.org/node/4142345692"
+    },
+    {
+     "name": "go asia",
+     "lat": 51.4524618,
+     "lon": 7.0135876,
+     "km": 0.7,
+     "osm": "https://www.openstreetmap.org/node/5068809227",
+     "brand": "Go Asia"
+    }
+   ],
+   "restaurants": [
+    {
+     "name": "Taste It India",
+     "lat": 51.4590749,
+     "lon": 7.0096763,
+     "km": 0.4,
+     "osm": "https://www.openstreetmap.org/node/6100586008"
+    },
+    {
+     "name": "Tandori Haus",
+     "lat": 51.4610691,
+     "lon": 7.0110921,
+     "km": 0.5,
+     "osm": "https://www.openstreetmap.org/node/2859822477"
+    },
+    {
+     "name": "Bella India",
+     "lat": 51.4540087,
+     "lon": 7.0227955,
+     "km": 0.7,
+     "osm": "https://www.openstreetmap.org/node/4149294211"
+    },
+    {
+     "name": "Nargesi",
+     "lat": 51.4493522,
+     "lon": 7.0131148,
+     "km": 1,
+     "osm": "https://www.openstreetmap.org/node/9699141496"
+    },
+    {
+     "name": "Suvai Bar & Restaurant",
+     "lat": 51.4485875,
+     "lon": 7.0131559,
+     "km": 1.1,
+     "osm": "https://www.openstreetmap.org/node/6863156787"
+    },
+    {
+     "name": "Shere Punjab",
+     "lat": 51.4427763,
+     "lon": 7.0191139,
+     "km": 1.7,
+     "osm": "https://www.openstreetmap.org/node/4589416506"
+    },
+    {
+     "name": "Svaad - The Indian Kitchen",
+     "lat": 51.4423568,
+     "lon": 7.0114806,
+     "km": 1.8,
+     "osm": "https://www.openstreetmap.org/node/344449728"
+    },
+    {
+     "name": "Namaste",
+     "lat": 51.4397273,
+     "lon": 7.0235864,
+     "km": 2.1,
+     "osm": "https://www.openstreetmap.org/node/577977388"
+    },
+    {
+     "name": "Sarovar Indisches Restaurant",
+     "lat": 51.4399935,
+     "lon": 6.9863395,
+     "km": 2.9,
+     "osm": "https://www.openstreetmap.org/node/11058079943"
+    }
+   ],
+   "worship": [
+    {
+     "name": "Sri Valli Devasena Sametha Siva Subramani Tempel",
+     "lat": 51.4590694,
+     "lon": 7.0222226,
+     "km": 0.5,
+     "osm": "https://www.openstreetmap.org/way/374977121",
+     "detail": "Hindu temple"
+    },
+    {
+     "name": "Sat Sang Darbar (Gurdwara Nanaksar Essen)",
+     "lat": 51.4702092,
+     "lon": 7.0024261,
+     "km": 1.6,
+     "osm": "https://www.openstreetmap.org/way/278923157",
+     "detail": "Gurdwara (Sikh)"
+    },
+    {
+     "name": "Hindutempel Muthukumaraswamy",
+     "lat": 51.4353853,
+     "lon": 6.8396747,
+     "km": 12.5,
+     "osm": "https://www.openstreetmap.org/way/1448620218",
+     "detail": "Hindu temple"
+    }
+   ],
+   "pharmacies": 37,
+   "hospitals": [
+    {
+     "name": "Elisabeth Krankenhaus",
+     "lat": 51.4451811,
+     "lon": 7.0328691,
+     "km": 1.9,
+     "osm": "https://www.openstreetmap.org/way/51698937"
+    },
+    {
+     "name": "Huyssens-Stiftung - Kliniken Essen-Mitte",
+     "lat": 51.4411514,
+     "lon": 7.0300314,
+     "km": 2.1,
+     "osm": "https://www.openstreetmap.org/way/51698936"
+    },
+    {
+     "name": "Universitätsklinikum Essen",
+     "lat": 51.4347056,
+     "lon": 6.9883548,
+     "km": 3.2,
+     "osm": "https://www.openstreetmap.org/relation/18240909"
+    },
+    {
+     "name": "Evangelisches Krankenhaus Essen-Steele",
+     "lat": 51.4419557,
+     "lon": 7.0613849,
+     "km": 3.6,
+     "osm": "https://www.openstreetmap.org/way/27757946"
+    },
+    {
+     "name": "Alfried-Krupp-Krankenhaus",
+     "lat": 51.4265137,
+     "lon": 7.008338,
+     "km": 3.6,
+     "osm": "https://www.openstreetmap.org/way/76486826"
+    }
+   ],
+   "station": {
+    "name": "Essen Hauptbahnhof",
+    "lat": 51.4514769,
+    "lon": 7.0144679,
+    "km": 0.8,
+    "osm": "https://www.openstreetmap.org/node/3010827615"
    }
   },
   {
@@ -15729,6 +16342,121 @@
    }
   },
   {
+   "city": "Leer (Ostfriesland)",
+   "slug": "leer-ostfriesland",
+   "lat": 53.2332168,
+   "lon": 7.4567555,
+   "supermarkets": {
+    "total": 19,
+    "brands": {
+     "Aldi": 4,
+     "Netto": 1,
+     "Kaufland": 1,
+     "Edeka": 2,
+     "Lidl": 3
+    },
+    "nearest": [
+     {
+      "name": "Mix Markt",
+      "lat": 53.2346128,
+      "lon": 7.4526479,
+      "km": 0.3,
+      "osm": "https://www.openstreetmap.org/node/2544906188",
+      "brand": "Mix Markt"
+     },
+     {
+      "name": "CBox",
+      "lat": 53.2303809,
+      "lon": 7.4576079,
+      "km": 0.3,
+      "osm": "https://www.openstreetmap.org/node/13781512771"
+     },
+     {
+      "name": "Multi Nord",
+      "lat": 53.2417216,
+      "lon": 7.4609765,
+      "km": 1,
+      "osm": "https://www.openstreetmap.org/node/561311079"
+     },
+     {
+      "name": "ALDI Nord",
+      "lat": 53.2429207,
+      "lon": 7.4603133,
+      "km": 1.1,
+      "osm": "https://www.openstreetmap.org/way/59565900",
+      "brand": "ALDI Nord"
+     },
+     {
+      "name": "nah und gut Blank",
+      "lat": 53.2322495,
+      "lon": 7.438996,
+      "km": 1.2,
+      "osm": "https://www.openstreetmap.org/way/112869634",
+      "brand": "Edeka"
+     },
+     {
+      "name": "Lidl",
+      "lat": 53.2298091,
+      "lon": 7.4393467,
+      "km": 1.2,
+      "osm": "https://www.openstreetmap.org/way/173946614",
+      "brand": "Lidl"
+     },
+     {
+      "name": "Netto Marken-Discount",
+      "lat": 53.2326188,
+      "lon": 7.477315,
+      "km": 1.4,
+      "osm": "https://www.openstreetmap.org/node/451701774",
+      "brand": "Netto Marken-Discount"
+     },
+     {
+      "name": "Lidl",
+      "lat": 53.2455514,
+      "lon": 7.4569585,
+      "km": 1.4,
+      "osm": "https://www.openstreetmap.org/way/90984636",
+      "brand": "Lidl"
+     }
+    ]
+   },
+   "groceries": [
+    {
+     "name": "Asian Shop",
+     "lat": 53.2297306,
+     "lon": 7.4536948,
+     "km": 0.4,
+     "osm": "https://www.openstreetmap.org/node/5209329558"
+    }
+   ],
+   "restaurants": [],
+   "worship": [],
+   "pharmacies": 9,
+   "hospitals": [
+    {
+     "name": "Klinikum Leer",
+     "lat": 53.2358311,
+     "lon": 7.4582025,
+     "km": 0.3,
+     "osm": "https://www.openstreetmap.org/way/90991695"
+    },
+    {
+     "name": "Borromäus Hospital",
+     "lat": 53.2285248,
+     "lon": 7.4447948,
+     "km": 1,
+     "osm": "https://www.openstreetmap.org/way/88884780"
+    }
+   ],
+   "station": {
+    "name": "Leer (Ostfriesland)",
+    "lat": 53.2313892,
+    "lon": 7.4651589,
+    "km": 0.6,
+    "osm": "https://www.openstreetmap.org/node/4530820003"
+   }
+  },
+  {
    "city": "Leipzig",
    "slug": "leipzig",
    "lat": 51.3406321,
@@ -16534,6 +17262,224 @@
     "lon": 8.4341483,
     "km": 0.8,
     "osm": "https://www.openstreetmap.org/node/66795510"
+   }
+  },
+  {
+   "city": "Lübeck",
+   "slug": "lubeck",
+   "lat": 53.866444,
+   "lon": 10.684738,
+   "supermarkets": {
+    "total": 77,
+    "brands": {
+     "Aldi": 14,
+     "Edeka": 7,
+     "Lidl": 7,
+     "Rewe": 15,
+     "Penny": 9,
+     "Netto": 4,
+     "Norma": 2,
+     "Denns": 1,
+     "Alnatura": 1
+    },
+    "nearest": [
+     {
+      "name": "REWE",
+      "lat": 53.865273,
+      "lon": 10.6855247,
+      "km": 0.1,
+      "osm": "https://www.openstreetmap.org/node/669102281",
+      "brand": "Rewe"
+     },
+     {
+      "name": "REWE City",
+      "lat": 53.8649696,
+      "lon": 10.6848009,
+      "km": 0.2,
+      "osm": "https://www.openstreetmap.org/node/318882227",
+      "brand": "Rewe"
+     },
+     {
+      "name": "Rewe City",
+      "lat": 53.8694431,
+      "lon": 10.6866541,
+      "km": 0.4,
+      "osm": "https://www.openstreetmap.org/node/384835250",
+      "brand": "Rewe"
+     },
+     {
+      "name": "Rewe",
+      "lat": 53.8628121,
+      "lon": 10.6865371,
+      "km": 0.4,
+      "osm": "https://www.openstreetmap.org/node/6367067898",
+      "brand": "Rewe"
+     },
+     {
+      "name": "Landwege",
+      "lat": 53.8682208,
+      "lon": 10.6955003,
+      "km": 0.7,
+      "osm": "https://www.openstreetmap.org/node/358312013"
+     },
+     {
+      "name": "PENNY Am Burgtor",
+      "lat": 53.8718145,
+      "lon": 10.6903682,
+      "km": 0.7,
+      "osm": "https://www.openstreetmap.org/node/2405258227",
+      "brand": "Penny"
+     },
+     {
+      "name": "Aldi",
+      "lat": 53.8686697,
+      "lon": 10.6951101,
+      "km": 0.7,
+      "osm": "https://www.openstreetmap.org/way/132915177",
+      "brand": "Aldi Nord"
+     },
+     {
+      "name": "Sultan Markt",
+      "lat": 53.8634602,
+      "lon": 10.6734136,
+      "km": 0.8,
+      "osm": "https://www.openstreetmap.org/node/8224005538"
+     }
+    ]
+   },
+   "groceries": [
+    {
+     "name": "Asiatica",
+     "lat": 53.867108,
+     "lon": 10.6865368,
+     "km": 0.1,
+     "osm": "https://www.openstreetmap.org/node/2374531965"
+    },
+    {
+     "name": "Abirami Asia & Afroshop",
+     "lat": 53.8725061,
+     "lon": 10.6903398,
+     "km": 0.8,
+     "osm": "https://www.openstreetmap.org/node/1620706168"
+    },
+    {
+     "name": "Ahmed Bazar",
+     "lat": 53.8695558,
+     "lon": 10.671307,
+     "km": 0.9,
+     "osm": "https://www.openstreetmap.org/node/7370697947"
+    },
+    {
+     "name": "Asia-Laden",
+     "lat": 53.8690945,
+     "lon": 10.6625896,
+     "km": 1.5,
+     "osm": "https://www.openstreetmap.org/node/8888356459"
+    },
+    {
+     "name": "KN Asiamarkt",
+     "lat": 53.8510108,
+     "lon": 10.7025715,
+     "km": 2.1,
+     "osm": "https://www.openstreetmap.org/node/12694064393"
+    }
+   ],
+   "restaurants": [
+    {
+     "name": "Manna Sushi & Grill",
+     "lat": 53.8674789,
+     "lon": 10.6841991,
+     "km": 0.1,
+     "osm": "https://www.openstreetmap.org/node/7730688273"
+    },
+    {
+     "name": "Tipasa",
+     "lat": 53.865564,
+     "lon": 10.6914037,
+     "km": 0.4,
+     "osm": "https://www.openstreetmap.org/node/391921161"
+    },
+    {
+     "name": "Masala Darbar",
+     "lat": 53.869618,
+     "lon": 10.688131,
+     "km": 0.4,
+     "osm": "https://www.openstreetmap.org/node/5257119737"
+    },
+    {
+     "name": "Raahi",
+     "lat": 53.8614888,
+     "lon": 10.6888771,
+     "km": 0.6,
+     "osm": "https://www.openstreetmap.org/node/11114483576"
+    },
+    {
+     "name": "Taj Mahal",
+     "lat": 53.8716943,
+     "lon": 10.690296,
+     "km": 0.7,
+     "osm": "https://www.openstreetmap.org/node/394691964"
+    },
+    {
+     "name": "Sadhu",
+     "lat": 53.8602258,
+     "lon": 10.6904728,
+     "km": 0.8,
+     "osm": "https://www.openstreetmap.org/node/408365586"
+    },
+    {
+     "name": "Taj Mahal",
+     "lat": 53.9190962,
+     "lon": 10.6963899,
+     "km": 5.9,
+     "osm": "https://www.openstreetmap.org/node/2571942182"
+    }
+   ],
+   "worship": [],
+   "pharmacies": 25,
+   "hospitals": [
+    {
+     "name": "Facharztklinik Lübeck",
+     "lat": 53.8624278,
+     "lon": 10.6853194,
+     "km": 0.4,
+     "osm": "https://www.openstreetmap.org/way/139886763"
+    },
+    {
+     "name": "Sana Kliniken Lübeck",
+     "lat": 53.8487442,
+     "lon": 10.6891488,
+     "km": 2,
+     "osm": "https://www.openstreetmap.org/relation/9487074"
+    },
+    {
+     "name": "Dr. Thomas Nicolai & Kollegen",
+     "lat": 53.8876589,
+     "lon": 10.6789043,
+     "km": 2.4,
+     "osm": "https://www.openstreetmap.org/node/13304754969"
+    },
+    {
+     "name": "Universitätsklinikum Schleswig-Holstein - Campus Lübeck",
+     "lat": 53.8364382,
+     "lon": 10.7070617,
+     "km": 3.6,
+     "osm": "https://www.openstreetmap.org/way/374466261"
+    },
+    {
+     "name": "Ostseeklinik",
+     "lat": 53.9154532,
+     "lon": 10.6977777,
+     "km": 5.5,
+     "osm": "https://www.openstreetmap.org/way/907734098"
+    }
+   ],
+   "station": {
+    "name": "Lübeck Hauptbahnhof",
+    "lat": 53.8675937,
+    "lon": 10.6698551,
+    "km": 1,
+    "osm": "https://www.openstreetmap.org/node/25149874"
    }
   },
   {
@@ -22229,6 +23175,184 @@
     "lon": 8.6395551,
     "km": 1,
     "osm": "https://www.openstreetmap.org/node/3179421514"
+   }
+  },
+  {
+   "city": "Rüsselsheim",
+   "slug": "russelsheim",
+   "lat": 49.9948491,
+   "lon": 8.411636,
+   "supermarkets": {
+    "total": 35,
+    "brands": {
+     "Norma": 2,
+     "Rewe": 5,
+     "Penny": 1,
+     "Kaufland": 2,
+     "Aldi": 4,
+     "Alnatura": 1,
+     "Netto": 3,
+     "Lidl": 3,
+     "Globus": 1,
+     "Edeka": 2
+    },
+    "nearest": [
+     {
+      "name": "Norma",
+      "lat": 49.9944383,
+      "lon": 8.4122964,
+      "km": 0.1,
+      "osm": "https://www.openstreetmap.org/node/944497147",
+      "brand": "Norma"
+     },
+     {
+      "name": "Reformhaus Hermann",
+      "lat": 49.9925815,
+      "lon": 8.4139547,
+      "km": 0.3,
+      "osm": "https://www.openstreetmap.org/node/3521336853"
+     },
+     {
+      "name": "Gözde Süpermarket",
+      "lat": 49.9951229,
+      "lon": 8.4167112,
+      "km": 0.4,
+      "osm": "https://www.openstreetmap.org/node/9310702371"
+     },
+     {
+      "name": "Lidl",
+      "lat": 49.9868982,
+      "lon": 8.4137677,
+      "km": 0.9,
+      "osm": "https://www.openstreetmap.org/way/139109887",
+      "brand": "Lidl"
+     },
+     {
+      "name": "PENNY",
+      "lat": 49.9978634,
+      "lon": 8.4259179,
+      "km": 1.1,
+      "osm": "https://www.openstreetmap.org/node/4266316385",
+      "brand": "Penny"
+     },
+     {
+      "name": "Interfood",
+      "lat": 49.9864293,
+      "lon": 8.4199377,
+      "km": 1.1,
+      "osm": "https://www.openstreetmap.org/way/228301624"
+     },
+     {
+      "name": "Aldi Süd",
+      "lat": 50.0017252,
+      "lon": 8.4264955,
+      "km": 1.3,
+      "osm": "https://www.openstreetmap.org/way/203654098",
+      "brand": "Aldi Süd"
+     },
+     {
+      "name": "Kaufland",
+      "lat": 49.984019,
+      "lon": 8.4011422,
+      "km": 1.4,
+      "osm": "https://www.openstreetmap.org/way/61348724",
+      "brand": "Kaufland"
+     }
+    ]
+   },
+   "groceries": [
+    {
+     "name": "Asia Shop",
+     "lat": 49.9925023,
+     "lon": 8.4144279,
+     "km": 0.3,
+     "osm": "https://www.openstreetmap.org/node/7318505924"
+    },
+    {
+     "name": "Majeed Asian Fine Food",
+     "lat": 49.9906203,
+     "lon": 8.444506,
+     "km": 2.4,
+     "osm": "https://www.openstreetmap.org/node/5474358647"
+    }
+   ],
+   "restaurants": [
+    {
+     "name": "Shahi",
+     "lat": 49.9911529,
+     "lon": 8.413695,
+     "km": 0.4,
+     "osm": "https://www.openstreetmap.org/node/291205255"
+    },
+    {
+     "name": "Rüsseler Flames",
+     "lat": 49.9763073,
+     "lon": 8.4342384,
+     "km": 2.6,
+     "osm": "https://www.openstreetmap.org/node/441582754"
+    },
+    {
+     "name": "Virasat",
+     "lat": 50.0084762,
+     "lon": 8.3691233,
+     "km": 3.4,
+     "osm": "https://www.openstreetmap.org/node/471960786"
+    },
+    {
+     "name": "Star of India",
+     "lat": 50.028525,
+     "lon": 8.4038343,
+     "km": 3.8,
+     "osm": "https://www.openstreetmap.org/node/7944646036"
+    },
+    {
+     "name": "Tandoori King",
+     "lat": 49.9513421,
+     "lon": 8.4577761,
+     "km": 5.9,
+     "osm": "https://www.openstreetmap.org/node/303422115"
+    },
+    {
+     "name": "Taste of Tandoori Eddersheim",
+     "lat": 50.03969,
+     "lon": 8.4716239,
+     "km": 6.6,
+     "osm": "https://www.openstreetmap.org/node/617005457"
+    },
+    {
+     "name": "Spicy Tandoori",
+     "lat": 49.9370225,
+     "lon": 8.3855572,
+     "km": 6.7,
+     "osm": "https://www.openstreetmap.org/node/12347651234"
+    }
+   ],
+   "worship": [
+    {
+     "name": "Gurdwara Singh Sabha",
+     "lat": 50.0988479,
+     "lon": 8.5230279,
+     "km": 14,
+     "osm": "https://www.openstreetmap.org/way/105347708",
+     "detail": "Gurdwara (Sikh)"
+    }
+   ],
+   "pharmacies": 19,
+   "hospitals": [
+    {
+     "name": "GPR Klinikum",
+     "lat": 49.9828613,
+     "lon": 8.4251799,
+     "km": 1.6,
+     "osm": "https://www.openstreetmap.org/way/26596810"
+    }
+   ],
+   "station": {
+    "name": "Rüsselsheim",
+    "lat": 49.991701,
+    "lon": 8.4138251,
+    "km": 0.4,
+    "osm": "https://www.openstreetmap.org/node/108112922"
    }
   },
   {

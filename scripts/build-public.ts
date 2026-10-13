@@ -2,6 +2,7 @@
 //   manifest.webmanifest   the installable-app manifest, with the site's base path (/setu on GitHub Pages)
 //   programme-status.json  current deadlines + recorded DAAD changes of every course, for "My plan"
 //   fx.json                (static build only) the ECB EUR→INR reference rate, saved at build time
+//   uni-pages.json         deadline sentences read from the universities' own course pages (weekly), for My plan
 // They are plain files so that the same build works on a Node server and on a static host. Not committed (.gitignore).
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -65,6 +66,11 @@ for (const p of programmes) {
   courses[p.id] = { d, ...(changes[p.id]?.length ? { c: changes[p.id] } : {}) };
 }
 writeFileSync(join(PUBLIC, "programme-status.json"), JSON.stringify({ courses }));
+
+// ── University course pages (scripts/check-uni-pages.ts) ──
+const uniFile = join(ROOT, "data", "uni-pages.json");
+const uniPages = existsSync(uniFile) ? JSON.parse(readFileSync(uniFile, "utf-8")) : { checkedAt: null, pages: {} };
+writeFileSync(join(PUBLIC, "uni-pages.json"), JSON.stringify(uniPages));
 
 // ── Exchange rate (static site only; the server build serves today's rate from /api/fx) ──
 if (STATIC_SITE) {

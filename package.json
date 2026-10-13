@@ -15,6 +15,7 @@
     "alerts:watch": "node scripts/watch-sources.ts",
     "test:prep": "node scripts/test-prep.ts",
     "data:cities": "node scripts/build-city-guides.ts",
+    "data:unipages": "node scripts/check-uni-pages.ts",
     "test:letters": "node scripts/test-letters.ts",
     "test:intake": "node scripts/test-intake.ts",
     "data:icons": "node scripts/build-icons.ts",
@@ -23,6 +24,7 @@
     "test:data": "node scripts/test-data.ts",
     "test:storage": "node scripts/test-storage.ts",
     "test:search": "node scripts/test-search.ts",
+    "test:unipages": "node scripts/test-unipages.ts",
     "build:static": "node scripts/build-static.ts",
     "predev": "node scripts/build-public.ts",
     "prebuild": "node scripts/build-public.ts"

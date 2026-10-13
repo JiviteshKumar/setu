@@ -1,0 +1,185 @@
+Euro foreign exchange reference rates
+Български Čeština Dansk Deutsch Eλληνικά English Español Eesti keel Suomi Français Gaeilge Hrvatski Magyar Italiano Lietuvių Latviešu Malti Nederlands Polski Português Română Slovenčina Slovenščina Svenska
+Monetary policy & markets
+Our monetary policy strategy, the tools we use and the impact they have
+Overview of monetary policy and markets
+Asset purchase programmes
+Latest monetary policy press conference
+Introduction • Benefits of price stability
+Decisions, statements & accounts
+Monetary policy strategy • Strategy review
+Two per cent inflation target
+Economic, monetary and financial analysis • Economic analysis
+Monetary and financial analysis
+Monetary policy operations • Open market operations • TLTROs
+Asset purchase programmes • Securities lending
+Pandemic emergency purchase programme
+Minimum reserves • Two-tier system
+Euro central bank liquidity lines • Swap lines
+Chronology of Eurosystem liquidity lines
+Emergency liquidity assistance (ELA)
+Collateral • Eligibility criteria and assessment • Marketable assets
+List of eligible marketable assets • User guide
+Collateral management • Eligible SSSs
+Structure of the euro area economy • Economic policy
+Market contact groups • Bond market (BMCG)
+Debt Issuance Market Contact Group (DIMCG)
+ECB Operations managers group (ECB OMG)
+Institutional Investor Dialogue (IID)
+Monetary Analysis Contact Group (MACG)
+Payments & financial stability
+Insights into our work on financial stability and payments and market infrastructures
+Overview of payments and financial stability
+TARGET professional use documents and links
+Latest Financial Stability Review
+TARGET Services • Shared features
+TIPS • Cross-border payments
+TARGET professional use documents & links • Shared features documents & links
+Tokenisation and DLT • Appia
+Retail payments • Retail payments strategy
+Collateral management harmonisation • SCoRE
+Cyber resilience • Financial market infrastructures
+Euro Cyber Resilience Board
+Oversight • Payment systems
+Securities settlement systems and central counterparties
+Critical service providers
+Correspondent and custodian banks
+Reserve management services • Key aspects
+Cash professionals • Cash handling • Authentication devices
+Recirculation of banknotes
+Common detector interface specifications
+Banknote manufacturer accreditation
+Introduction to financial stability
+Financial stability contact groups
+Access to all ECB statistics and background information
+Overview of ECB statistics
+THE ECB BLOG - Improved data: how climate change impacts banks
+PRESS RELEASE - ECB launches pilot project for research access to confidential statistical data
+Euro short-term rate (€STR) • Interest rate benchmarks • Working group on euro risk-free rates
+All statistics & background
+Data reporting & standards • Governance and quality framework
+Co-operation and standards
+Banks’ data reporting • DPM Alliance
+AnaCredit • AnaCredit Q&A
+Banking industry dialogue on ESCB statistics and integrated reporting
+SDMX – statistical data exchange model
+INEXDA - granular data network
+All you need to know about our common currency
+Redesign process of our future banknotes
+Digital euro • What it is • Digital euro and privacy
+In-depth information • Governance and stakeholder engagement
+Technical documents and research
+Frequently asked questions
+The Eurosystem cash strategy • The role of cash
+Access to and acceptance of cash
+Banknotes • Future banknotes
+Current banknotes • Denominations
+Banknote production and stocks
+Damaged and inked-stained banknotes
+Environment, health and safety • Product environmental footprint
+Images and reproduction rules
+Information and training materials
+Joining the euro area • Bulgaria (2026)
+Initial changeover (2002)
+Exchanging national cash • Austria
+In-depth studies and expert analyses covering diverse topics and fields
+Opportunities for researchers
+Economic research • Research agenda • Monetary policy, strategy and implementation
+Fiscal policy and governance within EMU
+International macro and finance
+Real sector and microeconomic analysis
+Forecasting and business cycle analysis
+Macro-finance, systemic risk and macroprudential policy
+Financial institutions, microprudential policy, financial markets and payments
+Opportunities for researchers • Wim Duisenberg Fellowship
+Regular Research Visitors
+Summer Research Graduate Programme
+Student Research Traineeship Programme
+Legal Research • Legal conferences and seminars
+Research papers • Papers by authors
+Browse all news & publications
+Governing Council decisions • Monetary policy decisions
+Economic Bulletin • Articles
+Macroeconomic projections
+Annual reports & financial statements • Annual Report • Annual Accounts
+Weekly financial statements • Disaggregated data
+Financial stability publications • Financial Stability Review • Special features & boxes
+Research publications • Research Bulletin
+Other publications • Letters to MEPs
+International Role of the Euro
+Monetary policy press conference • Monetary policy statements
+Monetary policy statements at a glance
+Conferences & seminars • Forum on Central Banking • Young Economist Prize
+Calendars • Weekly schedule
+Meetings of the Governing Council and the General Council
+Statistical calendars • Money, banking and financial markets
+Euro area economic and financial developments by institutional sector
+External transactions and positions
+Prices, output, demand and labour
+Supervisory and prudential statistics
+Eurosystem's tender operations
+Reserve maintenance period
+Our leadership • Executive Board
+Our organisation • ECB, ESCB and the Eurosystem • ECB mission
+Organisational principles
+Our tasks and responsibilities • Monetary policy
+Financial stability and macroprudential policy • Our tasks
+European relations • European cooperation
+International affairs • International relations and analysis
+International central bank cooperation
+Foreign reserves and own funds
+Foreign exchange operations
+Organisation chart of the ECB
+Eurosystem financial literacy network
+Our values • Independence
+Integrity • Ethics Network of Multilateral Organizations (ENMO)
+Our history, arts and culture • Our history • 25 years of the ECB
+Economic and Monetary Union
+Archives • Committee of Governors
+European Monetary Cooperation Fund
+European Monetary Institute
+Our legal framework • EUR-Lex - Frequently asked questions
+Climate change and the ECB • Our climate and nature plan
+Climate-related financial disclosures
+Managing climate-related risks
+Supporting the green transition
+Climate Insurance Protection Gap
+Sanctions imposed by the ECB
+Electronic tendering system
+Access to documents • Public Register of Documents
+Explainers • Key things to know about the ECB
+Unconventional monetary policy instruments
+Climate change and the ECB
+Youth initiatives • Girls' IT Bootcamp
+Financial literacy in Europe • The gender gap in financial literacy
+Who we are • About the ECB
+Why we value diversity • Women@ECB
+What we offer • Benefits & rewards
+Contract types • Fixed-term
+ECB Scholarship for Women
+ECB Scholarship for Ukrainian graduates
+How you can join us • How to apply
+You have been selected, what next? • Fixed-term employee
+When Bulgaria adopts the euro on 1 January 2026, the Bulgarian lev will cease to be the official currency of Bulgaria and will be removed from the ECB's list of euro foreign exchange reference rates. For further details, including the official conversion rate (which is published with five decimal places, unlike the ECB's euro foreign exchange reference rates that are published with four decimal places), please refer to the ECB press release "Bulgaria to join euro area on 1 January 2026", dated 8 July 2025.
+The reference rates are usually updated at around 16:00 CET every working day, except on TARGET closing days .
+They are based on the daily concertation procedure between central banks across Europe, which normally takes place around 14:10 CET. The reference rates are published for information purposes only. Using the rates for transaction purposes is strongly discouraged.
+All currencies quoted against the euro (base currency)
+Owing to current trading activity in the EUR/RUB market, the European Central Bank (ECB) is not in a position to set a reference rate that is representative of prevailing market conditions. The ECB has therefore decided to suspend its publication of a euro reference rate for the Russian rouble until further notice. The ECB last published a EUR/RUB reference rate on 1 March 2022.
+Download a PDF with the exchange rates of a specific day
+To import CSV files into your spreadsheet, choose a setting that uses a dot "." as decimal separator (such as UK or US format).
+To be informed of any format changes to these download files, check and subscribe to our announcements of technical updates .
+Framework for the euro foreign exchange reference rates
+ECB introduces changes to euro foreign exchange reference rates, 7 December 2015
+Time series for bilateral exchange rates
+NOT AN EXPERT? CHECK EXPLAINER
+What is the role of exchange rates?
+All pages in this section
+Are you happy with this page?
+Thank you for letting us know!
+Privacy statement for the website
+Copyright 2026, European Central Bank
+I understand and I accept the use of
+I do not accept the use of
+We have updated our privacy policy
+We are always working to improve this website for our users. To do this, we use the anonymous data provided
+See what has changed in our privacy policy

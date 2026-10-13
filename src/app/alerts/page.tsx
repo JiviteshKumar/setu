@@ -12,8 +12,8 @@ export default function AlertsPage() {
   return (
     <div>
       <PageHeader eyebrow="What changed" title={<>Alerts</>}>
-        Changes to rules, deadlines and procedures that affect Indian students. We watch official sources automatically, and a person checks every change
-        against the official page before it appears here. For the current rules, see{" "}
+        Changes to rules, deadlines and procedures that affect Indian students. Every morning Setu checks the official sources by itself. A change
+        appears here once it is still there on the next day&apos;s check, quoted word for word from the official page, never reworded. For the current rules, see{" "}
         <Link href="/updates" className="text-accent underline">
           verified facts
         </Link>

@@ -13,12 +13,21 @@ There are two ways to run Setu:
 
 ## GitHub Pages
 
-`.github/workflows/pages.yml` runs on every push to `main`, daily at 09:00 IST (fresh exchange rate) and on demand.
-It does three things:
+`.github/workflows/pages.yml` runs on every push to `main`, daily at 09:00 IST and on demand. It keeps the site up to
+date by itself; nothing waits on a laptop:
 
-1. Runs the checks (`tsc`, lint, `test:data`, `test:storage`, `test:search`, `test:intake`, `test:sw`).
-2. Builds the static site with `npm run build:static`.
-3. Publishes `out/`.
+1. **Daily:** checks the official sources (a change still there the next morning is published as a quoted alert),
+   re-checks every fact, and fetches the exchange rate.
+2. **Sundays:** re-downloads the DAAD course data, re-reads the universities' course pages and fills in missing city
+   guides.
+3. Saves the new data in `data/` (committed by `github-actions[bot]`), only after `test:data` passes.
+4. Runs the checks (`tsc`, lint and the offline tests), builds the static site with `npm run build:static` and
+   publishes `out/`.
+
+Run it by hand from **Actions → Update data and deploy → Run workflow**: tick *weekly* to run the Sunday refresh now,
+or *rebaseline* to re-take the page snapshots without publishing alerts (once, after adding sources).
+
+Because the bot commits data, run `git pull` before you change anything locally.
 
 Setup (once): repository **Settings → Pages → Source: GitHub Actions**. The site appears at
 `https://<user>.github.io/<repo>/`.
@@ -37,8 +46,8 @@ NEXT_PUBLIC_BASE_PATH=/setu npm run build:static
 
 The result is in `out/`.
 
-Data refreshes (DAAD crawl, city guides, alerts) still run on your own computer (section 5). Commit the updated
-`data/` files and push; the next Pages build publishes them.
+All data refreshes run in that workflow; nothing has to be run or committed by hand. (Section 5 is only for running
+Setu on your own server.)
 
 ## Your own server
 

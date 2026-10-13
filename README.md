@@ -45,7 +45,8 @@ npm run data:map          # build map outlines + geocode university cities (cach
 npm run data:build        # build data/programmes.json + data/qa-report.json
 npm run data:cities       # OpenStreetMap city guides (resumable; --max-new N, --cached-only, --refresh)
 npm run check:facts       # re-download every official source; fails if any fact's source changed
-npm run alerts:watch      # snapshot official pages, queue changes for review in /admin
+npm run alerts:watch      # snapshot official pages, queue changes for review in /admin (--publish: publish confirmed changes)
+npm run data:unipages     # read every course's page on the university website, store its deadline sentences
 npm run test:prep         # validate thousands of generated dMAT items (unique answers, no filler options)
 npm run test:letters      # letter explainer test cases
 npm run test:intake       # intake date rules, checked against every real DAAD deadline
@@ -53,6 +54,7 @@ npm run test:sw           # offline logic of the installed app
 npm run test:data         # integrity of courses, map, city guides, facts, sources, alerts
 npm run test:storage      # corrupted data on the device never breaks a page
 npm run test:search       # Munich/München/munchen find the same courses; dMAT degree names
+npm run test:unipages     # deadline reading on university pages, robots.txt, automatic alerts
 npm run test:routes       # every page, link, 404, header and API of a running server (see docs/TEST-REPORT.md)
 npm run build             # production build
 npm run build:static      # static site for GitHub Pages (out/); see docs/DEPLOY.md
@@ -65,11 +67,27 @@ To refresh course data, delete `data/raw/daad` and run the `data:` scripts in th
 1. **Only official sources.** German law, German government and missions, APS India, g.a.s.t., DAAD, HRK, universities. No blogs, consultants or forums (`src/content/sources.ts`).
 2. **No guessing.** Deadlines written as conditional free text are shown in their original wording, not converted into dates. Universities that can't be matched to the HRK register with certainty are left out.
 3. **Automatic cross-checks** in `scripts/build-programmes.ts` flag contradictions, e.g. a Baden-Württemberg or TUM course listed as tuition-free, or a course taught outside Germany. These show as "Please double-check" on the course page, and everything uncertain lands in `data/qa-report.json`.
-4. **Source anchors.** Every fact in `src/content/facts.ts` lists phrases that must appear on its source page. `npm run check:facts` re-downloads every source and exits with an error if any anchor disappears, which means the page changed and a person must re-verify.
-5. **Review dates.** Each fact has `verifiedOn` + `reviewDays`. Past that window the app shows "may be outdated" automatically.
+4. **Source anchors.** Every fact in `src/content/facts.ts` lists phrases that must appear on its source page. `npm run check:facts` re-downloads every source and exits with an error if any anchor disappears, which means the page changed; the fact then shows a warning on the site until it is re-verified.
+5. **Review dates.** Each fact has `verifiedOn` + `reviewDays`. Past that window the app shows "may be outdated" — unless the daily automatic check (within the last 7 days) found the fact's wording still on the official page.
 6. **Personal data stays on the device.** No accounts, nothing stored on a server.
 
-## Update alerts (phase 2)
+## Automatic updates (in the cloud, no person needed)
+
+`.github/workflows/pages.yml` keeps everything current on GitHub's servers — it does not depend on any one computer:
+
+```
+every morning  official pages   ──► alerts:watch --publish ──► still there next morning? ──► data/alerts.json ─┐
+               every fact       ──► check:facts            ──► data/fact-check-report.json (warnings)         ├─► commit ──► rebuild ──► every device
+every Sunday   DAAD database    ──► data:programmes/build  ──► data/programmes.json + programme-changes.json  │
+               university pages ──► data:unipages          ──► data/uni-pages.json (My plan check)            ┘
+```
+
+- **Automatic alerts** (`scripts/auto-alerts.ts`) quote the changed lines of the official page word for word — no AI or software wording. A change is published only if it is still there on the next morning's check, and only lines about things students act on (deadlines, fees, visa, APS, dMAT …) are quoted. A change that breaks a fact's anchor is "important", and the fact shows a warning.
+- **University pages** (`scripts/check-uni-pages.ts`, `src/lib/uniDeadlines.ts`): weekly, each course's own page is read (robots.txt honoured, one request per site every 2 s) and the sentences stating the application deadline are stored with their dates; sentences only for German/EU applicants are left out. **My plan → "Check university pages"** compares them with DAAD's dates for the student's saved courses, shows the quoted sentences, and what changed since the last reading.
+- **Safety gate**: `npm run test:data` must pass before anything is committed; weekly data that fails it is discarded and the site keeps last week's data.
+- On a new network (e.g. the first cloud run) run the workflow by hand with *rebaseline*, so the page snapshots are taken from GitHub's servers.
+
+### Manual review (optional, local)
 
 ```
 official pages ──► npm run alerts:watch ──► data/watch/pending ──► /admin (you review) ──► data/alerts.json ──► rebuild ──► /alerts + bell
@@ -90,7 +108,7 @@ DAAD weekly refresh ──► data:build ──► data/programme-changes.json �
   - The course finder can filter by "deadline not passed" or "open now" for the chosen intake.
   - The plan's steps use only verified facts (dMAT, APS, blocked account, visa, insurance, address registration).
 - **EU-only deadlines are dropped** at build time (`isEuOnly` in `build-programmes.ts`), so Indian applicants never see a deadline meant for EU applicants.
-- **Schedule**: `scripts/run-checks.ps1` runs the daily checks (and the Sunday data refresh) and shows a Windows notification when a review is needed. Register it with `powershell -ExecutionPolicy Bypass -File scripts\register-schedule.ps1`. Logs: `data/watch/logs`.
+- **Schedule**: the cloud workflow above. (`scripts/run-checks.ps1` / `register-schedule.ps1` can still run the checks on a Windows computer for local review, but nothing depends on it — don't run both, or that computer's snapshots drift from the repository.)
 
 ## dMAT practice (phase 3)
 
@@ -107,7 +125,7 @@ DAAD weekly refresh ──► data:build ──► data/programme-changes.json �
 
 - **German letter explainer** (`/germany/letters`): photo → text with tesseract.js **in the browser** (the photo is never uploaded; only the German model is downloaded once from the jsDelivr CDN), or paste. `src/lib/letters/analyze.ts` finds the sender type, deadlines, appointments, time limits, amounts, reference numbers and requested actions — each **quoted from the letter** — plus scam signs (gift cards/crypto, threats + payment, foreign IBAN for a German authority, demands without references). `glossary.ts` explains ~60 official terms. Verified rules shown when relevant: objection within one month (§ 70 VwGO), one year if instructions are missing (§ 58 VwGO), broadcasting fee €18.36 per flat.
   - Optional AI explanation (`/api/letter-ai`) — **off unless `SETU_LETTER_AI=1`** and a local Ollama model is running. Every step must quote the letter verbatim (else dropped); summaries with numbers/dates not in the letter are rejected (`src/lib/guard.ts`, shared with the alert pipeline). Letter text is not stored.
-- **City guides** (`/cities`, `/cities/<slug>`): OpenStreetMap data (© OpenStreetMap contributors, ODbL) for every city with a public-university Master's: supermarkets by chain, Indian/Asian groceries (by name — flagged as such), Indian restaurants, Hindu temples & gurdwaras, pharmacies, hospitals, main station; plus each university's own living-cost and accommodation notes from DAAD. `npm run data:cities` makes one small Overpass query per city (5 s apart, two public Overpass servers, cached in `data/raw/osm`), saves progress every 10 cities and can be resumed. Cities whose query failed are left out rather than shown with partial data; the weekly scheduled run fills in up to 20 missing cities.
+- **City guides** (`/cities`, `/cities/<slug>`): OpenStreetMap data (© OpenStreetMap contributors, ODbL) for every city with a public-university Master's: supermarkets by chain, Indian/Asian groceries (by name — flagged as such), Indian restaurants, Hindu temples & gurdwaras, pharmacies, hospitals, main station; plus each university's own living-cost and accommodation notes from DAAD. `npm run data:cities` makes one small Overpass query per city (5 s apart, two public Overpass servers, cached in `data/raw/osm`), saves progress every 10 cities and can be resumed. Cities whose query failed are left out rather than shown with partial data; the weekly cloud run fills in up to 20 missing cities and keeps every guide already built.
 - **Senior connect** (`/connect`): official support per public university from DAAD (buddy programme, welcome event, pick-up, accommodation and visa help …), safety rules for WhatsApp/Telegram groups, questions worth asking.
 - **Verified-senior Q&A** (`/connect/ask`):
   - Sign-in is by email without a password. The emailed link opens a page with a button, and the single-use token is only spent on that button press, so university mail scanners can't use it up.

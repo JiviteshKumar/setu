@@ -175,31 +175,50 @@ async function main() {
     })
     .sort();
 
+  // Guides already built are kept when their raw download isn't on this machine (e.g. the weekly cloud run, which
+  // starts without data/raw): only missing cities are downloaded, existing guides are never thrown away.
+  const guidesFile = join(OUT, "city-guides.json");
+  const prevFile = existsSync(guidesFile) ? readJson<{ builtAt: string; cities: CityGuide[] }>(guidesFile) : null;
+  const existing = new Map((prevFile?.cities ?? []).map((g) => [g.city, g]));
+  // The date shown as "checked" only moves when something was actually downloaded again.
+  const save = (list: CityGuide[]) =>
+    writeJson(guidesFile, {
+      builtAt: newDownloads || !prevFile ? new Date().toISOString() : prevFile.builtAt,
+      source: "© OpenStreetMap contributors, ODbL — via the Overpass API",
+      cities: [...list, ...[...existing.values()].filter((g) => !list.some((x) => x.city === g.city) && cities.includes(g.city))],
+    });
   const guides: CityGuide[] = [];
   const missing: string[] = [];
   for (const [i, city] of cities.entries()) {
     const { lat, lon } = coords[city]!;
+    const cached = existsSync(join(RAW, "osm", `city-${slugify(city)}.json`));
+    if (!cached && !refresh && existing.has(city)) {
+      guides.push(existing.get(city)!);
+      continue;
+    }
     try {
       const els = await loadCity(city, lat, lon, refresh, cachedOnly, maxNew);
       if (!els) {
-        missing.push(city);
+        if (existing.has(city)) guides.push(existing.get(city)!);
+        else missing.push(city);
         continue;
       }
       const supers = els.filter((e) => e.tags?.shop === "supermarket");
       const pharmacies = els.filter((e) => e.tags?.amenity === "pharmacy");
       guides.push(summarise(city, lat, lon, els, supers, pharmacies));
     } catch (e) {
-      missing.push(city);
+      if (existing.has(city)) guides.push(existing.get(city)!);
+      else missing.push(city);
       console.warn(`✗ ${city}: ${(e as Error).message}`);
     }
     if ((i + 1) % 10 === 0) {
       console.log(`progress ${i + 1}/${cities.length}`);
       // Save progress so finished cities appear even if a later one fails.
-      writeJson(join(OUT, "city-guides.json"), { builtAt: new Date().toISOString(), source: "© OpenStreetMap contributors, ODbL — via the Overpass API", cities: guides });
+      save(guides);
     }
   }
   // Cities that failed are simply left out (no city shows partial data); run again later to fill them in.
-  writeJson(join(OUT, "city-guides.json"), { builtAt: new Date().toISOString(), source: "© OpenStreetMap contributors, ODbL — via the Overpass API", cities: guides });
+  save(guides);
   console.log(`city guides: ${guides.length}/${cities.length} cities${missing.length ? ` (missing: ${missing.join(", ")} — run again to retry)` : ""}`);
 }
 

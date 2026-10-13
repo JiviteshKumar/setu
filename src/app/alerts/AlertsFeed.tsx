@@ -50,7 +50,7 @@ export function AlertsFeed({ alerts }: { alerts: Alert[] }) {
       {shown.length === 0 && (
         <div className="card mt-4 text-center text-muted">
           <p className="font-medium text-text">No alerts right now.</p>
-          <p className="mt-1 text-sm">We check the official sources regularly. When something changes that affects you, it appears here — after a person has verified it.</p>
+          <p className="mt-1 text-sm">The official sources are checked every morning. When something changes that affects you, it appears here.</p>
         </div>
       )}
 
@@ -70,6 +70,7 @@ export function AlertsFeed({ alerts }: { alerts: Alert[] }) {
                 <div className="flex flex-wrap items-center gap-2 text-xs">
                   <span className={`chip ${SEVERITY[a.severity].cls}`}>{SEVERITY[a.severity].label}</span>
                   {a.kind === "correction" && <span className="chip">Correction</span>}
+                  {a.kind === "detected" && <span className="chip">Found automatically</span>}
                   <span className="text-muted">{formatDate(a.publishedAt)}</span>
                   {newIds.has(a.id) && (
                     <motion.span initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="chip border-accent-bright/40 bg-accent-soft text-accent">
@@ -79,9 +80,15 @@ export function AlertsFeed({ alerts }: { alerts: Alert[] }) {
                 </div>
                 <h2 className="mt-2 text-lg font-semibold">{a.title}</h2>
                 <p className="mt-1 text-[15px] leading-relaxed">{a.summary}</p>
+                {a.quotes && (a.quotes.added.length > 0 || a.quotes.removed.length > 0) && (
+                  <div className="mt-3 space-y-2 text-sm">
+                    {a.quotes.added.length > 0 && <Quotes label="Now on the page" lines={a.quotes.added} />}
+                    {a.quotes.removed.length > 0 && <Quotes label="No longer on the page" lines={a.quotes.removed} removed />}
+                  </div>
+                )}
                 <div className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted">
                   <Icon name="shield" className="h-3.5 w-3.5 text-ok" />
-                  Verified by a person against:
+                  {a.kind === "detected" ? "Quoted word for word from the official page (not checked by a person):" : "Verified by a person against:"}
                   {a.sources.map((s) => (
                     <a key={s.url} href={s.url} target="_blank" rel="noopener noreferrer" className="underline decoration-dotted">
                       {s.name}
@@ -93,6 +100,21 @@ export function AlertsFeed({ alerts }: { alerts: Alert[] }) {
           ))}
         </AnimatePresence>
       </ol>
+    </div>
+  );
+}
+
+function Quotes({ label, lines, removed = false }: { label: string; lines: string[]; removed?: boolean }) {
+  return (
+    <div>
+      <p className="text-xs font-medium tracking-wide text-muted uppercase">{label}</p>
+      <ul className="mt-1 space-y-1">
+        {lines.map((l) => (
+          <li key={l}>
+            <blockquote className={`border-l-2 pl-3 leading-relaxed ${removed ? "border-danger/40 text-muted line-through decoration-danger/40" : "border-ok/50"}`}>“{l}”</blockquote>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

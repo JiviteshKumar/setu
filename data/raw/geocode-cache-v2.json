@@ -1,0 +1,887 @@
+{
+ "Aachen": {
+  "lon": 6.083862,
+  "lat": 50.776351,
+  "country": "de"
+ },
+ "Aalen": {
+  "lon": 10.0929593,
+  "lat": 48.8375607,
+  "country": "de"
+ },
+ "Albstadt": {
+  "lon": 8.9991483,
+  "lat": 48.233048,
+  "country": "de"
+ },
+ "Amberg": {
+  "lon": 11.8474021,
+  "lat": 49.4543662,
+  "country": "de"
+ },
+ "Ansbach": {
+  "lon": 10.5597693,
+  "lat": 49.2888745,
+  "country": "de"
+ },
+ "Aschaffenburg": {
+  "lon": 9.1384857,
+  "lat": 49.9706701,
+  "country": "de"
+ },
+ "Augsburg": {
+  "lon": 10.8979522,
+  "lat": 48.3690341,
+  "country": "de"
+ },
+ "Bad Homburg vor der Höhe": {
+  "lon": 8.6130128,
+  "lat": 50.2283803,
+  "country": "de"
+ },
+ "Bamberg": {
+  "lon": 10.8868478,
+  "lat": 49.8916044,
+  "country": "de"
+ },
+ "Bayreuth": {
+  "lon": 11.5743543,
+  "lat": 49.9446345,
+  "country": "de"
+ },
+ "Berlin": {
+  "lon": 13.3951309,
+  "lat": 52.5173885,
+  "country": "de"
+ },
+ "Bernburg / Saale": {
+  "lon": 11.7373854,
+  "lat": 51.7939656,
+  "country": "de"
+ },
+ "Bielefeld": {
+  "lon": 8.531007,
+  "lat": 52.0191005,
+  "country": "de"
+ },
+ "Bingen am Rhein": {
+  "lon": 7.8944,
+  "lat": 49.9675456,
+  "country": "de"
+ },
+ "Bochum": {
+  "lon": 7.2196635,
+  "lat": 51.4818111,
+  "country": "de"
+ },
+ "Bonn": {
+  "lon": 7.1024635,
+  "lat": 50.7352621,
+  "country": "de"
+ },
+ "Braunschweig": {
+  "lon": 10.5236066,
+  "lat": 52.2646577,
+  "country": "de"
+ },
+ "Bremen": {
+  "lon": 8.8071646,
+  "lat": 53.0758196,
+  "country": "de"
+ },
+ "Bremerhaven": {
+  "lon": 8.5851945,
+  "lat": 53.5505392,
+  "country": "de"
+ },
+ "Burghausen": {
+  "lon": 12.8329419,
+  "lat": 48.1588645,
+  "country": "de"
+ },
+ "Cham": {
+  "lon": 12.6663832,
+  "lat": 49.2178194,
+  "country": "de"
+ },
+ "Chemnitz": {
+  "lon": 12.918914,
+  "lat": 50.8323531,
+  "country": "de"
+ },
+ "Coburg": {
+  "lon": 10.964561,
+  "lat": 50.2582226,
+  "country": "de"
+ },
+ "Cottbus": {
+  "lon": 14.3357307,
+  "lat": 51.7567447,
+  "country": "de"
+ },
+ "Darmstadt": {
+  "lon": 8.651177,
+  "lat": 49.872775,
+  "country": "de"
+ },
+ "Deggendorf": {
+  "lon": 13.0006423,
+  "lat": 48.7814115,
+  "country": "de"
+ },
+ "Dessau-Roßlau": {
+  "lon": 12.2405447,
+  "lat": 51.8620868,
+  "country": "de"
+ },
+ "Detmold": {
+  "lon": 8.8791526,
+  "lat": 51.936284,
+  "country": "de"
+ },
+ "Dieburg": {
+  "lon": 8.8396216,
+  "lat": 49.8981797,
+  "country": "de"
+ },
+ "Dortmund": {
+  "lon": 7.4652789,
+  "lat": 51.5142273,
+  "country": "de"
+ },
+ "Dresden": {
+  "lon": 13.7381437,
+  "lat": 51.0493286,
+  "country": "de"
+ },
+ "Duisburg": {
+  "lon": 6.759562,
+  "lat": 51.434999,
+  "country": "de"
+ },
+ "Düsseldorf": {
+  "lon": 6.7763137,
+  "lat": 51.2254018,
+  "country": "de"
+ },
+ "Eberswalde": {
+  "lon": 13.7996542,
+  "lat": 52.8350807,
+  "country": "de"
+ },
+ "Eichstätt": {
+  "lon": 11.1989396,
+  "lat": 48.8863328,
+  "country": "de"
+ },
+ "Elsfleth": {
+  "lon": 8.4571037,
+  "lat": 53.2357029,
+  "country": "de"
+ },
+ "Eltville am Rhein": {
+  "lon": 8.1044149,
+  "lat": 50.0220051,
+  "country": "de"
+ },
+ "Emden": {
+  "lon": 7.2058304,
+  "lat": 53.3670541,
+  "country": "de"
+ },
+ "Erfurt": {
+  "lon": 11.0287364,
+  "lat": 50.9777974,
+  "country": "de"
+ },
+ "Erlangen": {
+  "lon": 10.9812072,
+  "lat": 49.5891571,
+  "country": "de"
+ },
+ "Essen": {
+  "lon": 7.0158171,
+  "lat": 51.4582235,
+  "country": "de"
+ },
+ "Esslingen am Neckar": {
+  "lon": 9.3071685,
+  "lat": 48.7427584,
+  "country": "de"
+ },
+ "Feuchtwangen": {
+  "lon": 10.3313268,
+  "lat": 49.1678603,
+  "country": "de"
+ },
+ "Flensburg": {
+  "lon": 9.4333264,
+  "lat": 54.7833021,
+  "country": "de"
+ },
+ "Frankfurt (Oder)": {
+  "lon": 14.549452,
+  "lat": 52.3412273,
+  "country": "de"
+ },
+ "Frankfurt am Main": {
+  "lon": 8.6820917,
+  "lat": 50.1106444,
+  "country": "de"
+ },
+ "Freiberg": {
+  "lon": 13.3428889,
+  "lat": 50.9169415,
+  "country": "de"
+ },
+ "Freiburg im Breisgau": {
+  "lon": 7.8494005,
+  "lat": 47.9960901,
+  "country": "de"
+ },
+ "Freising": {
+  "lon": 11.7439565,
+  "lat": 48.4008273,
+  "country": "de"
+ },
+ "Friedberg (Hessen)": {
+  "lon": 8.747636,
+  "lat": 50.328272,
+  "country": "de"
+ },
+ "Friedrichshafen": {
+  "lon": 9.4800858,
+  "lat": 47.6500279,
+  "country": "de"
+ },
+ "Fulda": {
+  "lon": 9.6762161,
+  "lat": 50.5514658,
+  "country": "de"
+ },
+ "Furtwangen im Schwarzwald": {
+  "lon": 8.2073776,
+  "lat": 48.0512198,
+  "country": "de"
+ },
+ "Garbsen": {
+  "lon": 9.6005102,
+  "lat": 52.4276606,
+  "country": "de"
+ },
+ "Garching b. München": {
+  "lon": 11.6509662,
+  "lat": 48.2513878,
+  "country": "de"
+ },
+ "Geisenheim": {
+  "lon": 7.9414537,
+  "lat": 50.0392213,
+  "country": "de"
+ },
+ "Gengenbach": {
+  "lon": 8.0153059,
+  "lat": 48.4035425,
+  "country": "de"
+ },
+ "Germersheim": {
+  "lon": 8.36659,
+  "lat": 49.2222749,
+  "country": "de"
+ },
+ "Gießen": {
+  "lon": 8.6742306,
+  "lat": 50.5862066,
+  "country": "de"
+ },
+ "Greifswald": {
+  "lon": 13.3815238,
+  "lat": 54.095791,
+  "country": "de"
+ },
+ "Gummersbach": {
+  "lon": 7.5630545,
+  "lat": 51.0277658,
+  "country": "de"
+ },
+ "Görlitz": {
+  "lon": 14.991018,
+  "lat": 51.1563185,
+  "country": "de"
+ },
+ "Göttingen": {
+  "lon": 9.9351811,
+  "lat": 51.5328328,
+  "country": "de"
+ },
+ "Gütersloh": {
+  "lon": 8.4043282,
+  "lat": 51.9166621,
+  "country": "de"
+ },
+ "Halle (Saale)": {
+  "lon": 11.9712985,
+  "lat": 51.4824354,
+  "country": "de"
+ },
+ "Hamburg": {
+  "lon": 10.0013165,
+  "lat": 53.5501721,
+  "country": "de"
+ },
+ "Hannover": {
+  "lon": 9.7385532,
+  "lat": 52.3744779,
+  "country": "de"
+ },
+ "Heide": {
+  "lon": 9.0928251,
+  "lat": 54.1948848,
+  "country": "de"
+ },
+ "Heidelberg": {
+  "lon": 8.694724,
+  "lat": 49.4093582,
+  "country": "de"
+ },
+ "Heilbronn": {
+  "lon": 9.218655,
+  "lat": 49.142291,
+  "country": "de"
+ },
+ "Heiligenhaus": {
+  "lon": 6.9710401,
+  "lat": 51.32658,
+  "country": "de"
+ },
+ "Hildesheim": {
+  "lon": 9.9518083,
+  "lat": 52.1527188,
+  "country": "de"
+ },
+ "Hof": {
+  "lon": 11.9162992,
+  "lat": 50.3187507,
+  "country": "de"
+ },
+ "Höxter": {
+  "lon": 9.348855,
+  "lat": 51.7938902,
+  "country": "de"
+ },
+ "Idstein": {
+  "lon": 8.2902,
+  "lat": 50.2147,
+  "country": "de"
+ },
+ "Ilmenau": {
+  "lon": 10.9142385,
+  "lat": 50.6867695,
+  "country": "de"
+ },
+ "Ingolstadt": {
+  "lon": 11.4250395,
+  "lat": 48.7630165,
+  "country": "de"
+ },
+ "Jena": {
+  "lon": 11.5879359,
+  "lat": 50.9281717,
+  "country": "de"
+ },
+ "Kaiserslautern": {
+  "lon": 7.7689951,
+  "lat": 49.4432174,
+  "country": "de"
+ },
+ "Kamp-Lintfort": {
+  "lon": 6.547923,
+  "lat": 51.5017981,
+  "country": "de"
+ },
+ "Karlsruhe": {
+  "lon": 8.4034195,
+  "lat": 49.0068705,
+  "country": "de"
+ },
+ "Kassel": {
+  "lon": 9.4978479,
+  "lat": 51.3157833,
+  "country": "de"
+ },
+ "Kemnath": {
+  "lon": 11.9355154,
+  "lat": 49.8581156,
+  "country": "de"
+ },
+ "Kempten (Allgäu)": {
+  "lon": 10.3168835,
+  "lat": 47.7267063,
+  "country": "de"
+ },
+ "Kiel": {
+  "lon": 10.135555,
+  "lat": 54.3227085,
+  "country": "de"
+ },
+ "Kleve": {
+  "lon": 6.1376008,
+  "lat": 51.7895571,
+  "country": "de"
+ },
+ "Koblenz": {
+  "lon": 7.5943951,
+  "lat": 50.3533278,
+  "country": "de"
+ },
+ "Konstanz": {
+  "lon": 9.1750718,
+  "lat": 47.659216,
+  "country": "de"
+ },
+ "Kronach": {
+  "lon": 11.3132063,
+  "lat": 50.2484128,
+  "country": "de"
+ },
+ "Kulmbach": {
+  "lon": 11.4581813,
+  "lat": 50.1071246,
+  "country": "de"
+ },
+ "Köln": {
+  "lon": 6.959974,
+  "lat": 50.938361,
+  "country": "de"
+ },
+ "Köthen / Anhalt": {
+  "lon": 11.973698,
+  "lat": 51.751033,
+  "country": "de"
+ },
+ "Künzelsau": {
+  "lon": 9.6901512,
+  "lat": 49.2803765,
+  "country": "de"
+ },
+ "Lambaréné (Gabon)": {
+  "lon": 10.2236482,
+  "lat": -0.6942603,
+  "country": "ga"
+ },
+ "Landau in der Pfalz": {
+  "lon": 8.1123441,
+  "lat": 49.1982825,
+  "country": "de"
+ },
+ "Landshut": {
+  "lon": 12.1516551,
+  "lat": 48.536217,
+  "country": "de"
+ },
+ "Leer (Ostfriesland)": {
+  "lon": 7.4567555,
+  "lat": 53.2332168,
+  "country": "de"
+ },
+ "Leipzig": {
+  "lon": 12.3747329,
+  "lat": 51.3406321,
+  "country": "de"
+ },
+ "Lemgo": {
+  "lon": 8.9012894,
+  "lat": 52.0280674,
+  "country": "de"
+ },
+ "Lippstadt": {
+  "lon": 8.347194,
+  "lat": 51.6747074,
+  "country": "de"
+ },
+ "Ludwigshafen am Rhein": {
+  "lon": 8.4381568,
+  "lat": 49.4704113,
+  "country": "de"
+ },
+ "Lübeck": {
+  "lon": 10.684738,
+  "lat": 53.866444,
+  "country": "de"
+ },
+ "Lüneburg": {
+  "lon": 10.407855,
+  "lat": 53.248706,
+  "country": "de"
+ },
+ "Magdeburg": {
+  "lon": 11.6400789,
+  "lat": 52.1314783,
+  "country": "de"
+ },
+ "Mainz": {
+  "lon": 8.2736253,
+  "lat": 49.9995205,
+  "country": "de"
+ },
+ "Mannheim": {
+  "lon": 8.4673098,
+  "lat": 49.4892913,
+  "country": "de"
+ },
+ "Marburg": {
+  "lon": 8.7704695,
+  "lat": 50.8090106,
+  "country": "de"
+ },
+ "Mittweida": {
+  "lon": 12.9810458,
+  "lat": 50.9854597,
+  "country": "de"
+ },
+ "Möckern": {
+  "lon": 11.9526037,
+  "lat": 52.1405587,
+  "country": "de"
+ },
+ "München": {
+  "lon": 11.5753822,
+  "lat": 48.1371079,
+  "country": "de"
+ },
+ "Münster": {
+  "lon": 7.6251879,
+  "lat": 51.9625101,
+  "country": "de"
+ },
+ "Neu-Ulm": {
+  "lon": 10.0005211,
+  "lat": 48.3953489,
+  "country": "de"
+ },
+ "Neubrandenburg": {
+  "lon": 13.2602781,
+  "lat": 53.5574458,
+  "country": "de"
+ },
+ "Neuburg an der Donau": {
+  "lon": 11.1879622,
+  "lat": 48.745628,
+  "country": "de"
+ },
+ "Neumarkt in der Oberpfalz": {
+  "lon": 11.4585353,
+  "lat": 49.2800542,
+  "country": "de"
+ },
+ "Nordhausen": {
+  "lon": 10.7925317,
+  "lat": 51.5051574,
+  "country": "de"
+ },
+ "Nürnberg": {
+  "lon": 11.077298,
+  "lat": 49.453872,
+  "country": "de"
+ },
+ "Nürtingen": {
+  "lon": 9.3365463,
+  "lat": 48.6265854,
+  "country": "de"
+ },
+ "Oestrich-Winkel": {
+  "lon": 8.0167585,
+  "lat": 50.0071863,
+  "country": "de"
+ },
+ "Offenburg": {
+  "lon": 7.9429235,
+  "lat": 48.4695984,
+  "country": "de"
+ },
+ "Oldenburg": {
+  "lon": 8.2146017,
+  "lat": 53.1389753,
+  "country": "de"
+ },
+ "Osnabrück": {
+  "lon": 8.047635,
+  "lat": 52.2719595,
+  "country": "de"
+ },
+ "Paderborn": {
+  "lon": 8.752653,
+  "lat": 51.7177044,
+  "country": "de"
+ },
+ "Passau": {
+  "lon": 13.4609744,
+  "lat": 48.5748229,
+  "country": "de"
+ },
+ "Pfarrkirchen": {
+  "lon": 12.960861,
+  "lat": 48.438569,
+  "country": "de"
+ },
+ "Pforzheim": {
+  "lon": 8.7025509,
+  "lat": 48.890934,
+  "country": "de"
+ },
+ "Pirmasens": {
+  "lon": 7.6087847,
+  "lat": 49.1996961,
+  "country": "de"
+ },
+ "Planegg": {
+  "lon": 11.4220029,
+  "lat": 48.103742,
+  "country": "de"
+ },
+ "Potsdam": {
+  "lon": 13.0591397,
+  "lat": 52.4009309,
+  "country": "de"
+ },
+ "Regensburg": {
+  "lon": 12.0974869,
+  "lat": 49.0195333,
+  "country": "de"
+ },
+ "Remagen": {
+  "lon": 7.2286788,
+  "lat": 50.5792112,
+  "country": "de"
+ },
+ "Reutlingen": {
+  "lon": 9.2114144,
+  "lat": 48.4919508,
+  "country": "de"
+ },
+ "Rheinbach": {
+  "lon": 6.9491436,
+  "lat": 50.6256808,
+  "country": "de"
+ },
+ "Riedlingen": {
+  "lon": 9.4748796,
+  "lat": 48.1534412,
+  "country": "de"
+ },
+ "Rosenheim": {
+  "lon": 12.1272983,
+  "lat": 47.8557873,
+  "country": "de"
+ },
+ "Rostock": {
+  "lon": 12.1400211,
+  "lat": 54.0886707,
+  "country": "de"
+ },
+ "Rottweil": {
+  "lon": 8.626979,
+  "lat": 48.1678244,
+  "country": "de"
+ },
+ "Rüsselsheim": {
+  "lon": 8.411636,
+  "lat": 49.9948491,
+  "country": "de"
+ },
+ "Saarbrücken": {
+  "lon": 6.996379,
+  "lat": 49.234362,
+  "country": "de"
+ },
+ "Sankt Augustin": {
+  "lon": 7.1895507,
+  "lat": 50.7752776,
+  "country": "de"
+ },
+ "Schweinfurt": {
+  "lon": 10.2340647,
+  "lat": 50.0451485,
+  "country": "de"
+ },
+ "Schwäbisch Gmünd": {
+  "lon": 9.7977584,
+  "lat": 48.7999036,
+  "country": "de"
+ },
+ "Selb": {
+  "lon": 12.1309201,
+  "lat": 50.1696241,
+  "country": "de"
+ },
+ "Senftenberg": {
+  "lon": 14.0046541,
+  "lat": 51.519201,
+  "country": "de"
+ },
+ "Siegen": {
+  "lon": 8.0256131,
+  "lat": 50.8751175,
+  "country": "de"
+ },
+ "Sigmaringen": {
+  "lon": 9.2165039,
+  "lat": 48.0869139,
+  "country": "de"
+ },
+ "Singapore": {
+  "lon": 103.8519072,
+  "lat": 1.2899175,
+  "country": "sg"
+ },
+ "Soest": {
+  "lon": 8.1061259,
+  "lat": 51.5725501,
+  "country": "de"
+ },
+ "Steinfurt": {
+  "lon": 7.3581404,
+  "lat": 52.1377509,
+  "country": "de"
+ },
+ "Stralsund": {
+  "lon": 13.0820846,
+  "lat": 54.3096314,
+  "country": "de"
+ },
+ "Straubing": {
+  "lon": 12.5955773,
+  "lat": 48.8839157,
+  "country": "de"
+ },
+ "Stuttgart": {
+  "lon": 9.1800132,
+  "lat": 48.7784485,
+  "country": "de"
+ },
+ "Tharandt": {
+  "lon": 13.5794907,
+  "lat": 50.9853391,
+  "country": "de"
+ },
+ "Trier": {
+  "lon": 6.6441878,
+  "lat": 49.7596208,
+  "country": "de"
+ },
+ "Tübingen": {
+  "lon": 9.053596,
+  "lat": 48.5203263,
+  "country": "de"
+ },
+ "Ulm": {
+  "lon": 9.9912458,
+  "lat": 48.3984968,
+  "country": "de"
+ },
+ "Vallendar": {
+  "lon": 7.6142479,
+  "lat": 50.4001381,
+  "country": "de"
+ },
+ "Villingen-Schwenningen": {
+  "lon": 8.4929618,
+  "lat": 48.063152,
+  "country": "de"
+ },
+ "Wedel (Holstein)": {
+  "lon": 9.7038772,
+  "lat": 53.5810226,
+  "country": "de"
+ },
+ "Weiden in der Oberpfalz": {
+  "lon": 12.1631636,
+  "lat": 49.6752749,
+  "country": "de"
+ },
+ "Weidenbach": {
+  "lon": 7.8830047,
+  "lat": 50.1543124,
+  "country": "de"
+ },
+ "Weimar": {
+  "lon": 11.3297921,
+  "lat": 50.9793301,
+  "country": "de"
+ },
+ "Weingarten": {
+  "lon": 9.6431145,
+  "lat": 47.8075299,
+  "country": "de"
+ },
+ "Weißenburg in Bayern": {
+  "lon": 10.9718974,
+  "lat": 49.0305748,
+  "country": "de"
+ },
+ "Wernigerode": {
+  "lon": 10.7862526,
+  "lat": 51.8344172,
+  "country": "de"
+ },
+ "Wiesbaden": {
+  "lon": 8.2416556,
+  "lat": 50.0820384,
+  "country": "de"
+ },
+ "Wildau": {
+  "lon": 13.6348744,
+  "lat": 52.3214429,
+  "country": "de"
+ },
+ "Wismar": {
+  "lon": 11.4647932,
+  "lat": 53.8909832,
+  "country": "de"
+ },
+ "Witten": {
+  "lon": 7.335124,
+  "lat": 51.4370171,
+  "country": "de"
+ },
+ "Witzenhausen": {
+  "lon": 9.8434192,
+  "lat": 51.3331901,
+  "country": "de"
+ },
+ "Wolfsburg": {
+  "lon": 10.7861682,
+  "lat": 52.4205588,
+  "country": "de"
+ },
+ "Worms": {
+  "lon": 8.3620898,
+  "lat": 49.6302618,
+  "country": "de"
+ },
+ "Wuppertal": {
+  "lon": 7.1780374,
+  "lat": 51.264018,
+  "country": "de"
+ },
+ "Würzburg": {
+  "lon": 9.9434769,
+  "lat": 49.7780356,
+  "country": "de"
+ },
+ "Zittau": {
+  "lon": 14.8008877,
+  "lat": 50.9097785,
+  "country": "de"
+ },
+ "Zweibrücken": {
+  "lon": 7.3641981,
+  "lat": 49.248655,
+  "country": "de"
+ },
+ "Zwickau": {
+  "lon": 12.4939267,
+  "lat": 50.7185043,
+  "country": "de"
+ }
+}

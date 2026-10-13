@@ -2,17 +2,21 @@
 //
 //   npm run alerts:watch            # check all sources, queue changes (AI drafts if Ollama is running)
 //   npm run alerts:watch -- --no-ai # skip AI drafts
+//   npm run alerts:watch -- --no-ai --publish     # the daily cloud run (pages.yml): publish confirmed changes itself
+//   npm run alerts:watch -- --rebaseline          # only re-take the snapshots (e.g. after moving to another network)
 //
 // First run per source only stores a baseline snapshot. Later runs compare against it:
 //   data/watch/snapshots/<source>.txt   last seen text of each page
 //   data/watch/pending/<id>.json        changes waiting for review in /admin (dev only)
-// Nothing here publishes anything — a person approves each alert.
+// Without --publish nothing is published — a person approves each alert in /admin. With --publish, changes that are
+// still there on the next day's check are published as word-for-word quotes (scripts/auto-alerts.ts).
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { FACTS } from "../src/content/facts.ts";
 import { SOURCES, type SourceKey } from "../src/content/sources.ts";
 import { OUT, ensureDir, fetchPageText, writeJson } from "./lib.ts";
 import { draftAlert, guardDraft, ollamaAvailable, OLLAMA_MODEL, type Draft, type GuardResult } from "./ai-draft.ts";
+import { confirmAndPublish, type Detected } from "./auto-alerts.ts";
 
 export const WATCH_DIR = join(OUT, "watch");
 const SNAP_DIR = join(WATCH_DIR, "snapshots");
@@ -64,7 +68,9 @@ function score(added: string[], removed: string[]) {
 }
 
 async function main() {
-  const useAi = !process.argv.includes("--no-ai") && (await ollamaAvailable());
+  const publish = process.argv.includes("--publish");
+  const rebaseline = process.argv.includes("--rebaseline");
+  const useAi = !rebaseline && !process.argv.includes("--no-ai") && (await ollamaAvailable());
   console.log(useAi ? `AI drafts: on (${OLLAMA_MODEL} via Ollama)` : "AI drafts: off");
   ensureDir(SNAP_DIR);
   ensureDir(PENDING_DIR);
@@ -73,6 +79,7 @@ async function main() {
   let unchanged = 0;
   const queued: string[] = [];
   const failed: string[] = [];
+  const results: { key: string; current: string[] | null; detected: Detected | null }[] = [];
 
   for (const key of Object.keys(SOURCES) as SourceKey[]) {
     const src: { name: string; url: string; linkOnly?: string; noisy?: string } = SOURCES[key];
@@ -86,7 +93,8 @@ async function main() {
         const hashPath = join(SNAP_DIR, `${key}.sha256`);
         const old = existsSync(hashPath) ? readFileSync(hashPath, "utf-8").trim() : null;
         writeFileSync(hashPath, page.sha256 ?? "");
-        if (!old) baselines++;
+        results.push({ key, current: [], detected: null });
+        if (!old || rebaseline) baselines++;
         else if (old === page.sha256) unchanged++;
         else {
           const detectedAt = new Date().toISOString();
@@ -100,23 +108,28 @@ async function main() {
           };
           writeJson(join(PENDING_DIR, `${id}.json`), candidate);
           queued.push(`${key} (new PDF version)`);
+          results[results.length - 1].detected = { key, sourceName: src.name, url: src.url, added: [], removed: [], brokenFacts: [], pdf: true };
         }
         continue;
       }
-      fullText = page.lines.join(" ").replace(/s+/g, " "); // anchors are checked against the full page, not the filtered lines
+      fullText = page.lines.join(" ").replace(/\s+/g, " "); // anchors are checked against the full page, not the filtered lines
       lines = normaliseLines(page.lines);
     } catch (e) {
       failed.push(`${key}: ${(e as Error).message}`);
+      results.push({ key, current: null, detected: null });
       continue;
     }
 
     if (!lines.length) {
+      results.push({ key, current: null, detected: null });
       // Pages that render only with JavaScript can't be watched this way — report it so a person checks them by hand.
       failed.push(`${key}: no readable text (JavaScript-only page?) — check ${src.url} manually`);
       continue;
     }
     const snapPath = join(SNAP_DIR, `${key}.txt`);
-    if (!existsSync(snapPath)) {
+    const result: (typeof results)[number] = { key, current: lines, detected: null };
+    results.push(result);
+    if (!existsSync(snapPath) || rebaseline) {
       writeFileSync(snapPath, lines.join("\n"));
       baselines++;
       continue;
@@ -144,6 +157,15 @@ async function main() {
       brokenAnchors: f.anchors.filter((a) => a.source === key && !new RegExp(a.pattern, "i").test(fullText)).map((a) => a.pattern),
     }));
     const { keywords, relevance } = score(added, removed);
+    result.detected = {
+      key,
+      sourceName: src.name,
+      url: src.url,
+      // Noisy pages only get here when a fact anchor broke; quote nothing else from them.
+      added: src.noisy ? [] : added,
+      removed: src.noisy ? [] : removed,
+      brokenFacts: affectedFacts.filter((f) => f.brokenAnchors.length).map((f) => ({ id: f.id, title: f.title })),
+    };
 
     let ai: ChangeCandidate["ai"] = null;
     if (useAi) {
@@ -163,10 +185,11 @@ async function main() {
   }
 
   console.log(`${baselines} new baselines, ${unchanged} unchanged, ${queued.length} changes queued for review, ${failed.length} failed`);
+  if (publish && !rebaseline) for (const l of confirmAndPublish(results)) console.log(`  alert ${l}`);
   for (const q of queued) console.log(`  → ${q}`);
   for (const f of failed) console.log(`  ✗ ${f}`);
-  // Exit 2 when something needs a human, so a scheduled task can notify.
-  if (queued.length) process.exitCode = 2;
+  // Exit 2 when something needs a human, so a scheduled task can notify (not when publishing by itself).
+  if (queued.length && !publish) process.exitCode = 2;
 }
 
 main().catch((e) => {
