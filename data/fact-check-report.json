@@ -1,22 +1,9 @@
 {
- "checkedAt": "2026-10-14T08:55:55.437Z",
+ "checkedAt": "2026-10-15T08:28:57.131Z",
  "facts": 21,
  "sources": 31,
  "skipped": [
   "https://www.goethe.de/ins/in/en/spr/prf.html (goethe.de blocks automated requests)"
  ],
- "problems": [
-  {
-   "source": "https://www.d-mat.de/en/dmat-in-india/",
-   "problem": "source unreachable: fetch failed"
-  },
-  {
-   "source": "https://www.d-mat.de/wp-content/uploads/2026/09/260902_dMAT_General-Academic-Module_Preparatoy-Materials_EN.pdf",
-   "problem": "source unreachable: fetch failed"
-  },
-  {
-   "source": "https://www.d-mat.de/wp-content/uploads/2026/09/202609_Info_dMAT_Candidates.pdf",
-   "problem": "source unreachable: fetch failed"
-  }
- ]
+ "problems": []
 }
