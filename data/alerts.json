@@ -1,3 +1,69 @@
 {
- "alerts": []
+ "alerts": [
+  {
+   "id": "auto-apsDmat-2026-10-15",
+   "publishedAt": "2026-10-16T08:26:13.396Z",
+   "title": "Changed: APS India – dMAT for selected Master's applicants",
+   "summary": "The official page changed (noticed on 15 Oct 2026 and still the same a day later). The changed lines are quoted below word for word; open the page for the full context.",
+   "severity": "info",
+   "audience": [
+    "planning"
+   ],
+   "sources": [
+    {
+     "name": "APS India – dMAT for selected Master's applicants",
+     "url": "https://aps-india.de/dmat/"
+    }
+   ],
+   "kind": "detected",
+   "quotes": {
+    "added": [
+     "The next dMAT test dates will be in mid-January and mid-March.",
+     "The registration start date will be announced on this website shortly.",
+     "Details regarding the updated list of affected fields of study will be announced on this website shortly.For applicants in these fields, the dMAT is a required part of the APS documentation for applications relating to the summer semester 2027 intake and subsequent intakes, unless a transitional exemption applies.",
+     "The dMAT applies to selected groups of Master’s applicants from India. Details regarding the updated list of affected study fields will be announced on this website shortly."
+    ],
+    "removed": [
+     "Registration starts on 29 June 2026.",
+     "The dMAT will apply to Master’s applicants whose previous degree falls within one of the following fields:",
+     "dMAT – Affected Fields List",
+     "For applicants in these fields, the dMAT is a required part of the APS documentation for applications relating to the summer semester 2027 intake and subsequent intakes, unless a transitional exemption applies.",
+     "29 June 2026 – Registration starts",
+     "12 October 2026 – Certificate available online via the test takers’ portal of g.a.s.t."
+    ]
+   }
+  },
+  {
+   "id": "auto-apsHome-2026-10-15",
+   "publishedAt": "2026-10-16T08:26:13.396Z",
+   "title": "Changed: APS India",
+   "summary": "The official page changed (noticed on 15 Oct 2026 and still the same a day later). The changed lines are quoted below word for word; open the page for the full context.",
+   "severity": "info",
+   "audience": [
+    "planning"
+   ],
+   "sources": [
+    {
+     "name": "APS India",
+     "url": "https://aps-india.de/"
+    }
+   ],
+   "kind": "detected",
+   "quotes": {
+    "added": [
+     "Digital Master Test (dMAT) Status Update: Upcoming Test Sessions and Registration",
+     "The dMAT is an additional element in the APS documentation for selected Master’s applicants.",
+     "Following the completion of the first dMAT session, the next test cycles are scheduled for mid-January and mid-March. These test sessions are particularly relevant for applicants aiming to begin their Master’s studies in Germany in the winter semester 2027/28.",
+     "Details regarding the updated list of affected fields of study, as well as the registration start date, will be announced on this website shortly. For applicants in these specified fields, the dMAT is a mandatory requirement for obtaining an APS certificate.",
+     "Reminder: Master’s applicants in affected fields may continue to submit their complete APS application documents in advance. Verification will begin upon receipt, and the final APS certificate will be issued once the dMAT score report has been verified."
+    ],
+    "removed": [
+     "Submit your APS documents before your dMAT certificate is available",
+     "The dMAT is an additional element in the APS documentation for selected Master’s applicants whose previous degree falls within Engineering, Commerce / Accounting / Finance / Economics, or Business / Management.",
+     "Applicants in the affected subject groups for the Summer Semester 2027 Master intake or later Master intakes may submit their complete APS application documents now, before the dMAT certificate is available. APS India can begin the document verification in advance.",
+     "The APS certificate can only be issued after the required dMAT certificate has been submitted and checked. All other documents required by the applicable APS checklist must be included in the initial submission."
+    ]
+   }
+  }
+ ]
 }
