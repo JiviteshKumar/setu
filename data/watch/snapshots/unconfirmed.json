@@ -1,15 +1,1 @@
-{
- "daadScholarships": {
-  "key": "daadScholarships",
-  "sourceName": "DAAD scholarship database",
-  "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/",
-  "added": [
-   "148 Scholarship options for your selection"
-  ],
-  "removed": [
-   "149 Scholarship options for your selection"
-  ],
-  "brokenFacts": [],
-  "firstSeen": "2026-10-15T08:28:36.082Z"
- }
-}
+{}

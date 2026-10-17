@@ -64,6 +64,31 @@
      "The APS certificate can only be issued after the required dMAT certificate has been submitted and checked. All other documents required by the applicable APS checklist must be included in the initial submission."
     ]
    }
+  },
+  {
+   "id": "auto-daadScholarships-2026-10-15",
+   "publishedAt": "2026-10-17T08:01:14.193Z",
+   "title": "Changed: DAAD scholarship database",
+   "summary": "The official page changed (noticed on 15 Oct 2026 and still the same a day later). The changed lines are quoted below word for word; open the page for the full context.",
+   "severity": "info",
+   "audience": [
+    "planning"
+   ],
+   "sources": [
+    {
+     "name": "DAAD scholarship database",
+     "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/"
+    }
+   ],
+   "kind": "detected",
+   "quotes": {
+    "added": [
+     "148 Scholarship options for your selection"
+    ],
+    "removed": [
+     "149 Scholarship options for your selection"
+    ]
+   }
   }
  ]
 }
