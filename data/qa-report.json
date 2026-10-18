@@ -1,5 +1,5 @@
 {
- "builtAt": "2026-10-11T11:42:15.517Z",
+ "builtAt": "2026-10-18T09:08:57.786Z",
  "unmatchedOrFlagged": [
   {
    "id": 6527,
@@ -4143,14 +4143,6 @@
    "id": 3738,
    "name": "Master's Programme (LLM) in European and International Law",
    "university": "Saarland University",
-   "checks": [
-    "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
-   ]
-  },
-  {
-   "id": 5395,
-   "name": "Master's Programme International Business with Regional Focus (MBA)",
-   "university": "Technical University of Applied Sciences Würzburg-Schweinfurt (THWS)",
    "checks": [
     "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
    ]

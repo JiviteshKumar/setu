@@ -1,3 +1,52 @@
 {
- "changes": {}
+ "changes": {
+  "5395": [
+   {
+    "field": "Listing",
+    "before": "Listed in the DAAD database",
+    "after": "No longer listed — check the university website",
+    "detectedAt": "2026-10-18T09:08:57.729Z"
+   }
+  ],
+  "7852": [
+   {
+    "field": "English requirement",
+    "before": "B2 required, please provide an official language certificate, e.g.: • TOEFL iBT Home Edition (before 2026): 83 • Reading: 18 • Listening: 17 • Speaking: 20 • Writing: 17 • UNIcert® English: UNIcert® II • IELTS Academic: 6",
+    "after": "B2 required, please provide an official language certificate, e.g.: • TOEFL iBT Home Edition (before 2026): 83 • UNIcert® English: UNIcert® II • IELTS Academic: 6",
+    "detectedAt": "2026-10-18T09:08:57.729Z"
+   }
+  ],
+  "8603": [
+   {
+    "field": "English requirement",
+    "before": "B2 required, please provide an official language certificate, e.g.: • UNIcert® English: UNIcert® II • TOEFL iBT Home Edition (before 2026): 83 • Reading: 18 • Listening: 17 • Speaking: 20 • Writing: 17 • IELTS Academic: 6",
+    "after": "B2 required, please provide an official language certificate, e.g.: • UNIcert® English: UNIcert® II • TOEFL iBT Home Edition (before 2026): 83 • IELTS Academic: 6",
+    "detectedAt": "2026-10-18T09:08:57.729Z"
+   }
+  ],
+  "8604": [
+   {
+    "field": "English requirement",
+    "before": "B2 required, please provide an official language certificate, e.g.: • UNIcert® English: UNIcert® II • TOEFL iBT Home Edition (before 2026): 83 • Reading: 18 • Listening: 17 • Speaking: 20 • Writing: 17 • IELTS Academic: 6",
+    "after": "B2 required, please provide an official language certificate, e.g.: • UNIcert® English: UNIcert® II • TOEFL iBT Home Edition (before 2026): 83 • IELTS Academic: 6",
+    "detectedAt": "2026-10-18T09:08:57.729Z"
+   }
+  ],
+  "8605": [
+   {
+    "field": "English requirement",
+    "before": "B2 required, please provide an official language certificate, e.g.: • UNIcert® English: UNIcert® II • TOEFL iBT Home Edition (before 2026): 83 • Reading: 18 • Listening: 17 • Speaking: 20 • Writing: 17 • IELTS Academic: 6",
+    "after": "B2 required, please provide an official language certificate, e.g.: • UNIcert® English: UNIcert® II • TOEFL iBT Home Edition (before 2026): 83 • IELTS Academic: 6",
+    "detectedAt": "2026-10-18T09:08:57.729Z"
+   }
+  ],
+  "10435": [
+   {
+    "field": "Tuition fee",
+    "before": "The following tuition fees apply for applicants from: all countries 5,970 EUR",
+    "after": "The following tuition fees apply for applicants from: all countries 6,300 EUR",
+    "detectedAt": "2026-10-18T09:08:57.729Z"
+   }
+  ]
+ }
 }
