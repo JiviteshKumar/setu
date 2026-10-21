@@ -1,30 +1,15 @@
 {
- "dmatSite": {
-  "key": "dmatSite",
-  "sourceName": "g.a.s.t. – dMAT in India",
-  "url": "https://www.d-mat.de/en/dmat-in-india/",
-  "added": [
-   "Important information for your dMAT registration",
-   "Accepted payment methods: PayPal or Mastercard/Visa credit card with 3D Secure authentication. Debit cards are not accepted.",
-   "Required identification document: A valid passport. No other identification documents are accepted."
-  ],
-  "removed": [],
-  "brokenFacts": [],
-  "firstSeen": "2026-10-20T08:48:58.384Z"
- },
  "tumFees": {
   "key": "tumFees",
   "sourceName": "TUM – tuition fees for students from non-EU countries",
   "url": "https://www.tum.de/en/studies/fees/tuition",
   "added": [
-   "TUM Strengthens Cutting-Edge Research with the Center for Quantum Engineering",
-   "TUM Celebrates Alumni Homecoming"
+   "Big goals for a semester in Singapore"
   ],
   "removed": [
-   "Using AI to respond more quickly to traffic hazards",
-   "“We need to redefine our conservation goals”"
+   "Record-breaking start: More students and more international than ever"
   ],
   "brokenFacts": [],
-  "firstSeen": "2026-10-20T08:48:58.384Z"
+  "firstSeen": "2026-10-21T08:49:09.170Z"
  }
 }

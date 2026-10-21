@@ -89,6 +89,30 @@
      "149 Scholarship options for your selection"
     ]
    }
+  },
+  {
+   "id": "auto-dmatSite-2026-10-20",
+   "publishedAt": "2026-10-21T08:49:09.170Z",
+   "title": "Changed: g.a.s.t. – dMAT in India",
+   "summary": "The official page changed (noticed on 20 Oct 2026 and still the same a day later). The changed lines are quoted below word for word; open the page for the full context.",
+   "severity": "info",
+   "audience": [
+    "planning"
+   ],
+   "sources": [
+    {
+     "name": "g.a.s.t. – dMAT in India",
+     "url": "https://www.d-mat.de/en/dmat-in-india/"
+    }
+   ],
+   "kind": "detected",
+   "quotes": {
+    "added": [
+     "Important information for your dMAT registration",
+     "Accepted payment methods: PayPal or Mastercard/Visa credit card with 3D Secure authentication. Debit cards are not accepted."
+    ],
+    "removed": []
+   }
   }
  ]
 }
