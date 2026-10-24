@@ -4,14 +4,10 @@
   "sourceName": "TUM – tuition fees for students from non-EU countries",
   "url": "https://www.tum.de/en/studies/fees/tuition",
   "added": [
-   "TUM opens Convergence Center and TUM RoboGym powered by NEURA"
+   "More space for basic research"
   ],
-  "removed": [
-   "Award for Exemplary Communication on Animal Research",
-   "Big goals for a semester in Singapore",
-   "TUM Strengthens Cutting-Edge Research with the Center for Quantum Engineering"
-  ],
+  "removed": [],
   "brokenFacts": [],
-  "firstSeen": "2026-10-23T08:43:20.554Z"
+  "firstSeen": "2026-10-24T08:22:12.284Z"
  }
 }

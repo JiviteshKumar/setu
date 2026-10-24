@@ -1,9 +1,34 @@
 {
- "checkedAt": "2026-10-23T08:43:42.740Z",
+ "checkedAt": "2026-10-24T08:31:17.687Z",
  "facts": 21,
  "sources": 31,
  "skipped": [
   "https://www.goethe.de/ins/in/en/spr/prf.html (goethe.de blocks automated requests)"
  ],
- "problems": []
+ "problems": [
+  {
+   "source": "https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html",
+   "problem": "source unreachable: fetch failed"
+  },
+  {
+   "source": "https://www.gesetze-im-internet.de/aufenthg_2004/__20.html",
+   "problem": "source unreachable: fetch failed"
+  },
+  {
+   "source": "https://www.gesetze-im-internet.de/bmg/__17.html",
+   "problem": "source unreachable: fetch failed"
+  },
+  {
+   "source": "https://www.gesetze-im-internet.de/sgb_5/__5.html",
+   "problem": "source unreachable: fetch failed"
+  },
+  {
+   "source": "https://www.gesetze-im-internet.de/vwgo/__70.html",
+   "problem": "source unreachable: fetch failed"
+  },
+  {
+   "source": "https://www.gesetze-im-internet.de/vwgo/__58.html",
+   "problem": "source unreachable: fetch failed"
+  }
+ ]
 }
