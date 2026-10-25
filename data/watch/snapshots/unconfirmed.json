@@ -1,13 +1,1 @@
-{
- "tumFees": {
-  "key": "tumFees",
-  "sourceName": "TUM – tuition fees for students from non-EU countries",
-  "url": "https://www.tum.de/en/studies/fees/tuition",
-  "added": [
-   "More space for basic research"
-  ],
-  "removed": [],
-  "brokenFacts": [],
-  "firstSeen": "2026-10-24T08:22:12.284Z"
- }
-}
+{}
