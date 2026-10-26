@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-10-25T08:50:14.881Z",
+ "checkedAt": "2026-10-26T09:24:15.535Z",
  "facts": 21,
  "sources": 31,
  "skipped": [
@@ -23,20 +23,12 @@
    "problem": "source unreachable: fetch failed"
   },
   {
-   "source": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/",
-   "problem": "source unreachable: HTTP 403"
-  },
-  {
    "source": "https://www.gesetze-im-internet.de/vwgo/__70.html",
    "problem": "source unreachable: fetch failed"
   },
   {
    "source": "https://www.gesetze-im-internet.de/vwgo/__58.html",
    "problem": "source unreachable: fetch failed"
-  },
-  {
-   "source": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/",
-   "problem": "source unreachable: HTTP 403"
   }
  ]
 }
