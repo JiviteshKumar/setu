@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-10-28T10:08:09.476Z",
+ "checkedAt": "2026-10-29T10:29:23.722Z",
  "facts": 21,
  "sources": 31,
  "skipped": [
@@ -25,10 +25,6 @@
   {
    "source": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/",
    "problem": "source unreachable: HTTP 403"
-  },
-  {
-   "source": "https://www.hochschulkompass.de/hochschulen/downloads.html",
-   "problem": "source unreachable: HTTP 400"
   },
   {
    "source": "https://www.gesetze-im-internet.de/vwgo/__70.html",

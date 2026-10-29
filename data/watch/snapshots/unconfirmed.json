@@ -4,13 +4,16 @@
   "sourceName": "TUM – tuition fees for students from non-EU countries",
   "url": "https://www.tum.de/en/studies/fees/tuition",
   "added": [
-   "Sustainability is contagious",
-   "Medicine meets natural sciences and engineering"
+   "Mycorrhizae and how they help plants",
+   "Number 12 in Global Employability Ranking",
+   "TUM tops the list for patent applications"
   ],
   "removed": [
-   "TUM opens Convergence Center and TUM RoboGym powered by NEURA"
+   "Sustainability is contagious",
+   "Medicine meets natural sciences and engineering",
+   "More space for basic research"
   ],
   "brokenFacts": [],
-  "firstSeen": "2026-10-28T09:57:54.652Z"
+  "firstSeen": "2026-10-29T10:19:45.268Z"
  }
 }
