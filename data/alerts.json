@@ -113,6 +113,29 @@
     ],
     "removed": []
    }
+  },
+  {
+   "id": "auto-tumFees-2026-10-29",
+   "publishedAt": "2026-10-30T10:16:50.995Z",
+   "title": "Changed: TUM – tuition fees for students from non-EU countries",
+   "summary": "The official page changed (noticed on 29 Oct 2026 and still the same a day later). The changed lines are quoted below word for word; open the page for the full context.",
+   "severity": "info",
+   "audience": [
+    "planning"
+   ],
+   "sources": [
+    {
+     "name": "TUM – tuition fees for students from non-EU countries",
+     "url": "https://www.tum.de/en/studies/fees/tuition"
+    }
+   ],
+   "kind": "detected",
+   "quotes": {
+    "added": [
+     "TUM tops the list for patent applications"
+    ],
+    "removed": []
+   }
   }
  ]
 }
