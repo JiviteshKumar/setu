@@ -136,6 +136,69 @@
     ],
     "removed": []
    }
+  },
+  {
+   "id": "auto-apsDmat-2026-10-30",
+   "publishedAt": "2026-10-31T09:50:40.244Z",
+   "title": "Changed: APS India – dMAT for selected Master's applicants",
+   "summary": "The official page changed (noticed on 30 Oct 2026), and it no longer contains wording that Setu's fact \"dMAT fee and first test\" relies on. Treat that fact as unconfirmed until it is updated, and read the official page.",
+   "severity": "important",
+   "audience": [
+    "planning"
+   ],
+   "sources": [
+    {
+     "name": "APS India – dMAT for selected Master's applicants",
+     "url": "https://aps-india.de/dmat/"
+    }
+   ],
+   "kind": "detected",
+   "quotes": {
+    "added": [
+     "Confirmed dMAT Test Dates for 2027",
+     "Registration is now open. Candidates are required to select their preferred test date and location directly during the online registration process via the g.a.s.t. portal.",
+     "The dMAT requirement applies to Indian Master’s applicants whose undergraduate degree falls under any of the following disciplines:",
+     "For applicants in these fields, the dMAT is a required part of the APS documentation for applications relating to intakes from the summer semester 2027 onwards, unless a transitional exemption applies.",
+     "An APS certificate can only be issued for degrees and study programs that are formally recognized by the University Grants Commission (UGC).",
+     "A dMAT certificate cannot compensate for missing formal recognition of a higher education institution or degree."
+    ],
+    "removed": [
+     "The next dMAT test dates will be in mid-January and mid-March.",
+     "The registration start date will be announced on this website shortly.",
+     "Details regarding the updated list of affected fields of study will be announced on this website shortly.For applicants in these fields, the dMAT is a required part of the APS documentation for applications relating to the summer semester 2027 intake and subsequent intakes, unless a transitional exemption applies.",
+     "Applicants are exempt from the dMAT requirement if they completed their APS online registration before 29 June 2026 or if they shipped their complete APS application documents before 29 June 2026.",
+     "The dMAT applies to selected groups of Master’s applicants from India. Details regarding the updated list of affected study fields will be announced on this website shortly.",
+     "Yes. For applicants in the selected fields, the dMAT is required for APS applications relating to the summer semester 2027 intake and subsequent intakes."
+    ]
+   }
+  },
+  {
+   "id": "auto-apsHome-2026-10-30",
+   "publishedAt": "2026-10-31T09:50:40.244Z",
+   "title": "Changed: APS India",
+   "summary": "The official page changed (noticed on 30 Oct 2026 and still the same a day later). The changed lines are quoted below word for word; open the page for the full context.",
+   "severity": "info",
+   "audience": [
+    "planning"
+   ],
+   "sources": [
+    {
+     "name": "APS India",
+     "url": "https://aps-india.de/"
+    }
+   ],
+   "kind": "detected",
+   "quotes": {
+    "added": [
+     "Digital Master Test (dMAT) Status Update: Test Dates Confirmed & Registration Open",
+     "Registration is now open. Please refer to the dMAT page below for detailed explanations on the affected fields of study. For applicants falling under the specified fields, the dMAT is a mandatory requirement to obtain an APS certificate."
+    ],
+    "removed": [
+     "Digital Master Test (dMAT) Status Update: Upcoming Test Sessions and Registration",
+     "Following the completion of the first dMAT session, the next test cycles are scheduled for mid-January and mid-March. These test sessions are particularly relevant for applicants aiming to begin their Master’s studies in Germany in the winter semester 2027/28.",
+     "Details regarding the updated list of affected fields of study, as well as the registration start date, will be announced on this website shortly. For applicants in these specified fields, the dMAT is a mandatory requirement for obtaining an APS certificate."
+    ]
+   }
   }
  ]
 }

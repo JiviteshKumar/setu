@@ -1,98 +1,17 @@
 {
- "apsDmat": {
-  "key": "apsDmat",
-  "sourceName": "APS India – dMAT for selected Master's applicants",
-  "url": "https://aps-india.de/dmat/",
+ "tumFees": {
+  "key": "tumFees",
+  "sourceName": "TUM – tuition fees for students from non-EU countries",
+  "url": "https://www.tum.de/en/studies/fees/tuition",
   "added": [
-   "Published on: 29 October 2026 · Last updated: 29 October 2026",
-   "Confirmed dMAT Test Dates for 2027",
-   "Cycle 1 : January 16, 2027",
-   "Registration is now open. Candidates are required to select their preferred test date and location directly during the online registration process via the g.a.s.t. portal.",
-   "The dMAT requirement applies to Indian Master’s applicants whose undergraduate degree falls under any of the following disciplines:",
-   "Engineering / Technology: All B.Tech and B.Eng degrees (regardless of the specific specialization or field).",
-   "Commerce & Economics: All undergraduate degrees in Commerce, Accounting, Finance, or Economics.",
-   "Business & Management: All undergraduate degrees in Business Administration or Management Studies.",
-   "For applicants in these fields, the dMAT is a required part of the APS documentation for applications relating to intakes from the summer semester 2027 onwards, unless a transitional exemption applies.",
-   "Recognition, anabin and UGC Approval",
-   "An APS certificate can only be issued for degrees and study programs that are formally recognized by the University Grants Commission (UGC).",
-   "A dMAT certificate cannot compensate for missing formal recognition of a higher education institution or degree.",
-   "To determine whether the dMAT requirement applies to your program, please apply the following criteria:",
-   "Degree Title Rule: All B.Tech and B.Eng degrees are subject to the dMAT requirement, regardless of the specific specialization or field.",
-   "Major Field Rule: For multidisciplinary, combined, or related degrees (e.g., B.Sc., B.A., or B.Com variants), the dMAT is mandatory if your program’s core curriculum or major field of study falls within Commerce, Economics, Business, or Management .",
-   "If your degree falls into a boundary area, taking the dMAT is strongly advised to ensure your APS application can be processed without delay.",
-   "Yes. For applicants in the selected fields, the dMAT is required for APS applications relating to intakes from the summer semester 2027 onwards.",
-   "Yes. Applicants subject to the dMAT requirement may submit their APS application documents before the dMAT certificate is available.",
-   "Registration for the upcoming test cycles is now open on the official g.a.s.t. portal:",
-   "Schedule for Upcoming Test Sessions:",
-   "Test Date: 16 January 2027",
-   "Please refer to the g.a.s.t. portal during registration for exact deadlines regarding registration closure and score release for each respective cycle.",
-   "Advance notice regarding the conclusion of the first dMAT session; initial announcement of upcoming test windows in mid-January and mid-March 2027 for applicants targeting the Winter Semester 2027/28 intake; notice that affected study fields and registration details would be updated shortly.",
-   "Announcement of confirmed test dates (16 January 2027 and 13 March 2027); opening of online registration via the g.a.s.t. portal; publication of the updated list of affected fields of study (including all B.Tech / B.Eng degrees, Commerce/Economics, Business/Management); inclusion of explicit guidance regarding program-level UGC recognition requirements."
+   "Electric trucks: Reliable on the road and profitable as energy storage",
+   "EuroTech expands to eight universities"
   ],
   "removed": [
-   "Published on: 15 October 2026 · Last updated: 15 October 2026",
-   "The next dMAT test dates will be in mid-January and mid-March.",
-   "The registration start date will be announced on this website shortly.",
-   "Details regarding the updated list of affected fields of study will be announced on this website shortly.For applicants in these fields, the dMAT is a required part of the APS documentation for applications relating to the summer semester 2027 intake and subsequent intakes, unless a transitional exemption applies.",
-   "Applicants are exempt from the dMAT requirement if they completed their APS online registration before 29 June 2026 or if they shipped their complete APS application documents before 29 June 2026.",
-   "The dMAT applies to selected groups of Master’s applicants from India. Details regarding the updated list of affected study fields will be announced on this website shortly.",
-   "Yes. For applicants in the selected fields, the dMAT is required for APS applications relating to the summer semester 2027 intake and subsequent intakes.",
-   "Yes. If the dMAT requirement applies to your applicant group, the dMAT certificate is a required part of your APS documentation. However, applicants for the Summer Semester 2027 Master intake or later Master intakes may submit their APS application documents before the dMAT certificate is available.",
-   "I am applying for the winter semester 2026/27 Master intake. Do I have to take the dMAT?",
-   "The first dMAT certificates will be available from 12 October 2026. The dMAT introduction is therefore intended for applications in connection with the summer semester 2027 Master intake and subsequent intakes.",
-   "The current schedule for the first dMAT date in India is as follows:",
-   "29 June 2026 – Registration starts:",
-   "15 September 2026 – Registration deadline",
-   "26 September 2026 – dMAT test date",
-   "12 October 2026 – Certificates available online"
-  ],
-  "brokenFacts": [
-   {
-    "id": "dmat-fee-dates",
-    "title": "dMAT fee and first test"
-   }
-  ],
-  "firstSeen": "2026-10-30T10:16:50.995Z"
- },
- "apsHome": {
-  "key": "apsHome",
-  "sourceName": "APS India",
-  "url": "https://aps-india.de/",
-  "added": [
-   "Digital Master Test (dMAT) Status Update: Test Dates Confirmed & Registration Open",
-   "The test dates for the upcoming sessions have been confirmed for 16 January 2027 and 13 March 2027. These sessions are particularly relevant for applicants aiming to begin their master’s studies in Germany in the Winter Semester 2027/28.",
-   "Registration is now open. Please refer to the dMAT page below for detailed explanations on the affected fields of study. For applicants falling under the specified fields, the dMAT is a mandatory requirement to obtain an APS certificate."
-  ],
-  "removed": [
-   "Digital Master Test (dMAT) Status Update: Upcoming Test Sessions and Registration",
-   "Following the completion of the first dMAT session, the next test cycles are scheduled for mid-January and mid-March. These test sessions are particularly relevant for applicants aiming to begin their Master’s studies in Germany in the winter semester 2027/28.",
-   "Details regarding the updated list of affected fields of study, as well as the registration start date, will be announced on this website shortly. For applicants in these specified fields, the dMAT is a mandatory requirement for obtaining an APS certificate."
+   "Number 12 in Global Employability Ranking",
+   "TUM tops the list for patent applications"
   ],
   "brokenFacts": [],
-  "firstSeen": "2026-10-30T10:16:50.995Z"
- },
- "rundfunk": {
-  "key": "rundfunk",
-  "sourceName": "ARD ZDF Deutschlandradio Beitragsservice",
-  "url": "https://www.rundfunkbeitrag.de/",
-  "added": [
-   "--> Startseite - Der Rundfunkbeitrag • • • •"
-  ],
-  "removed": [
-   "--> Der Rundfunkbeitrag • • • •"
-  ],
-  "brokenFacts": [],
-  "firstSeen": "2026-10-30T10:16:50.995Z"
- },
- "enbBremen": {
-  "key": "enbBremen",
-  "sourceName": "University of Bremen – definitively failed (endgültig nicht bestanden)",
-  "url": "https://www.uni-bremen.de/studium/starten-studieren/pruefungen/endgueltig-nicht-bestanden",
-  "added": [
-   "MINT-Barcamp im Land Bremen"
-  ],
-  "removed": [],
-  "brokenFacts": [],
-  "firstSeen": "2026-10-30T10:16:50.995Z"
+  "firstSeen": "2026-10-31T09:50:40.244Z"
  }
 }
