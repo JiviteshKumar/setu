@@ -1,11 +1,35 @@
 {
- "checkedAt": "2026-10-31T09:51:06.568Z",
+ "checkedAt": "2026-11-01T10:53:19.607Z",
  "facts": 21,
  "sources": 31,
  "skipped": [
   "https://www.goethe.de/ins/in/en/spr/prf.html (goethe.de blocks automated requests)"
  ],
  "problems": [
+  {
+   "source": "https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html",
+   "problem": "source unreachable: fetch failed"
+  },
+  {
+   "source": "https://www.gesetze-im-internet.de/aufenthg_2004/__20.html",
+   "problem": "source unreachable: fetch failed"
+  },
+  {
+   "source": "https://www.gesetze-im-internet.de/bmg/__17.html",
+   "problem": "source unreachable: fetch failed"
+  },
+  {
+   "source": "https://www.gesetze-im-internet.de/sgb_5/__5.html",
+   "problem": "source unreachable: fetch failed"
+  },
+  {
+   "source": "https://www.gesetze-im-internet.de/vwgo/__70.html",
+   "problem": "source unreachable: fetch failed"
+  },
+  {
+   "source": "https://www.gesetze-im-internet.de/vwgo/__58.html",
+   "problem": "source unreachable: fetch failed"
+  },
   {
    "fact": "dmat-fee-dates",
    "source": "https://aps-india.de/dmat/",

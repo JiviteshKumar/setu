@@ -1,6 +1,5 @@
 Downloads - Hochschulkompass
 Hochschulrektorenkonferenz
-Studienplatzbörse • Studienplatzbörse
 Studiengangsuche • Studiengangsuche
 Erweiterte Studiengangsuche
 Berufsbegleitend studieren
@@ -66,6 +65,7 @@ Studienvorbereitung & Studieneinstieg • Studienvorbereitung & Studieneinstieg
 Studienbeitrag & Studienfinanzierung • Studienbeitrag & Studienfinanzierung
 Semesterbeitrag & Studienbeitrag
 Bildungskredit & Studienkredit
+Studienplatzbörse • Studienplatzbörse
 Hochschulen • Hochschulen
 Geschichte der Universitäten
 Geschichte der Fachhochschulen und HAW

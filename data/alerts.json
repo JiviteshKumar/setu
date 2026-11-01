@@ -199,6 +199,29 @@
      "Details regarding the updated list of affected fields of study, as well as the registration start date, will be announced on this website shortly. For applicants in these specified fields, the dMAT is a mandatory requirement for obtaining an APS certificate."
     ]
    }
+  },
+  {
+   "id": "auto-tumFees-2026-10-31",
+   "publishedAt": "2026-11-01T10:44:42.164Z",
+   "title": "Changed: TUM – tuition fees for students from non-EU countries",
+   "summary": "The official page changed (noticed on 31 Oct 2026 and still the same a day later). The changed lines are quoted below word for word; open the page for the full context.",
+   "severity": "info",
+   "audience": [
+    "planning"
+   ],
+   "sources": [
+    {
+     "name": "TUM – tuition fees for students from non-EU countries",
+     "url": "https://www.tum.de/en/studies/fees/tuition"
+    }
+   ],
+   "kind": "detected",
+   "quotes": {
+    "added": [],
+    "removed": [
+     "TUM tops the list for patent applications"
+    ]
+   }
   }
  ]
 }

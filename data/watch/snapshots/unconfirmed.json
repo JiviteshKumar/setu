@@ -1,17 +1,1 @@
-{
- "tumFees": {
-  "key": "tumFees",
-  "sourceName": "TUM – tuition fees for students from non-EU countries",
-  "url": "https://www.tum.de/en/studies/fees/tuition",
-  "added": [
-   "Electric trucks: Reliable on the road and profitable as energy storage",
-   "EuroTech expands to eight universities"
-  ],
-  "removed": [
-   "Number 12 in Global Employability Ranking",
-   "TUM tops the list for patent applications"
-  ],
-  "brokenFacts": [],
-  "firstSeen": "2026-10-31T09:50:40.244Z"
- }
-}
+{}
