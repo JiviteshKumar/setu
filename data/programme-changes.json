@@ -1,11 +1,161 @@
 {
  "changes": {
+  "3679": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: non-EU countries For the winter semester: until 15 May",
+    "after": "The following is valid for applicants from: non-EU countries For the winter semester: until 15 May The following is valid for applicants from: • EU countries • Switzerland For the winter semester: until 25 June",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "3704": [
+   {
+    "field": "Tuition fee",
+    "before": "The following tuition fees apply for applicants from: all countries 3,875 EUR",
+    "after": "The following tuition fees apply for applicants from: all countries 4,000 EUR",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "3972": [
+   {
+    "field": "Admission requirements",
+    "before": "In order to be admitted to our Master's programme in Mathematics, you have to:\n• hold a Bachelor's degree in mathematics or an equivalent degree with good grades (comparable to the German grade 2.5 or better),\n• prove that you earned 120 ECTS credit points from mathematical modules, and\n• prove your knowledge of English (every certificate proving language level B2 or higher will be accepted).\nFurthermore, non-European applicants may be invited for a qualifying test.",
+    "after": "In order to be admitted to our Master's programme in Mathematics, you have to:\n• hold a Bachelor's degree in mathematics or an equivalent degree,\n• prove that you earned 120 ECTS credit points from mathematical modules, and\n• prove your knowledge of English (every certificate proving language level B2 or higher will be accepted).\nFurthermore, non-European applicants may be invited for a qualifying test.",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "4017": [
+   {
+    "field": "English requirement",
+    "before": "No minimum language level required",
+    "after": "B2 required, please provide an official language certificate, e.g.: • Cambridge English Qualifications: B2 First • Cambridge English Qualifications Business (BEC) : B2 Business Vantage • TOEFL iBT (before 2026): 72 • Reading: 18 • Listening: 17 • Speaking: 20 • Writing: 17 • TOEIC: 785 • Reading: 385 • Listening: 400 • Speaking: 160 • Writing: 150 • IELTS Academic: 5.5 • UNIcert® English: UNIcert® II • PTE Academic: 59 • ISE (paper edition): ISE II",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   },
+   {
+    "field": "Admission requirements",
+    "before": "To apply, you need to have a good first (undergraduate) degree gained after a standard period of three years of full-time study with a cultural studies and business/economics focus. You must have received an average mark of 2.5 or better according to the German marking system (or the relevant foreign equivalent) or be ranked among the best 50% of your cohort.\nYou should also have:\n• a minimum of 40 ECTS credits in business administration/economics\n• a minimum of 40 ECTS credits in a subject included in module group B",
+    "after": "To apply, you need to have a good first (undergraduate) degree gained after a standard period of three years of full-time study with a cultural studies and business/economics focus. You must have received an average mark of 2.5 or better according to the German marking system (or the relevant foreign equivalent) or be ranked among the best 50% of your cohort.\nYou should also have:\n• a minimum of 20 ECTS credits in business administration\n• a minimum of 20 ECTS credits in intercultural communication, cultural studies or intercultural management\n• a minimum of 10 ECTS credits in quantitative and/or qualitative research methods, of which 5 ECTS credits must be in data collection, data analysis, mathematics or statistics",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "4062": [
+   {
+    "field": "Admission requirements",
+    "before": "Applicants must have completed a Bachelor's degree or university diploma in the field of electrical engineering, mechanical engineering or mechatronics, or a comparable relevant degree programme with a predominance of engineering sciences, computer science or software engineering. The degree must include at least 10 ECTS credits in computer science-related modules. The final grade must be better than or equivalent to the German grade 2.5.\nUniversity certificates must indicate the final grade and include all university end of year exam certificates with individual grades. All certificates must be accompanied by an explanation of the grading system. Copies must be officially authenticated.",
+    "after": "Applicants must have completed a Bachelor's degree or university diploma in the field of electrical engineering, mechanical engineering or mechatronics, or a comparable relevant degree programme with a predominance of engineering sciences, computer science or software engineering. The degree must include at least 10 ECTS credits in computer science-related modules.\nUniversity certificates must indicate the final grade and include all university end of year exam certificates with individual grades. All certificates must be accompanied by an explanation of the grading system. Copies must be officially authenticated.",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "4159": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: non-EU countries For the winter semester: 15 April - 15 May",
+    "after": "The following is valid for applicants from: all countries For the winter semester: 15 April - 15 May",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "4411": [
+   {
+    "field": "Admission requirements",
+    "before": "Applicants must have completed a Bachelor's degree in Business, Business Informatics, or a related field of study, earning a minimum of 210 ECTS credits. The final grade should be better than or equivalent to the German grade 2.5 or the ECTS grade \"B\".\nAdditionally, applicants must provide proof of English language proficiency as specified in the \"language requirements\" section.",
+    "after": "Applicants must have completed a Bachelor's degree in Business, Business Informatics, or a related field of study, earning a minimum of 210 ECTS credits.\nAdditionally, applicants must provide proof of English language proficiency as specified in the \"language requirements\" section.",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "4521": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: non-EU countries For the summer semester: until 15 January The following is valid for applicants from: non-EU countries For the winter semester: until 15 July",
+    "after": "The following is valid for applicants from: all countries For the summer semester: until 15 January The following is valid for applicants from: all countries For the winter semester: until 15 July",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "4776": [
+   {
+    "field": "Admission requirements",
+    "before": "Applicants should have completed a qualifying degree (e.g. Bachelor's degree) from a European or foreign college or university in the fields of (Molecular) Biomedicine, Biochemistry, Medical Biology, Biology, Human Biology or in a related life sciences field. The degree must have been completed with the German grade 2.3 /good (In the German grading system, 1.0 [very good] is the best, 2.0 [good] and 4.0 is considered sufficient to pass.) Applicants who have not yet completed their Bachelor's degrees must prove a current grade of 2.0 (German system).\nPrerequisite courses include:\n- 30 ECTS (European Credit Transfer and Accumulation System credit points) in total in Immunology, Pharmacology, Biochemistry, Anatomy or Physiology\n- 30 ECTS in total in subjects like Chemistry, Genetics, Developmental Biology, Molecular Biology, Cell Biology or Microbiology\nIn addition, the final thesis written as part of the first higher education degree must be a text based on a practical wet lab experiment; students in a degree programme whose curriculum does not include a thesis are required to provide proof of practical experience working in a research laboratory worth at least 15 ECTS.\nA transcript of records with achieved grades has to be included in the application.\nMore details about our entry requirements and the selection procedure can be found on our website.",
+    "after": "Applicants should have completed a qualifying degree (e.g. Bachelor's degree) from a European or foreign college or university in the fields of (Molecular) Biomedicine, Biochemistry, Medical Biology, Biology, Human Biology or in a related life sciences field. The degree must have been completed with the German grade 2.3 /good (In the German grading system, 1.0 [very good] is the best, 2.0 [good] and 4.0 is considered sufficient to pass.) Applicants who have not yet completed their Bachelor's degrees must prove a current grade of 2.0 (German system).\nPrerequisite courses include:\n- 30 ECTS (European Credit Transfer and Accumulation System credit points) in total in Immunology, Pharmacology, Biochemistry, Anatomy or Physiology (animal or human)\n- 30 ECTS in total in subjects like Organic Chemistry, Genetics, Developmental Biology, Molecular Biology, Cell Biology or Microbiology\nIn addition, the final thesis written as part of the first higher education degree must be a text based on a practical wet lab experiment; students in a degree programme whose curriculum does not include a thesis are required to provide proof of practical experience working in a research laboratory worth at least 15 ECTS.\nA transcript of records with achieved grades has to be included in the application.\nMore details about our entry requirements and the selection procedure can be found on our website.",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "5344": [
+   {
+    "field": "English requirement",
+    "before": "B2 required, please provide an official language certificate, e.g.: • TOEFL iBT Home Edition (since 2026): 4 • Reading: 4 • Listening: 4 • Speaking: 4 • Writing: 4 • TOEFL iBT Home Edition (before 2026): 72 • Reading: 18 • Listening: 17 • Speaking: 20 • Writing: 17 • TOEFL iBT (since 2026): 4 • Reading: 4 • Listening: 4 • Speaking: 4 • Writing: 4 • TOEFL iBT (before 2026): 72 • Reading: 18 • Listening: 17 • Speaking: 20 • Writing: 17 • telc English: telc English B2-C1 University • PTE Academic: 59 • IELTS Academic: 5.5 • Cambridge English Qualifications Business (BEC) : B2 Business Vantage • Cambridge English Qualifications: B2 First",
+    "after": "C1 required, please provide an official language certificate, e.g.: • Oxford Test of English: 141 • TOEFL iBT Home Edition (since 2026): 5 • Reading: 5 • Listening: 5 • Speaking: 5 • Writing: 5 • TOEFL iBT Home Edition (before 2026): 95 • Reading: 24 • Listening: 22 • Speaking: 25 • Writing: 24 • TOEFL iBT (since 2026): 5 • Reading: 5 • Listening: 5 • Speaking: 5 • Writing: 5 • TOEFL iBT (before 2026): 95 • Reading: 24 • Listening: 22 • Speaking: 25 • Writing: 24 • PTE Academic: 76 • IELTS Academic: 7 • Cambridge English Qualifications Business (BEC) : C1 Business Higher • Cambridge English Qualifications: C1 Advanced",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
   "5395": [
    {
     "field": "Listing",
     "before": "Listed in the DAAD database",
     "after": "No longer listed — check the university website",
     "detectedAt": "2026-10-18T09:08:57.729Z"
+   }
+  ],
+  "5423": [
+   {
+    "field": "English requirement",
+    "before": "B2 required, please provide an official language certificate, e.g.: • TOEFL iBT Home Edition (before 2026): 71 • Reading: 18 • Listening: 17 • Speaking: 20 • Writing: 17 • TOEFL iBT (since 2026): 4 • Reading: 4 • Listening: 4 • Speaking: 4 • Writing: 4 • Cambridge English Qualifications: B2 First • IELTS Academic: 6",
+    "after": "B2 required, please provide an official language certificate, e.g.: • TOEFL iBT (since 2026): 4 • Reading: 4 • Listening: 4 • Speaking: 4 • Writing: 4 • TOEFL iBT Home Edition (before 2026): 71 • Reading: 18 • Listening: 17 • Speaking: 20 • Writing: 17 • Cambridge English Qualifications: B2 First • IELTS Academic: 6",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   },
+   {
+    "field": "Admission requirements",
+    "before": "ADMISSION REQUIREMENTS\n• Bachelor of Automotive Engineering, Computer Engineering, other Bachelor of Engineering (Mechanical Engineering, Mechatronics, Electrical Engineering or equivalent)\n• Two confidential letters of recommendation\n• Letter of motivation\n• English language test (Please see our website for details.)\n• Online application\n• The APS is required for applicants whose first degree is from PR China, Vietnam and India.",
+    "after": "ADMISSION REQUIREMENTS\n• Bachelor of Automotive Engineering, Computer Engineering, other Bachelor of Engineering (Mechanical Engineering, Mechatronics, Electrical Engineering or equivalent)\n• Two confidential letters of recommendation\n• Letter of motivation\n• English language test (Please see our website for details.)\n• Online application\n• The APS certificate is required for applicants whose first degree is from PR China, Vietnam and India.",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "5426": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: non-EU countries until 31 March The following is valid for applicants from: EU countries until 15 July",
+    "after": "The following is valid for applicants from: non-EU countries For the winter semester: until 31 March The following is valid for applicants from: EU countries For the winter semester: until 15 July",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   },
+   {
+    "field": "English requirement",
+    "before": "B2 required, please provide an official language certificate, e.g.: • TOEFL iBT (since 2026): 4 • Reading: 4 • Listening: 4 • Speaking: 4 • Writing: 4 • Cambridge English Qualifications: B2 First • TOEFL iBT (before 2026): 71 • Reading: 18 • Listening: 17 • Speaking: 20 • Writing: 17 • IELTS Academic: 6",
+    "after": "B2 required, please provide an official language certificate, e.g.: • TOEFL iBT (since 2026): 4 • Reading: 4 • Listening: 4 • Speaking: 4 • Writing: 4 • TOEFL iBT (before 2026): 71 • Reading: 18 • Listening: 17 • Speaking: 20 • Writing: 17 • IELTS Academic: 6 • Cambridge English Qualifications: B2 First",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   },
+   {
+    "field": "Admission requirements",
+    "before": "Admission requirements for the Esslingen MiM:\n• Bachelor’s degree, preferably in business, management or related discipline\n• Language test in English (e.g. TOEFL) for non-native speakers\n• APS certificate, if you received your degree in PR China, India or Vietnam",
+    "after": "Admission requirements for the Esslingen MiM:\n• Bachelor’s degree, preferably in business, management or related discipline\n• Language test in English (e.g. TOEFL) for non-native speakers\n• APS certificate, if you received your degree in PR China, India and Vietnam",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "5440": [
+   {
+    "field": "English requirement",
+    "before": "B2 required, please provide an official language certificate, e.g.: • Cambridge English Qualifications: B2 First • TOEFL iBT (before 2026): 71 • Reading: 18 • Listening: 17 • Speaking: 20 • Writing: 17 • TOEFL iBT Home Edition (since 2026): 4 • Reading: 4 • Listening: 4 • Speaking: 4 • Writing: 4 • IELTS Academic: 6",
+    "after": "B2 required, please provide an official language certificate, e.g.: • TOEFL iBT Home Edition (since 2026): 4 • Reading: 4 • Listening: 4 • Speaking: 4 • Writing: 4 • TOEFL iBT (before 2026): 71 • Reading: 18 • Listening: 17 • Speaking: 20 • Writing: 17 • IELTS Academic: 6 • Cambridge English Qualifications: B2 First",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "5664": [
+   {
+    "field": "Tuition fee",
+    "before": "The following tuition fees apply for applicants from: • all countries • EU countries • non-EU countries 2,200 EUR",
+    "after": "The following tuition fees apply for applicants from: all countries 2,200 EUR",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   },
+   {
+    "field": "Admission requirements",
+    "before": "For admission to the Master’s programme IMIS Online, the applicant is required to prove the successful completion of a Bachelor’s programme, their professional expertise and their language skills.\nSuccessful completion of a Bachelor’s programme\n• of at least seven semesters with a volume of 210 credits or a diploma degree course in Economics (Business) or Business Informatics or a comparable degree course with an overall grade at least equal to the German grade \"good\" (2.5) or the relative ECTS grade A or B, OR\n• of six semesters with a volume of 180 credits in Economics (Business) or Business Informatics or a comparable degree course with an overall grade at least equal to the German grade \"good\" (2.5) or the relative ECTS grade A or B, and\n• an additional qualification requirement defined by the examination board of the Master's programme, OR\n• proof of relevant qualified practical professional experience from a subject-specific project for at least six months in addition to 12 months of practical professional experience\nProfessional expertise\nProof of relevant, qualified practical experience of at least 12 months after completing a course of study qualifying for a profession",
+    "after": "For admission to the Master’s programme IMIS Online, the applicant is required to prove the successful completion of a Bachelor’s programme, their professional expertise and their language skills.\nSuccessful completion of a Bachelor’s programme\n• of at least seven semesters with a volume of 210 credits or a diploma degree course in Economics (Business) or Business Informatics or a comparable degree course, OR\n• of six semesters with a volume of 180 credits in Economics (Business) or Business Informatics or a comparable degree course, and\n• an additional qualification requirement defined by the examination board of the Master's programme, OR\n• proof of relevant qualified practical professional experience from a subject-specific project for at least six months in addition to 12 months of practical professional experience\nProfessional expertise\nProof of relevant, qualified practical experience of at least 12 months after completing a course of study qualifying for a profession",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "7030": [
+   {
+    "field": "English requirement",
+    "before": "B2 required, please provide an official language certificate, e.g.: • TOEFL iBT (before 2026): 90 • TOEFL iBT (since 2026): 4.5 • IELTS Academic: 6.5",
+    "after": "C1 required, please provide an official language certificate, e.g.: • TOEFL iBT (before 2026): 95 • Reading: 24 • Listening: 22 • Speaking: 25 • Writing: 24 • TOEFL iBT (since 2026): 5 • Reading: 5 • Listening: 5 • Speaking: 5 • Writing: 5 • IELTS Academic: 7",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
    }
   ],
   "7852": [
@@ -40,12 +190,72 @@
     "detectedAt": "2026-10-18T09:08:57.729Z"
    }
   ],
+  "9011": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: all countries For the summer semester: 1 December - 30 April The following is valid for applicants from: all countries For the winter semester: 1 December - 30 April",
+    "after": "The following is valid for applicants from: all countries For the summer semester: 1 November - 31 March The following is valid for applicants from: all countries For the winter semester: 1 November - 31 March",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "9012": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: all countries For the summer semester: 1 December - 30 April The following is valid for applicants from: all countries For the winter semester: 1 December - 30 April",
+    "after": "The following is valid for applicants from: all countries For the summer semester: 1 November - 31 March The following is valid for applicants from: all countries For the winter semester: 1 November - 31 March",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "9013": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: all countries For the winter semester: 1 December - 30 April The following is valid for applicants from: all countries For the summer semester: 1 December - 30 April",
+    "after": "The following is valid for applicants from: all countries For the winter semester: 1 November - 31 March The following is valid for applicants from: all countries For the summer semester: 1 November - 31 March",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "9921": [
+   {
+    "field": "English requirement",
+    "before": "B2 required, please provide an official language certificate, e.g.: • TOEFL iBT (since 2026): 4.5 • TOEFL iBT (before 2026): 90 • IELTS Academic: 6.5",
+    "after": "C1 required, please provide an official language certificate, e.g.: • TOEFL iBT (since 2026): 5 • Reading: 5 • Listening: 5 • Speaking: 5 • Writing: 5 • TOEFL iBT (before 2026): 95 • Reading: 24 • Listening: 22 • Speaking: 25 • Writing: 24 • IELTS Academic: 7",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   },
+   {
+    "field": "Admission requirements",
+    "before": "The Mobile Robotics study programme addresses highly motivated students with an excellent Bachelor’s degree in computer science, geodesy, or related subjects such as electrical engineering, applied mathematics, or similar. Students are expected to have a background in mathematics, programming (e.g. Python), and basic engineering skills.\nIn detail applicants must fulfil the following requirements according to § 5 of the Examination Regulations of the Master's Programme Mobile Robotics.\nThe university degree must have been completed with a grade of at least 2.5 (minimum grade is subject to change). The grade is calculated using the modified Bavarian formula during the application process.\nIn detail, students must submit proof of the following:\n• a total of at least 18 credits from mathematics\n• a total of at least 6 credits from programming\n• Additional achievements from at least one of the subject areas\n• mathematics\n• programming\n• engineering sciences\n• physics\n• computer science or\n• geodesy\nStudents must achieve in total at least 26 credits from the areas 3.1 - 3.6.\n• An academic thesis worth at least 10 credits .\nBefore you apply, please check the requirements carefully.",
+    "after": "The programme addresses highly motivated students with an excellent Bachelor’s degree in computer science, geodesy, or related subjects such as electrical engineering, applied mathematics, or similar. Students are expected to have a background in mathematics, programming (e.g. Python), and basic engineering skills.\nWe expect a minimum average BSc grade of 2.0 (German University grading system). The grade is calculated using the modified Bavarian formula during the application process.\nIn detail, students must submit proof of the following:\n• a total of at least 24 credits from mathematics\n• a total of at least 6 credits from programming\n• Additional achievements from at least one of the subject areas\n• mathematics\n• programming\n• engineering sciences\n• physics\n• computer science or\n• geodesy\nStudents must achieve in total at least 26 credits from the areas 3.1 - 3.6.\n• An academic thesis worth at least 10 credits .\nBefore you apply, please check the requirements carefully.\nGRE Test\nStudents with a European Bachelor's degree are not required to submit a GRE test. All other students are requested to submit a GRE test. Minimum recommended GRE test scores are:\n• Quantitative Reasoning: 160 points\n• Verbal Reasoning: 145 points\n• Analytical Writing: 3 points\nFurther Requirements\nStudents with BSc degrees from non-European countries that administer nationwide university entrance exams (such as the JEE in India or the Gaokao in China) are asked to submit their results as part of their application. In particular, this means:\n• India : Students must submit their Joint Entrance Examination Advanced (JEE Advanced) results, including the All India Rank (AIR), with their application.\n• China : Students must submit their Gaokao results with their application.\n• Pakistan : Students are asked to submit their ECAT (Engineering College Admission Test) or their university-specific entry test results.",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
   "10435": [
    {
     "field": "Tuition fee",
     "before": "The following tuition fees apply for applicants from: all countries 5,970 EUR",
     "after": "The following tuition fees apply for applicants from: all countries 6,300 EUR",
     "detectedAt": "2026-10-18T09:08:57.729Z"
+   }
+  ],
+  "10523": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: all countries For the winter semester: 1 December - 30 April The following is valid for applicants from: all countries For the summer semester: 1 December - 30 April",
+    "after": "The following is valid for applicants from: all countries For the winter semester: 1 November - 31 March The following is valid for applicants from: all countries For the summer semester: 1 November - 31 March",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "10666": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: EU countries For the winter semester: 15 March - 15 September The following is valid for applicants from: EU countries For the summer semester: 1 November - 15 March The following is valid for applicants from: non-EU countries For the winter semester: 1 January - 15 May The following is valid for applicants from: non-EU countries For the summer semester: 1 November - 15 January",
+    "after": "The following is valid for applicants from: EU countries For the winter semester: 15 March - 15 September The following is valid for applicants from: non-EU countries For the winter semester: 1 January - 15 May",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
+   },
+   {
+    "field": "Intakes",
+    "before": "winter, summer",
+    "after": "winter",
+    "detectedAt": "2026-11-01T11:50:59.137Z"
    }
   ]
  }

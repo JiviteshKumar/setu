@@ -1,5 +1,5 @@
 {
- "builtAt": "2026-10-18T09:08:57.786Z",
+ "builtAt": "2026-11-01T11:50:59.233Z",
  "unmatchedOrFlagged": [
   {
    "id": 6527,
@@ -1117,8 +1117,8 @@
   "Frankfurt School of Finance & Management [privat, staatlich anerkannt]": 10,
   "Catholic University of Eichstätt-Ingolstadt [kirchlich, staatlich anerkannt]": 9,
   "International School of Management (ISM) [privat, staatlich anerkannt]": 9,
+  "EBS Universität für Wirtschaft und Recht [privat, staatlich anerkannt]": 7,
   "Dresden International University [privat, staatlich anerkannt]": 6,
-  "EBS Universität für Wirtschaft und Recht [privat, staatlich anerkannt]": 6,
   "WHU - Otto Beisheim School of Management [privat, staatlich anerkannt]": 6,
   "HHL Leipzig Graduate School of Management [privat, staatlich anerkannt]": 6,
   "bbw Hochschule - University of Applied Sciences [privat, staatlich anerkannt]": 4,
@@ -1128,8 +1128,9 @@
   "ESCP Berlin Campus [privat, staatlich anerkannt]": 4,
   "Kühne Logistics University [privat, staatlich anerkannt]": 4,
   "International Psychoanalytic University Berlin [privat, staatlich anerkannt]": 3,
-  "Witten/Herdecke University [privat, staatlich anerkannt]": 2,
+  "University of Witten/Herdecke [privat, staatlich anerkannt]": 2,
   "Friedensau Adventist University [kirchlich, staatlich anerkannt]": 2,
+  "Bucerius Law School [privat, staatlich anerkannt]": 1,
   "Fachhochschule Wedel University of Applied Sciences [privat, staatlich anerkannt]": 1,
   "Zeppelin University [privat, staatlich anerkannt]": 1,
   "Merz Akademie, University of Applied Arts, Design and Media Stuttgart [privat, staatlich anerkannt]": 1
@@ -1187,6 +1188,14 @@
    "id": 8543,
    "name": "Agriculture, Ecology & Societies (AGES)",
    "university": "University of Kassel",
+   "checks": [
+    "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
+   ]
+  },
+  {
+   "id": 11263,
+   "name": "AI and Digital Technology in Learning and Instruction",
+   "university": "Goethe University Frankfurt",
    "checks": [
     "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
    ]
@@ -2715,14 +2724,6 @@
    ]
   },
   {
-   "id": 5426,
-   "name": "International Industrial Management (MiM)",
-   "university": "Esslingen University of Applied Sciences",
-   "checks": [
-    "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
-   ]
-  },
-  {
    "id": 3688,
    "name": "International Management",
    "university": "Fulda University of Applied Sciences",
@@ -3828,17 +3829,17 @@
    ]
   },
   {
-   "id": 9785,
+   "id": 4154,
    "name": "Master of Science in Physics",
-   "university": "Ruhr-Universität Bochum",
+   "university": "Freie Universität Berlin",
    "checks": [
     "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
    ]
   },
   {
-   "id": 4154,
+   "id": 9785,
    "name": "Master of Science in Physics",
-   "university": "Freie Universität Berlin",
+   "university": "Ruhr-Universität Bochum",
    "checks": [
     "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
    ]
