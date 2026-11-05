@@ -1,15 +1,29 @@
 {
- "tumFees": {
-  "key": "tumFees",
-  "sourceName": "TUM – tuition fees for students from non-EU countries",
-  "url": "https://www.tum.de/en/studies/fees/tuition",
+ "dmatSite": {
+  "key": "dmatSite",
+  "sourceName": "g.a.s.t. – dMAT in India",
+  "url": "https://www.d-mat.de/en/dmat-in-india/",
   "added": [
-   "Five years of the TUM Student Club Fair"
+   "The current schedule for the upcoming dMAT administration in India is:"
   ],
   "removed": [
-   "EuroTech expands to eight universities"
+   "The current schedule for the first dMAT administration in India is:",
+   "Publication of results and issuing of certificate via g.a.s.t. portal"
   ],
   "brokenFacts": [],
-  "firstSeen": "2026-11-04T11:22:07.563Z"
+  "firstSeen": "2026-11-05T11:20:14.948Z"
+ },
+ "enbBremen": {
+  "key": "enbBremen",
+  "sourceName": "University of Bremen – definitively failed (endgültig nicht bestanden)",
+  "url": "https://www.uni-bremen.de/studium/starten-studieren/pruefungen/endgueltig-nicht-bestanden",
+  "added": [
+   "Canvas for Change - Alles zum Projekt"
+  ],
+  "removed": [
+   "Canvas for Change Einreichungsformular"
+  ],
+  "brokenFacts": [],
+  "firstSeen": "2026-11-05T11:20:14.948Z"
  }
 }
