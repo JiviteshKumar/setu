@@ -1,6 +1,6 @@
 dMAT – Academic Evaluation Center
 Digital Master Test (dMAT) for selected Master’s applicants in India
-Published on: 29 October 2026 · Last updated: 29 October 2026
+Published on: 29 June 2026 · Last updated: 06 November 2026
 APS India would like to inform applicants about the upcoming introduction of the Digital Master Test (dMAT) as an additional element in the APS documentation for selected groups of Master’s applicants in India.
 The dMAT is a standardized academic aptitude test for Master’s applicants. It is being introduced step by step as an additional element in the APS documentation for selected applicant groups. This allows APS India and g.a.s.t. to implement the new procedure in a structured manner.
 Confirmed dMAT Test Dates for 2027
@@ -8,9 +8,13 @@ Cycle 1 : January 16, 2027
 Registration is now open. Candidates are required to select their preferred test date and location directly during the online registration process via the g.a.s.t. portal.
 The dMAT is administered by g.a.s.t. APS India remains responsible for APS document verification.
 The dMAT requirement applies to Indian Master’s applicants whose undergraduate degree falls under any of the following disciplines:
-Engineering / Technology: All B.Tech and B.Eng degrees (regardless of the specific specialization or field).
+Engineering / Technology:
+All degrees titled B.Tech or B.Eng regardless of specialization.
+All other undergraduate degrees in Engineering regardless of degree nomenclature (e.g., BS Research, B.Voc, or B.Sc. in Engineering tracks).
 Commerce & Economics: All undergraduate degrees in Commerce, Accounting, Finance, or Economics.
 Business & Management: All undergraduate degrees in Business Administration or Management Studies.
+Tourism, Travel & Hospitality: All undergraduate degrees in Tourism, Travel, Hotel, and Hospitality Management.
+Integrated & Dual-Degree Programs: Applicants completing integrated Bachelor-Master or dual-degree programs must take the dMAT if any component or major field of their program falls within one of the affected disciplines listed above.
 For applicants in these fields, the dMAT is a required part of the APS documentation for applications relating to intakes from the summer semester 2027 onwards, unless a transitional exemption applies.
 Applicants who have already completed the APS procedure and have received their APS certificate are not required to take the dMAT for that completed APS procedure.
 Applicants who completed their APS online registration on or after 29 June 2026 and shipped their APS application documents on or after 29 June 2026 are required to submit a dMAT certificate, provided that their previous degree falls within one of the affected fields and their application relates to the Summer Semester 2027 Master intake or a later Master intake. They may submit their APS application documents before the dMAT certificate is available. APS India can only issue the APS certificate after the required dMAT certificate has been submitted and the dMAT result has been checked against the information provided by g.a.s.t.
@@ -36,8 +40,8 @@ applicants participating in officially confirmed exchange, double-degree or univ
 I studied a related or mixed subject. How do I know whether I am affected?
 To determine whether the dMAT requirement applies to your program, please apply the following criteria:
 Degree Title Rule: All B.Tech and B.Eng degrees are subject to the dMAT requirement, regardless of the specific specialization or field.
-Major Field Rule: For multidisciplinary, combined, or related degrees (e.g., B.Sc., B.A., or B.Com variants), the dMAT is mandatory if your program’s core curriculum or major field of study falls within Commerce, Economics, Business, or Management .
-If your degree falls into a boundary area, taking the dMAT is strongly advised to ensure your APS application can be processed without delay.
+Major Field Rule: For all other degree types (standard, combined, integrated, or non-standard), the dMAT is mandatory if your program’s core discipline or major field of study falls within Engineering, Commerce, Economics, Business, Management, or Tourism, Travel & Hospitality .
+Boundary Areas: If your degree falls into a boundary area, taking the dMAT is strongly advised to ensure your APS application can be processed without delay.
 Yes. For applicants in the selected fields, the dMAT is required for APS applications relating to intakes from the summer semester 2027 onwards.
 The dMAT certificate is a required part of the APS documentation. Applicants may submit their APS application documents before the dMAT certificate is available. APS India can only complete the APS procedure and issue the APS certificate after the required dMAT certificate has been submitted and the dMAT result has been checked against the information provided by g.a.s.t.
 Can I submit my APS documents before taking the dMAT or before receiving the dMAT certificate?
@@ -139,9 +143,10 @@ Whom should I contact for APS-related questions?
 For questions regarding the APS procedure, document verification, affected applicant groups, exemptions and APS documentation, please contact APS India:
 Whom should I contact for dMAT-related questions?
 For questions regarding dMAT registration, payment, test center booking, test format, technical requirements, test day procedures and result download, please contact g.a.s.t.:
-Initial publication of the dMAT information page for selected Master’s applicants in India.
-Clarification of transitional rules for applicants who completed APS online registration or shipped APS application documents before 29 June 2026; clarification that applicants who have already completed the APS procedure and received their APS certificate are not required to take the dMAT for that completed APS procedure; clarification that applicants subject to the dMAT requirement may submit the dMAT certificate later once it becomes available, while all other required APS application documents must be submitted according to the applicable APS checklist.
-Clarification that applicants subject to the dMAT requirement may submit their APS application documents before the dMAT certificate is available; APS India may begin document verification and plausibility checks in advance where possible; the APS certificate can only be issued after the required dMAT certificate has been submitted and checked against information provided by g.a.s.t.; clarification that no additional or updated academic qualification documents can be submitted later together with the dMAT certificate for the same APS procedure.
-Advance notice regarding the conclusion of the first dMAT session; initial announcement of upcoming test windows in mid-January and mid-March 2027 for applicants targeting the Winter Semester 2027/28 intake; notice that affected study fields and registration details would be updated shortly.
+Refinement of affected fields of study: explicit inclusion of Tourism, Travel, and Hospitality as a distinct category; clarification for Engineering degrees across all nomenclatures (e.g., BS Research or B.Voc in Engineering tracks); clarification of dMAT requirements for integrated Bachelor-Master and dual-degree programs.
 Announcement of confirmed test dates (16 January 2027 and 13 March 2027); opening of online registration via the g.a.s.t. portal; publication of the updated list of affected fields of study (including all B.Tech / B.Eng degrees, Commerce/Economics, Business/Management); inclusion of explicit guidance regarding program-level UGC recognition requirements.
+Advance notice regarding the conclusion of the first dMAT session; initial announcement of upcoming test windows in mid-January and mid-March 2027 for applicants targeting the Winter Semester 2027/28 intake; notice that affected study fields and registration details would be updated shortly.
+Clarification that applicants subject to the dMAT requirement may submit their APS application documents before the dMAT certificate is available; APS India may begin document verification and plausibility checks in advance where possible; the APS certificate can only be issued after the required dMAT certificate has been submitted and checked against information provided by g.a.s.t.; clarification that no additional or updated academic qualification documents can be submitted later together with the dMAT certificate for the same APS procedure.
+Clarification of transitional rules for applicants who completed APS online registration or shipped APS application documents before 29 June 2026; clarification that applicants who have already completed the APS procedure and received their APS certificate are not required to take the dMAT for that completed APS procedure; clarification that applicants subject to the dMAT requirement may submit the dMAT certificate later once it becomes available, while all other required APS application documents must be submitted according to the applicable APS checklist.
+Initial publication of the dMAT information page for selected Master’s applicants in India.
 Copyright &copy; 2026 Academic Evaluation Center

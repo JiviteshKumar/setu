@@ -1,29 +1,44 @@
 {
- "dmatSite": {
-  "key": "dmatSite",
-  "sourceName": "g.a.s.t. – dMAT in India",
-  "url": "https://www.d-mat.de/en/dmat-in-india/",
+ "apsDmat": {
+  "key": "apsDmat",
+  "sourceName": "APS India – dMAT for selected Master's applicants",
+  "url": "https://aps-india.de/dmat/",
   "added": [
-   "The current schedule for the upcoming dMAT administration in India is:"
+   "Published on: 29 June 2026 · Last updated: 06 November 2026",
+   "Engineering / Technology:",
+   "All degrees titled B.Tech or B.Eng regardless of specialization.",
+   "All other undergraduate degrees in Engineering regardless of degree nomenclature (e.g., BS Research, B.Voc, or B.Sc. in Engineering tracks).",
+   "Tourism, Travel & Hospitality: All undergraduate degrees in Tourism, Travel, Hotel, and Hospitality Management.",
+   "Integrated & Dual-Degree Programs: Applicants completing integrated Bachelor-Master or dual-degree programs must take the dMAT if any component or major field of their program falls within one of the affected disciplines listed above.",
+   "Major Field Rule: For all other degree types (standard, combined, integrated, or non-standard), the dMAT is mandatory if your program’s core discipline or major field of study falls within Engineering, Commerce, Economics, Business, Management, or Tourism, Travel & Hospitality .",
+   "Boundary Areas: If your degree falls into a boundary area, taking the dMAT is strongly advised to ensure your APS application can be processed without delay.",
+   "Refinement of affected fields of study: explicit inclusion of Tourism, Travel, and Hospitality as a distinct category; clarification for Engineering degrees across all nomenclatures (e.g., BS Research or B.Voc in Engineering tracks); clarification of dMAT requirements for integrated Bachelor-Master and dual-degree programs."
   ],
   "removed": [
-   "The current schedule for the first dMAT administration in India is:",
-   "Publication of results and issuing of certificate via g.a.s.t. portal"
+   "Published on: 29 October 2026 · Last updated: 29 October 2026",
+   "Engineering / Technology: All B.Tech and B.Eng degrees (regardless of the specific specialization or field).",
+   "Major Field Rule: For multidisciplinary, combined, or related degrees (e.g., B.Sc., B.A., or B.Com variants), the dMAT is mandatory if your program’s core curriculum or major field of study falls within Commerce, Economics, Business, or Management .",
+   "If your degree falls into a boundary area, taking the dMAT is strongly advised to ensure your APS application can be processed without delay."
   ],
-  "brokenFacts": [],
-  "firstSeen": "2026-11-05T11:20:14.948Z"
+  "brokenFacts": [
+   {
+    "id": "dmat-fee-dates",
+    "title": "dMAT fee and first test"
+   }
+  ],
+  "firstSeen": "2026-11-06T11:18:35.322Z"
  },
- "enbBremen": {
-  "key": "enbBremen",
-  "sourceName": "University of Bremen – definitively failed (endgültig nicht bestanden)",
-  "url": "https://www.uni-bremen.de/studium/starten-studieren/pruefungen/endgueltig-nicht-bestanden",
+ "tumFees": {
+  "key": "tumFees",
+  "sourceName": "TUM – tuition fees for students from non-EU countries",
+  "url": "https://www.tum.de/en/studies/fees/tuition",
   "added": [
-   "Canvas for Change - Alles zum Projekt"
+   "Bringing memory and computing closer together"
   ],
   "removed": [
-   "Canvas for Change Einreichungsformular"
+   "Electric trucks: Reliable on the road and profitable as energy storage"
   ],
   "brokenFacts": [],
-  "firstSeen": "2026-11-05T11:20:14.948Z"
+  "firstSeen": "2026-11-06T11:18:35.322Z"
  }
 }

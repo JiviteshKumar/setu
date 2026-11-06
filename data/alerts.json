@@ -222,6 +222,32 @@
      "TUM tops the list for patent applications"
     ]
    }
+  },
+  {
+   "id": "auto-dmatSite-2026-11-05",
+   "publishedAt": "2026-11-06T11:18:35.322Z",
+   "title": "Changed: g.a.s.t. – dMAT in India",
+   "summary": "The official page changed (noticed on 5 Nov 2026 and still the same a day later). The changed lines are quoted below word for word; open the page for the full context.",
+   "severity": "info",
+   "audience": [
+    "planning"
+   ],
+   "sources": [
+    {
+     "name": "g.a.s.t. – dMAT in India",
+     "url": "https://www.d-mat.de/en/dmat-in-india/"
+    }
+   ],
+   "kind": "detected",
+   "quotes": {
+    "added": [
+     "The current schedule for the upcoming dMAT administration in India is:"
+    ],
+    "removed": [
+     "The current schedule for the first dMAT administration in India is:",
+     "Publication of results and issuing of certificate via g.a.s.t. portal"
+    ]
+   }
   }
  ]
 }
