@@ -34,7 +34,7 @@ export function SourceNote({
       {checkedOn && <span>· checked {formatDate(checkedOn)}</span>}
       {autoCheckedOn && <span>· re-checked automatically {formatDate(autoCheckedOn)}</span>}
       {checkedOn && reviewDays != null && (
-        <StaleBadge verifiedOn={(autoCheckedOn && autoCheckedOn > checkedOn ? autoCheckedOn : checkedOn).slice(0, 10)} reviewDays={autoCheckedOn ? Math.min(reviewDays, 7) : reviewDays} />
+        <StaleBadge verifiedOn={checkedOn.slice(0, 10)} reviewDays={reviewDays} autoCheckedOn={autoCheckedOn} />
       )}
     </div>
   );
