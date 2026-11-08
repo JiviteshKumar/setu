@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-11-07T10:43:37.277Z",
+ "checkedAt": "2026-11-08T10:56:07.679Z",
  "facts": 21,
  "sources": 31,
  "skipped": [
@@ -7,8 +7,12 @@
  ],
  "problems": [
   {
+   "source": "https://aps-india.de/dmat/",
+   "problem": "source unreachable: fetch failed"
+  },
+  {
    "source": "https://aps-india.de/wp-content/uploads/2026/06/dMAT_India_Affected_Fields_List.pdf",
-   "problem": "source unreachable: HTTP 404"
+   "problem": "source unreachable: fetch failed"
   },
   {
    "source": "https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html",
@@ -35,9 +39,8 @@
    "problem": "source unreachable: fetch failed"
   },
   {
-   "fact": "dmat-fee-dates",
-   "source": "https://aps-india.de/dmat/",
-   "problem": "anchor \"26 September 2026\" no longer found — the official page changed"
+   "source": "https://aps-india.de/aps-process/",
+   "problem": "source unreachable: fetch failed"
   }
  ]
 }
