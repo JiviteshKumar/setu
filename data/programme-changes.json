@@ -16,6 +16,22 @@
     "detectedAt": "2026-11-01T11:50:59.137Z"
    }
   ],
+  "3724": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: • EU countries • Iceland • Norway • Liechtenstein For the winter semester: 1 March - 15 July The following is valid for applicants from: non-EU countries For the winter semester: 1 March - 1 June",
+    "after": "The following is valid for applicants from: • EU countries • Iceland • Norway • Liechtenstein For the winter semester: 16 January 2027 - 15 July 2027 The following is valid for applicants from: non-EU countries For the winter semester: 16 January 2027 - 15 March 2027",
+    "detectedAt": "2026-11-08T11:55:31.084Z"
+   }
+  ],
+  "3820": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: • EU countries • Iceland • Norway • Liechtenstein For the winter semester: 1 March - 15 July The following is valid for applicants from: non-EU countries For the winter semester: 1 March - 1 May",
+    "after": "The following is valid for applicants from: • EU countries • Iceland • Norway • Liechtenstein For the winter semester: 16 January 2027 - 15 July 2027 The following is valid for applicants from: non-EU countries For the winter semester: 16 January 2027 - 15 February 2027",
+    "detectedAt": "2026-11-08T11:55:31.084Z"
+   }
+  ],
   "3972": [
    {
     "field": "Admission requirements",
@@ -60,6 +76,34 @@
     "before": "Applicants must have completed a Bachelor's degree in Business, Business Informatics, or a related field of study, earning a minimum of 210 ECTS credits. The final grade should be better than or equivalent to the German grade 2.5 or the ECTS grade \"B\".\nAdditionally, applicants must provide proof of English language proficiency as specified in the \"language requirements\" section.",
     "after": "Applicants must have completed a Bachelor's degree in Business, Business Informatics, or a related field of study, earning a minimum of 210 ECTS credits.\nAdditionally, applicants must provide proof of English language proficiency as specified in the \"language requirements\" section.",
     "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "4454": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: all countries For the winter semester: 1 April - 15 June",
+    "after": "The following is valid for applicants from: all countries For the winter semester: 1 April - 15 May",
+    "detectedAt": "2026-11-08T11:55:31.084Z"
+   },
+   {
+    "field": "Admission requirements",
+    "before": "Applicants are required to prove...\n• A completed Bachelor's programme (or equivalent) with a profile in the natural sciences or engineering\n• Subject-specific knowledge in the fields of biotechnology, biochemistry, organic chemistry, molecular biology, microbiology, and process engineering (at least 75 points)\n• Documented proof of good English language skills (level B2)",
+    "after": "Applicants are required to prove...\n• A completed Bachelor's programme (or equivalent) with a profile in the natural sciences or engineering\n• Subject-specific knowledge in the fields of biotechnology, biochemistry, organic chemistry, molecular biology, microbiology, and process engineering (at least 80 points out of 130)\n• Documented proof of good English language skills (level B2)\n• A score of at least 50% on an electronic aptitude test",
+    "detectedAt": "2026-11-08T11:55:31.084Z"
+   }
+  ],
+  "4456": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: all countries For the winter semester: 1 April - 15 June",
+    "after": "The following is valid for applicants from: all countries For the winter semester: 1 April - 15 May",
+    "detectedAt": "2026-11-08T11:55:31.084Z"
+   },
+   {
+    "field": "Admission requirements",
+    "before": "Applicants are required to prove...\n• A completed Bachelor's programme (or equivalent) with a profile in the natural sciences or engineering\n• Subject-specific knowledge in the fields of physics, mathematics, organic chemistry, food chemistry, microbiology, and process engineering (at least 70 points)\n• Documented proof of good English language skills (level B2)",
+    "after": "Applicants are required to prove...\n• A completed Bachelor's programme (or equivalent) with a profile in the natural sciences or engineering with an average grade of 2.6 or better\n• Subject-specific knowledge in the fields of physics, mathematics, organic chemistry, food chemistry, food technology, microbiology, and process engineering (at least 80 points out of 120 points)\n• Documented proof of good English language skills (level B2)\n• A score of at least 50% on an electronic aptitude test",
+    "detectedAt": "2026-11-08T11:55:31.084Z"
    }
   ],
   "4521": [
@@ -126,6 +170,14 @@
     "before": "Admission requirements for the Esslingen MiM:\n• Bachelor’s degree, preferably in business, management or related discipline\n• Language test in English (e.g. TOEFL) for non-native speakers\n• APS certificate, if you received your degree in PR China, India or Vietnam",
     "after": "Admission requirements for the Esslingen MiM:\n• Bachelor’s degree, preferably in business, management or related discipline\n• Language test in English (e.g. TOEFL) for non-native speakers\n• APS certificate, if you received your degree in PR China, India and Vietnam",
     "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "5427": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: EU countries 1 March - 15 July The following is valid for applicants from: non-EU countries 1 March - 1 June",
+    "after": "The following is valid for applicants from: • EU countries • Iceland • Norway • Liechtenstein For the winter semester: 16 January 2027 - 15 July 2027 The following is valid for applicants from: non-EU countries For the winter semester: 16 January 2027 - 15 March 2027",
+    "detectedAt": "2026-11-08T11:55:31.084Z"
    }
   ],
   "5440": [
@@ -236,6 +288,30 @@
     "detectedAt": "2026-10-18T09:08:57.729Z"
    }
   ],
+  "10442": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: • EU countries • Iceland • Norway • Liechtenstein For the winter semester: 1 March - 15 July The following is valid for applicants from: non-EU countries For the winter semester: 1 March - 1 June",
+    "after": "The following is valid for applicants from: • EU countries • Iceland • Norway • Liechtenstein For the winter semester: 16 January 2027 - 15 July 2027 The following is valid for applicants from: non-EU countries For the winter semester: 16 January 2027 - 15 March 2027",
+    "detectedAt": "2026-11-08T11:55:31.084Z"
+   }
+  ],
+  "10443": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: • EU countries • Iceland • Norway • Liechtenstein For the winter semester: 1 March - 15 July The following is valid for applicants from: non-EU countries For the winter semester: 1 March - 1 June",
+    "after": "The following is valid for applicants from: • EU countries • Iceland • Norway • Liechtenstein For the winter semester: 16 January 2027 - 15 July 2027 The following is valid for applicants from: non-EU countries For the winter semester: 16 January 2027 - 15 March 2027",
+    "detectedAt": "2026-11-08T11:55:31.084Z"
+   }
+  ],
+  "10444": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: non-EU countries For the winter semester: 1 March - 1 June The following is valid for applicants from: • EU countries • Iceland • Norway • Liechtenstein For the winter semester: 1 March - 15 July",
+    "after": "The following is valid for applicants from: • EU countries • Iceland • Norway • Liechtenstein For the winter semester: 16 January 2027 - 15 July 2027 The following is valid for applicants from: non-EU countries For the winter semester: 16 January 2027 - 15 March 2027",
+    "detectedAt": "2026-11-08T11:55:31.084Z"
+   }
+  ],
   "10523": [
    {
     "field": "Application deadline",
@@ -256,6 +332,14 @@
     "before": "winter, summer",
     "after": "winter",
     "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "11011": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: all countries For the winter semester: 1 May - 30 September The following is valid for applicants from: all countries For the summer semester: 1 November - 31 March",
+    "after": "The following is valid for applicants from: all countries For the winter semester: 1 May - 15 July The following is valid for applicants from: all countries For the summer semester: 1 November - 15 January",
+    "detectedAt": "2026-11-08T11:55:31.084Z"
    }
   ]
  }

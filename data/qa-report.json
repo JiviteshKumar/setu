@@ -1,5 +1,5 @@
 {
- "builtAt": "2026-11-01T11:50:59.233Z",
+ "builtAt": "2026-11-08T11:55:31.208Z",
  "unmatchedOrFlagged": [
   {
    "id": 6527,
@@ -36,6 +36,12 @@
    "programme": "Artificial Intelligence Aided Mobility Design (MA)",
    "university": "Hof University of Applied Sciences",
    "issue": "matched to Hochschule für angewandte Wissenschaften Hof (Hof) via university link, but DAAD city is Selb — branch campus?"
+  },
+  {
+   "id": 9890,
+   "programme": "Artificial Intelligence and Data Science for Digital Business Management – Freiburg Campus",
+   "university": "Furtwangen University",
+   "issue": "matched to Hochschule Furtwangen - Informatik, Technik, Wirtschaft, Medien, Gesundheit (Furtwangen) via university link, but DAAD city is Freiburg im Breisgau — branch campus?"
   },
   {
    "id": 3961,
@@ -1313,6 +1319,14 @@
    ]
   },
   {
+   "id": 9890,
+   "name": "Artificial Intelligence and Data Science for Digital Business Management – Freiburg Campus",
+   "university": "Furtwangen University",
+   "checks": [
+    "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
+   ]
+  },
+  {
    "id": 8977,
    "name": "Artificial Intelligence for Industrial Applications (MSc)",
    "university": "Ostbayerische Technische Hochschule Amberg-Weiden (OTH)",
@@ -2181,14 +2195,6 @@
    "id": 5321,
    "name": "Financial Engineering (DISC)",
    "university": "RPTU University Kaiserslautern-Landau",
-   "checks": [
-    "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
-   ]
-  },
-  {
-   "id": 5427,
-   "name": "Forestry System Transformation (FST)",
-   "university": "Eberswalde University for Sustainable Development",
    "checks": [
     "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
    ]
@@ -3829,17 +3835,17 @@
    ]
   },
   {
-   "id": 4154,
+   "id": 9785,
    "name": "Master of Science in Physics",
-   "university": "Freie Universität Berlin",
+   "university": "Ruhr-Universität Bochum",
    "checks": [
     "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
    ]
   },
   {
-   "id": 9785,
+   "id": 4154,
    "name": "Master of Science in Physics",
-   "university": "Ruhr-Universität Bochum",
+   "university": "Freie Universität Berlin",
    "checks": [
     "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
    ]
@@ -4168,6 +4174,46 @@
    "id": 4808,
    "name": "Materials Science",
    "university": "Technical University of Darmstadt",
+   "checks": [
+    "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
+   ]
+  },
+  {
+   "id": 11278,
+   "name": "Materials Science — Focus Battery Technology",
+   "university": "Kiel University",
+   "checks": [
+    "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
+   ]
+  },
+  {
+   "id": 11279,
+   "name": "Materials Science — Focus Biomedical Microsystems",
+   "university": "Kiel University",
+   "checks": [
+    "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
+   ]
+  },
+  {
+   "id": 11280,
+   "name": "Materials Science — Focus Business Administration",
+   "university": "Kiel University",
+   "checks": [
+    "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
+   ]
+  },
+  {
+   "id": 11281,
+   "name": "Materials Science — Focus Energy and Electronic Materials",
+   "university": "Kiel University",
+   "checks": [
+    "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
+   ]
+  },
+  {
+   "id": 11277,
+   "name": "Materials Science — Focus Modelling and Simulation",
+   "university": "Kiel University",
    "checks": [
     "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
    ]
