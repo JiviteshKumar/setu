@@ -17,6 +17,12 @@ export type Fact = {
   verifiedOn: string; // YYYY-MM-DD
   reviewDays: number;
   anchors: { source: SourceKey; pattern: string }[];
+  /**
+   * Sections of the official page that say the same thing (from the line matching `start` up to the line matching
+   * `end`, regexes). The daily check saves their current wording; if the fact's anchors break, the site shows that
+   * official wording, quoted, instead of the outdated summary — until the fact is rewritten.
+   */
+  live?: { source: SourceKey; start: string; end: string; max?: number }[];
 };
 
 export const FACTS: Fact[] = [
@@ -25,17 +31,24 @@ export const FACTS: Fact[] = [
     topic: "dmat",
     title: "dMAT: who needs it",
     summary:
-      "Master's applicants whose bachelor's degree is in Engineering, Commerce / Accounting / Finance / Economics, or Business / Management need a dMAT certificate for their APS certificate, for the Summer Semester 2027 intake or later.",
+      "APS India requires a dMAT certificate from Master's applicants whose undergraduate degree is in Engineering / Technology, Commerce & Economics, Business & Management, or Tourism, Travel & Hospitality — for intakes from the summer semester 2027 onwards.",
     details: [
-      "Not needed for: Bachelor's applicants, PhD applicants, degrees outside these three field groups, and officially confirmed exchange, double-degree or university partnership programmes.",
+      "Every degree titled B.Tech or B.Eng needs it, whatever the specialisation — including Computer Science, IT or AI branches (APS's \"Degree Title Rule\"). So do all other undergraduate degrees in Engineering, whatever they are called (for example BS Research, B.Voc or B.Sc. in engineering tracks).",
+      "Other degrees (B.Sc., B.A., B.Com and others): the dMAT is mandatory if the core discipline or major field is in one of the four areas (\"Major Field Rule\"). Integrated Bachelor–Master and dual degrees need it if any component or major field is in one of them. In boundary areas, APS strongly advises taking it.",
+      "Not needed for: Bachelor's applicants, PhD applicants, bachelor's students who haven't yet completed 5 semesters (3-year programme) or 7 semesters (4-year programme), degrees outside these fields, and officially confirmed exchange, double-degree or university partnership programmes.",
       "Transition rule: not needed if you completed APS online registration before 29 June 2026, shipped complete APS documents before 29 June 2026, or already hold an APS certificate.",
-      "B.Tech/B.E. Computer Science and Engineering is covered. Standalone Computer Science, BCA, IT, AI, Data Science and Cyber Security are not automatically covered (APS decides from your official degree title).",
-      "Use our dMAT checker to look up your exact degree name in the official list.",
+      "APS widened the list on 5 November 2026 (Tourism, Travel & Hospitality; all engineering degree names; integrated and dual degrees). g.a.s.t.'s dMAT page still names only the first three groups — for the APS procedure, APS India's list applies.",
     ],
-    sources: ["apsDmat", "apsDmatFields"],
-    verifiedOn: "2026-10-09",
+    sources: ["apsDmat", "dmatSite"],
+    verifiedOn: "2026-11-08",
     reviewDays: 30,
-    anchors: [{ source: "apsDmat", pattern: "29 June 2026" }, { source: "apsDmat", pattern: "Summer Semester 2027" }],
+    anchors: [
+      { source: "apsDmat", pattern: "Tourism, Travel & Hospitality" },
+      { source: "apsDmat", pattern: "B\\.Tech or B\\.Eng regardless of specialization" },
+      { source: "apsDmat", pattern: "summer semester 2027 onwards" },
+      { source: "apsDmat", pattern: "before 29 June 2026" },
+    ],
+    live: [{ source: "apsDmat", start: "^Who is affected\\?", end: "^Responsibilities" }],
   },
   {
     id: "dmat-format",
@@ -55,6 +68,7 @@ export const FACTS: Fact[] = [
       { source: "dmatSite", pattern: "core module and a subject module" },
       { source: "dmatSite", pattern: "General Academic Module" },
     ],
+    live: [{ source: "dmatSite", start: "^How is the dMAT structured\\?", end: "^Preparation for the exam" }],
   },
   {
     id: "dmat-score",
@@ -63,24 +77,41 @@ export const FACTS: Fact[] = [
     summary:
       "APS India says the dMAT is not a stand-alone pass/fail test for the APS certificate, and a low score does not automatically lead to refusal. The result appears on the APS certificate and each university decides how to weigh it.",
     sources: ["apsDmat"],
-    verifiedOn: "2026-10-09",
+    verifiedOn: "2026-11-08",
     reviewDays: 30,
-    anchors: [{ source: "apsDmat", pattern: "pass/fail" }],
+    anchors: [{ source: "apsDmat", pattern: "not a stand-alone pass/fail test" }, { source: "apsDmat", pattern: "does not automatically lead to a refusal" }],
+    live: [{ source: "apsDmat", start: "^Will I automatically be denied an APS certificate", end: "^Does the dMAT score determine" }],
   },
   {
     id: "dmat-fee-dates",
     topic: "dmat",
-    title: "dMAT fee and first test",
+    title: "dMAT fee and 2027 test dates",
     summary:
-      "The fee is €150, paid to g.a.s.t. during registration. The first test in India was on 26 September 2026 (registration closed 15 September); certificates are available from 12 October 2026. Watch the g.a.s.t. registration page for the next dates.",
+      "Registration for the 2027 tests is open (since 28 October 2026). Test dates: 16 January 2027 (register by 4 January) and 13 March 2027 (register by 1 March). The fee is €150, paid to g.a.s.t. during registration.",
     details: [
+      "Results: 8 February 2027 for the January test, 5 April 2027 for the March test. Download your certificate from the g.a.s.t. test takers' portal.",
+      "Payment: PayPal or a Mastercard/Visa credit card with 3D Secure — debit cards are not accepted. Bring a valid passport; no other ID is accepted.",
       "Test centres listed by APS India: Ahmedabad, Bengaluru, Bhopal, Chandigarh, Chennai, Kolkata, Mananthavady, Mumbai, New Delhi, Pune. Seats are first come, first served.",
       "You may submit your APS documents before your dMAT certificate is available; the APS certificate is issued only after the dMAT certificate is checked.",
     ],
-    sources: ["apsDmat", "dmatRegister", "dmatSite"],
-    verifiedOn: "2026-10-09",
+    sources: ["dmatSite", "apsDmat", "dmatRegister"],
+    verifiedOn: "2026-11-08",
     reviewDays: 14,
-    anchors: [{ source: "apsDmat", pattern: "150" }, { source: "apsDmat", pattern: "26 September 2026" }, { source: "apsDmat", pattern: "12 October 2026" }],
+    anchors: [
+      { source: "apsDmat", pattern: "€150" },
+      { source: "dmatSite", pattern: "28 October 2026" },
+      { source: "dmatSite", pattern: "04 January 2027" },
+      { source: "dmatSite", pattern: "16 January 2027" },
+      { source: "dmatSite", pattern: "08 February 2027" },
+      { source: "dmatSite", pattern: "01 March 2027" },
+      { source: "dmatSite", pattern: "13 March 2027" },
+      { source: "dmatSite", pattern: "05 April 2027" },
+      { source: "dmatSite", pattern: "Debit cards are not accepted" },
+    ],
+    live: [
+      { source: "dmatSite", start: "^Test dates$", end: "^Registration$|test centres" },
+      { source: "apsDmat", start: "^How much does the dMAT cost\\?", end: "^Can I get a refund" },
+    ],
   },
   {
     id: "blocked-account",

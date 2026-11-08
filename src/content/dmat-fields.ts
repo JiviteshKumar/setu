@@ -1,8 +1,15 @@
-// Transcribed from the official APS India "dMAT India – List of Affected Previous Degree Fields",
-// Version 1.0, 29 June 2026: https://aps-india.de/wp-content/uploads/2026/06/dMAT_India_Affected_Fields_List.pdf
-// Keep the wording identical to the PDF. When APS publishes a new version, update DMAT_LIST_VERSION and the lists.
+// Who needs the dMAT, by APS India's current rules (https://aps-india.de/dmat/, "Who is affected?", last updated
+// 6 November 2026). The rules there are short: every degree titled B.Tech / B.Eng; every other undergraduate degree whose
+// core or major field is Engineering, Commerce & Economics, Business & Management, or Tourism, Travel & Hospitality;
+// integrated / dual degrees if any component is; boundary areas: "strongly advised".
+//
+// The degree NAMES below were transcribed word for word from APS's first, more detailed list (Version 1.0,
+// 29 June 2026), which APS has since withdrawn. They are kept so students can find their degree by name, and are
+// grouped by the current rules: hotel and tourism degrees (formerly "assessed separately") are now covered, BBA degrees
+// count as Business Administration, the rest of that section is a boundary area. If APS changes the page again, the
+// daily fact check flags the "dMAT: who needs it" fact and the checker shows APS's new wording (see page.tsx).
 
-export const DMAT_LIST_VERSION = "Version 1.0 – 29 June 2026";
+export const DMAT_RULES_DATE = "6 November 2026";
 
 export const ENGINEERING = [
   "Advanced Manufacturing and Mechanical Systems Design", "Aerodynamic Engineering", "Aeronautical Engineering", "Aerospace Engineering",
@@ -68,22 +75,28 @@ export const BUSINESS_MANAGEMENT = [
   "Marketing", "Marketing Management", "Digital Marketing", "Human Resource Management", "Human Resources", "HR Management",
   "Human Resource Development", "Operations Management", "Logistics Management", "Logistics and Supply Chain Management", "Supply Chain Management",
   "Retail Management", "Entrepreneurship", "Business Entrepreneurship", "Financial Management, if awarded as part of a Business or Management degree",
+  "BBA Aviation Management / BBA Airline and Airport Management / BBA Airport Management", "BBA Hospital Administration / BBA Healthcare Management",
 ];
 
-// Section 5: not classified by name alone — APS assesses separately.
-export const SEPARATE_ASSESSMENT = [
+// Since 5 November 2026: "All undergraduate degrees in Tourism, Travel, Hotel, and Hospitality Management".
+export const TOURISM_HOSPITALITY = [
   "BBA Hotel Management / BBA Hospitality Management", "BBA Tourism and Travel Management / BBA Travel and Tourism Management",
-  "BBA Aviation Management / BBA Airline and Airport Management / BBA Airport Management", "BBA Hospital Administration / BBA Healthcare Management",
   "Bachelor of Hotel Management / BHM", "Bachelor of Hotel Management and Catering Technology / BHMCT", "Bachelor of Tourism and Travel Management / BTTM",
   "Hotel Management / Hospitality Management / Hotel Management and Catering Technology / Hospitality and Hotel Administration",
   "Tourism Management / Travel and Tourism Management / Tourism and Hospitality Management",
+];
+
+// Formerly "assessed separately", not named in the current rules: a boundary area, where APS "strongly advises" the dMAT.
+// (The BBA variants of these count as Business Administration and are listed with Business / Management.)
+export const BOUNDARY = [
   "Aviation Management / Airline and Airport Management / Airport Management", "Hospital Administration / Healthcare Management",
   "Construction Management / Infrastructure Management / Sports Management",
 ];
 
-// Section 6: not automatically included.
+// Named in the first list as "not automatically included" and not covered by the current rules either — unless the
+// degree is titled B.Tech / B.Eng (then it always needs the dMAT; the checker asks for the title first).
 export const NOT_AUTOMATICALLY_INCLUDED = [
-  "Standalone Technology degrees without an Engineering designation", "B.Tech with a non-Engineering or unclear branch/specialisation",
+  "Standalone Technology degrees without an Engineering designation (not titled B.Tech / B.Eng)",
   "Information Technology as a standalone field", "Information and Communication Technology as a standalone field",
   "Information Science and Technology as a standalone field", "Computer Applications", "Bachelor of Computer Applications / BCA",
   "Computer Science without Engineering designation", "B.Sc. Computer Science", "B.Sc. Information Technology", "B.Sc. Data Science",
@@ -98,14 +111,18 @@ export const NOT_AUTOMATICALLY_INCLUDED = [
   "Social Sciences, except Economics where listed above",
 ];
 
-export type FieldGroup = "engineering" | "commerce" | "business" | "separate" | "not-included";
+export type FieldGroup = "engineering" | "commerce" | "business" | "tourism" | "boundary" | "not-included";
+
+/** Groups that need the dMAT under the current rules. */
+export const AFFECTED: FieldGroup[] = ["engineering", "commerce", "business", "tourism"];
 
 export const FIELD_GROUPS: { group: FieldGroup; label: string; items: string[] }[] = [
   { group: "engineering", label: "Engineering", items: ENGINEERING },
   { group: "commerce", label: "Commerce / Accounting / Finance / Economics", items: COMMERCE_FINANCE_ECONOMICS },
   { group: "business", label: "Business / Management", items: BUSINESS_MANAGEMENT },
-  { group: "separate", label: "Requires separate formal assessment by APS", items: SEPARATE_ASSESSMENT },
-  { group: "not-included", label: "Not automatically included", items: NOT_AUTOMATICALLY_INCLUDED },
+  { group: "tourism", label: "Tourism, Travel & Hospitality", items: TOURISM_HOSPITALITY },
+  { group: "boundary", label: "Boundary area", items: BOUNDARY },
+  { group: "not-included", label: "Not in the affected fields", items: NOT_AUTOMATICALLY_INCLUDED },
 ];
 
 const norm = (s: string) =>

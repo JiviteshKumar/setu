@@ -3,7 +3,9 @@
 //   npm run test:unipages
 import { compareDeadlines, datesIn, euOnly, findDeadlines } from "../src/lib/uniDeadlines.ts";
 import { parseRobots } from "./check-uni-pages.ts";
-import { composeAlert, confirmAndPublish, matters } from "./auto-alerts.ts";
+import { composeAlert, confirmAndPublish, matters, pruneAlerts } from "./auto-alerts.ts";
+import { extractSection } from "./check-facts.ts";
+import type { Alert } from "../src/lib/alerts.ts";
 import { mkdtempSync, readFileSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
@@ -112,6 +114,42 @@ eq("a broken fact makes it important", broken?.severity, "important");
   eq("…and is published once it can be read again", published().length, 2);
   rmSync(dir, { recursive: true });
 }
+
+// ── Outdated news goes away by itself ──
+{
+  const alert = (id: string, added: string[], removed: string[] = [], extra = {}) =>
+    ({ id, publishedAt: "2026-10-16T00:00:00Z", title: "Changed: x", summary: "s", severity: "info", audience: ["planning"], sources: [{ name: "x", url: "u" }], kind: "detected", quotes: { added, removed }, ...extra }) as Alert;
+  const page = ["Confirmed dMAT Test Dates for 2027", "Registration is now open."];
+  const { alerts: kept } = pruneAlerts(
+    [
+      alert("auto-apsDmat-2026-10-16", ["The next dMAT test dates will be in mid-January and mid-March."]), // superseded
+      alert("auto-apsDmat-2026-10-31", ["Registration is now open.", "The registration start date will be announced shortly."]),
+      alert("auto-tumFees-2026-10-30", ["TUM tops the list for patent applications"]), // news teaser
+      alert("auto-daadScholarships-2026-10-17", ["148 Scholarship options for your selection"]), // a counter
+      alert("auto-dmatSite-2026-10-21", ["Accepted payment methods: PayPal or credit card."]), // page not read today: untouched
+    ],
+    new Map([["apsDmat", page], ["tumFees", ["Tuition fees"]], ["daadScholarships", ["148 Scholarship options for your selection"]]]),
+    new Set(),
+  );
+  eq("outdated, irrelevant and counter-only alerts are removed", kept.map((a) => a.id), ["auto-apsDmat-2026-10-31", "auto-dmatSite-2026-10-21"]);
+  eq("lines no longer on the page are dropped from an alert", kept[0].quotes, { added: ["Registration is now open."], removed: [] });
+  const factAlert = alert("auto-apsDmat-2026-10-31", ["Registration is now open."], [], {
+    severity: "important",
+    facts: ["dmat-fee-dates"],
+    summary: `The official page changed (noticed on 30 Oct 2026), and it no longer contains wording that Setu's fact "x" relies on. Treat that fact as unconfirmed.`,
+  });
+  eq("stays important while the fact is broken", pruneAlerts([factAlert], new Map([["apsDmat", page]]), new Set(["dmat-fee-dates"])).alerts[0].severity, "important");
+  const fixed = pruneAlerts([factAlert], new Map([["apsDmat", page]]), new Set()).alerts[0];
+  eq("becomes an ordinary update once the fact matches again", [fixed.severity, fixed.facts, /Treat that fact/.test(fixed.summary)], ["info", undefined, false]);
+}
+
+// ── Facts: live official wording ──
+eq(
+  "a section of the official page is quoted from its heading to the next one",
+  extractSection(["Menu", "Who is affected?", "• Engineering", "  ", "•", "Commerce: all degrees", "Responsibilities", "x"], "^Who is affected", "^Responsibilities"),
+  ["Who is affected?", "• Engineering", "Commerce: all degrees"],
+);
+eq("a missing heading gives no quote (never a guess)", extractSection(["a", "b"], "^Who is affected", "^Responsibilities"), []);
 
 if (failures) {
   console.error(`✗ ${failures} automatic-check test(s) failed`);

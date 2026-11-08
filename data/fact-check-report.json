@@ -1,46 +1,159 @@
 {
- "checkedAt": "2026-11-08T10:56:07.679Z",
+ "checkedAt": "2026-11-08T13:51:49.312Z",
  "facts": 21,
- "sources": 31,
+ "sources": 30,
  "skipped": [
   "https://www.goethe.de/ins/in/en/spr/prf.html (goethe.de blocks automated requests)"
  ],
- "problems": [
-  {
-   "source": "https://aps-india.de/dmat/",
-   "problem": "source unreachable: fetch failed"
+ "problems": [],
+ "status": {
+  "dmat-who": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
   },
-  {
-   "source": "https://aps-india.de/wp-content/uploads/2026/06/dMAT_India_Affected_Fields_List.pdf",
-   "problem": "source unreachable: fetch failed"
+  "dmat-format": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
   },
-  {
-   "source": "https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html",
-   "problem": "source unreachable: fetch failed"
+  "dmat-score": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
   },
-  {
-   "source": "https://www.gesetze-im-internet.de/aufenthg_2004/__20.html",
-   "problem": "source unreachable: fetch failed"
+  "dmat-fee-dates": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
   },
-  {
-   "source": "https://www.gesetze-im-internet.de/bmg/__17.html",
-   "problem": "source unreachable: fetch failed"
+  "blocked-account": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
   },
-  {
-   "source": "https://www.gesetze-im-internet.de/sgb_5/__5.html",
-   "problem": "source unreachable: fetch failed"
+  "visa-portal-aps": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
   },
-  {
-   "source": "https://www.gesetze-im-internet.de/vwgo/__70.html",
-   "problem": "source unreachable: fetch failed"
+  "remonstration": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
   },
-  {
-   "source": "https://www.gesetze-im-internet.de/vwgo/__58.html",
-   "problem": "source unreachable: fetch failed"
+  "work-limit": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
   },
-  {
-   "source": "https://aps-india.de/aps-process/",
-   "problem": "source unreachable: fetch failed"
+  "job-search-after": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
+  },
+  "anmeldung": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
+  },
+  "student-insurance-30": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
+  },
+  "bw-fees": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
+  },
+  "tum-fees": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
+  },
+  "aps-process": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
+  },
+  "deutschlandstipendium": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
+  },
+  "daad-scholarships": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
+  },
+  "blue-card": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
+  },
+  "final-fail": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
+  },
+  "dw-german": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
+  },
+  "objection-deadline": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
+  },
+  "rundfunk-fee": {
+   "lastOk": "2026-11-08T13:51:49.312Z"
   }
- ]
+ },
+ "live": {
+  "dmat-who": {
+   "at": "2026-11-08T13:51:49.312Z",
+   "sections": [
+    {
+     "source": "apsDmat",
+     "lines": [
+      "Who is affected?",
+      "The dMAT requirement applies to Indian Master’s applicants whose undergraduate degree falls under any of the following disciplines:",
+      "• Engineering / Technology:",
+      "• All degrees titled B.Tech or B.Eng regardless of specialization.",
+      "• All other undergraduate degrees in Engineering regardless of degree nomenclature (e.g., BS Research, B.Voc, or B.Sc. in Engineering tracks).",
+      "• Commerce & Economics: All undergraduate degrees in Commerce, Accounting, Finance, or Economics.",
+      "• Business & Management: All undergraduate degrees in Business Administration or Management Studies.",
+      "• Tourism, Travel & Hospitality: All undergraduate degrees in Tourism, Travel, Hotel, and Hospitality Management.",
+      "• Integrated & Dual-Degree Programs: Applicants completing integrated Bachelor-Master or dual-degree programs must take the dMAT if any component or major field of their program falls within one of the affected disciplines listed above.",
+      "For applicants in these fields, the dMAT is a required part of the APS documentation for applications relating to intakes from the summer semester 2027 onwards, unless a transitional exemption applies.",
+      "Applicants who have already completed the APS procedure and have received their APS certificate are not required to take the dMAT for that completed APS procedure.",
+      "Applicants who completed their APS online registration on or after 29 June 2026 and shipped their APS application documents on or after 29 June 2026 are required to submit a dMAT certificate, provided that their previous degree falls within one of the affected fields and their application relates to the Summer Semester 2027 Master intake or a later Master intake. They may submit their APS applica…"
+     ]
+    }
+   ]
+  },
+  "dmat-format": {
+   "at": "2026-11-08T13:51:49.312Z",
+   "sections": [
+    {
+     "source": "dmatSite",
+     "lines": [
+      "How is the dMAT structured?",
+      "The dMAT consists of two modules: a core module and a subject module (General Academic Module) .",
+      "The core module measures general cognitive and analytical skills. It consists of three subtests.",
+      "The subject module tests the ability to apply these cognitive and analytical skills to academic problem solving in a general academic module. The tasks consist of a combination of a typical problem and related questions. The dMAT therefore requires developed transfer and application skills rather than memorised factual knowledge."
+     ]
+    }
+   ]
+  },
+  "dmat-score": {
+   "at": "2026-11-08T13:51:49.312Z",
+   "sections": [
+    {
+     "source": "apsDmat",
+     "lines": [
+      "Will I automatically be denied an APS certificate if I submit a low dMAT score?",
+      "No. The dMAT is not a stand-alone pass/fail test for the APS certificate.",
+      "APS India verifies the authenticity and formal plausibility of academic documents. The dMAT certificate provides a required additional academic test result issued by g.a.s.t. and forms part of the APS documentation for the affected applicant groups.",
+      "A low dMAT score does not automatically lead to a refusal of the APS certificate. The APS certificate will document the APS verification result and, where applicable, reflect the dMAT result as part of the applicant’s APS documentation."
+     ]
+    }
+   ]
+  },
+  "dmat-fee-dates": {
+   "at": "2026-11-08T13:51:49.312Z",
+   "sections": [
+    {
+     "source": "dmatSite",
+     "lines": [
+      "Test dates",
+      "The current schedule for the upcoming dMAT administration in India is:",
+      "28 October 2026",
+      "Start registration",
+      "04 January 2027",
+      "Application deadline",
+      "16 January 2027",
+      "dMAT test date",
+      "08 February 2027",
+      "Release of results",
+      "01 March 2027",
+      "Application deadline",
+      "13 March 2027",
+      "dMAT test date",
+      "05 April 2027",
+      "Release of results"
+     ]
+    },
+    {
+     "source": "apsDmat",
+     "lines": [
+      "How much does the dMAT cost?",
+      "The dMAT test fee is charged by g.a.s.t. The current fee is €150.00 and is payable during registration. Payment details will be shown on the dMAT website during registration."
+     ]
+    }
+   ]
+  }
+ }
 }

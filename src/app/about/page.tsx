@@ -29,7 +29,8 @@ export default function AboutPage() {
           </li>
           <li>
             Everything updates by itself in the cloud, for everyone using Setu: official sources and facts are re-checked every morning; course data from
-            DAAD and the course pages of the universities are re-read every week. If a fact&apos;s official page changes, the fact shows a warning at once.
+            DAAD and the course pages of the universities are re-read every week. If a fact&apos;s official page changes, Setu hides its summary at once and shows
+            what the official page says now, quoted. News that is no longer on the official page is removed from the alerts by itself.
           </li>
           <li>Anyone can report a mistake. A person checks every report against the official source.</li>
         </ol>

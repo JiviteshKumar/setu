@@ -40,7 +40,7 @@ async function main() {
   const listing: ListingEntry[] = [];
   let total = Infinity;
   for (let offset = 0; offset < total && listing.length < limit; offset += PAGE_SIZE) {
-    const json = JSON.parse(await fetchText(searchUrl(offset)));
+    const json = JSON.parse(await fetchText(searchUrl(offset), 4)); // patient: DAAD sometimes refuses for a few minutes
     total = json.numResults;
     for (const c of json.courses) {
       listing.push({
@@ -65,7 +65,14 @@ async function main() {
 
   let downloaded = 0;
   let failed = 0;
+  let inARow = 0;
   for (const [i, e] of entries.entries()) {
+    // Many failures in a row mean DAAD is refusing us right now: stop, so the run fails visibly and is retried later
+    // (pages.yml), instead of building on a half-downloaded crawl.
+    if (inARow >= 10) {
+      console.error(`Stopped: ${inARow} pages in a row failed — DAAD is not answering. Nothing was changed; try again later.`);
+      process.exit(1);
+    }
     const url = `${BASE}/en/detail/${e.id}/`;
     try {
       const file = join(RAW, "daad", `${e.id}.html`);
@@ -74,16 +81,19 @@ async function main() {
       if (refresh && existsSync(file) && Date.now() - statSync(file).mtimeMs > 86_400_000) {
         writeFileSync(file, await fetchText(url));
         downloaded++;
+        inARow = 0;
         await sleep(DELAY_MS);
         continue;
       }
       const { fresh } = await fetchCached(url, file);
+      inARow = 0;
       if (fresh) {
         downloaded++;
         await sleep(DELAY_MS);
       }
     } catch (err) {
       failed++;
+      inARow++;
       console.warn(`detail ${e.id} failed: ${(err as Error).message}`);
     }
     if ((i + 1) % 50 === 0) console.log(`details: ${i + 1}/${entries.length} (new ${downloaded}, failed ${failed})`);

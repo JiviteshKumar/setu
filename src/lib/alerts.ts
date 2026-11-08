@@ -17,6 +17,8 @@ export type Alert = {
    */
   kind: "official-change" | "correction" | "detected";
   quotes?: { added: string[]; removed: string[] };
+  /** Facts that this change broke; while any of them doesn't match its source, the alert stays "important". */
+  facts?: string[];
 };
 
 export const ALERTS_FILE = join(process.cwd(), "data", "alerts.json");

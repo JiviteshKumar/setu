@@ -3,24 +3,30 @@
 #   Every morning (09:00 India time):
 #     • checks every official source; a change still there the next morning is published as an alert, quoted word
 #       for word (scripts/watch-sources.ts --publish, scripts/auto-alerts.ts)
-#     • re-checks every fact against its source; a fact whose source changed shows a warning at once
+#     • re-checks every fact against its source; when a source no longer says what a fact says, the site hides the
+#       fact's summary and shows the source's current wording instead, quoted (scripts/check-facts.ts, FactCard)
+#     • outdated news is removed: quoted lines that are no longer on the official page drop out of their alerts
 #     • fresh exchange rate (ECB)
 #   Every Sunday, additionally:
 #     • re-downloads the DAAD course database (deadline, fee and requirement changes appear in My plan)
 #     • re-reads every course's page on the university's own website (My plan → "Check university pages")
 #     • fills in missing city guides
+#     If the weekly refresh fails (e.g. a site refuses GitHub's servers that morning), the run shows red and it is tried
+#     again at 19:00 India time the same day. The site is still deployed with the daily results.
 #   Then the results are saved in the repository (data/) and the site is rebuilt, so every phone and computer gets
 #   them the next time Setu is opened. Also runs on every push to main, and by hand (Actions → Run workflow).
 #
 # Safety: the data checks (npm run test:data) must pass before anything is saved. If the weekly refresh produces
 # data that fails them, it is thrown away and the site keeps last week's data; the daily part is published anyway.
+# Only checked data ever reaches main, so the site is rebuilt from main even when an update step fails.
 name: Update data and deploy
 
 on:
   push:
     branches: [main]
   schedule:
-    - cron: "30 3 * * *" # 09:00 in India
+    - cron: "30 3 * * *" # 09:00 in India: daily checks (+ weekly refresh on Sundays)
+    - cron: "30 13 * * 0" # Sunday 19:00 in India: second try of the weekly refresh, only if the morning one failed
   workflow_dispatch:
     inputs:
       weekly:
@@ -66,6 +72,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Official sources (daily)
+        if: github.event.schedule != '30 13 * * 0'
         run: |
           if [ "${{ inputs.rebaseline }}" = "true" ]; then
             npm run alerts:watch -- --no-ai --rebaseline
@@ -73,9 +80,11 @@ jobs:
             npm run alerts:watch -- --no-ai --publish
           fi
       - name: Facts (daily)
+        if: github.event.schedule != '30 13 * * 0'
         # Exit 1 = a fact's source changed (the fact now shows a warning), 3 = a source was unreachable. Neither stops the update.
         run: npm run check:facts || echo "::warning::check:facts reported problems — see data/fact-check-report.json"
       - name: Save daily results
+        if: github.event.schedule != '30 13 * * 0'
         run: |
           npm run test:data
           git add data
@@ -86,9 +95,11 @@ jobs:
       - name: Weekly refresh
         id: weekly
         if: inputs.weekly || github.event_name == 'schedule'
-        continue-on-error: true
+        # A failure here turns the run red (so it is visible) but the build below still runs with the daily results.
         run: |
           if [ "${{ inputs.weekly }}" != "true" ] && [ "$(date -u +%u)" != "7" ]; then echo "not Sunday"; exit 0; fi
+          done_on=$(node -p "try { require('./data/update-status.json').weeklyOkAt.slice(0, 10) } catch { '' }")
+          if [ "${{ inputs.weekly }}" != "true" ] && [ "$done_on" = "$(date -u +%F)" ]; then echo "weekly refresh already done today"; exit 0; fi
           set -e
           npm run data:programmes -- --refresh
           npm run data:map
@@ -100,6 +111,7 @@ jobs:
             echo "::error::The weekly data failed the safety checks and was NOT published; the site keeps last week's data."
             exit 1
           fi
+          node -e "require('fs').writeFileSync('data/update-status.json', JSON.stringify({ weeklyOkAt: new Date().toISOString() }, null, 1) + '\n')"
           git add data
           if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
           git commit -q -m "Weekly update $(date -u +%F): DAAD courses, university pages, city guides"
@@ -107,7 +119,7 @@ jobs:
 
   build:
     needs: update
-    if: ${{ !cancelled() && needs.update.result != 'failure' }}
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

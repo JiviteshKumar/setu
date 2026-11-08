@@ -8,15 +8,20 @@ export type Source = {
   linkOnly?: string;
   /** Set for pages whose content changes constantly (e.g. daily lessons): the watcher only checks fact anchors, not every change. */
   noisy?: string;
+  /** Regex (case-insensitive): automatic alerts from this page only quote changed lines that match it (e.g. a fee page with news teasers). */
+  quoteOnly?: string;
+  /** Regex (case-insensitive): changed lines matching it are never quoted (e.g. a running counter). */
+  ignore?: string;
+  /**
+   * Also read the same official text through the federal legal information portal (rechtsinformationen.bund.de) when the
+   * page itself can't be reached (gesetze-im-internet.de refuses cloud servers). `law` is the official abbreviation,
+   * `article` the section's id in the portal.
+   */
+  checkVia?: { law: string; article: string };
 };
 
 export const SOURCES = {
   apsDmat: { name: "APS India – dMAT for selected Master's applicants", url: "https://aps-india.de/dmat/", kind: "official-body" },
-  apsDmatFields: {
-    name: "APS India – dMAT affected fields list (v1.0, 29 June 2026)",
-    url: "https://aps-india.de/wp-content/uploads/2026/06/dMAT_India_Affected_Fields_List.pdf",
-    kind: "official-body",
-  },
   apsHome: { name: "APS India", url: "https://aps-india.de/", kind: "official-body" },
   dmatSite: { name: "g.a.s.t. – dMAT in India", url: "https://www.d-mat.de/en/dmat-in-india/", kind: "official-body" },
   dmatPrepPdf: {
@@ -34,8 +39,18 @@ export const SOURCES = {
     url: "https://www.gast.de/portal/center-search/center-search/dmat/exams/worldwide?lang=en",
     kind: "official-body",
   },
-  aufenthg16b: { name: "§ 16b Residence Act (AufenthG) – studies", url: "https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html", kind: "law" },
-  aufenthg20: { name: "§ 20 Residence Act (AufenthG) – job seeking", url: "https://www.gesetze-im-internet.de/aufenthg_2004/__20.html", kind: "law" },
+  aufenthg16b: {
+    name: "§ 16b Residence Act (AufenthG) – studies",
+    url: "https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html",
+    kind: "law",
+    checkVia: { law: "AufenthG", article: "art-z16b" },
+  },
+  aufenthg20: {
+    name: "§ 20 Residence Act (AufenthG) – job seeking",
+    url: "https://www.gesetze-im-internet.de/aufenthg_2004/__20.html",
+    kind: "law",
+    checkVia: { law: "AufenthG", article: "art-z20" },
+  },
   bmg17: { name: "§ 17 Federal Registration Act (BMG)", url: "https://www.gesetze-im-internet.de/bmg/__17.html", kind: "law" },
   sgb5: { name: "§ 5 Social Code Book V (SGB V)", url: "https://www.gesetze-im-internet.de/sgb_5/__5.html", kind: "law" },
   blockedAccount: {
@@ -58,7 +73,12 @@ export const SOURCES = {
     url: "https://mwk.baden-wuerttemberg.de/de/hochschulen-studium/studieren-in-bw/studienfinanzierung/gebuehren-fuer-internationale-studierende-und-zweitstudium/tuition-fees-for-international-students",
     kind: "government",
   },
-  tumFees: { name: "TUM – tuition fees for students from non-EU countries", url: "https://www.tum.de/en/studies/fees/tuition", kind: "university" },
+  tumFees: {
+    name: "TUM – tuition fees for students from non-EU countries",
+    url: "https://www.tum.de/en/studies/fees/tuition",
+    kind: "university",
+    quoteOnly: "tuition|fees?\\b|gebühr|€|euro|exempt|waiver|scholarship|semester", // the page also shows TUM news teasers
+  },
   kmkGrade: {
     name: "KMK – modified Bavarian formula (Vereinbarung über die Festsetzung der Gesamtnote)",
     url: "https://www.kmk.org/fileadmin/Dateien/pdf/ZAB/Hochschulzugang_Beschluesse_der_KMK/GesNot05.pdf",
@@ -81,6 +101,7 @@ export const SOURCES = {
     name: "DAAD scholarship database",
     url: "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/",
     kind: "official-body",
+    ignore: "^\\d+ scholarship options", // a running count of listed scholarships
   },
   blueCard: {
     name: "German Foreign Office – EU Blue Card visa information (thresholds as of 2026)",

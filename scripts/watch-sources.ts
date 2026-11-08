@@ -13,10 +13,10 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { FACTS } from "../src/content/facts.ts";
-import { SOURCES, type SourceKey } from "../src/content/sources.ts";
-import { OUT, ensureDir, fetchPageText, writeJson } from "./lib.ts";
+import { SOURCES, type Source, type SourceKey } from "../src/content/sources.ts";
+import { OUT, ensureDir, sourcePageText, writeJson } from "./lib.ts";
 import { draftAlert, guardDraft, ollamaAvailable, OLLAMA_MODEL, type Draft, type GuardResult } from "./ai-draft.ts";
-import { confirmAndPublish, type Detected } from "./auto-alerts.ts";
+import { confirmAndPublish, quotable, type Detected } from "./auto-alerts.ts";
 
 export const WATCH_DIR = join(OUT, "watch");
 const SNAP_DIR = join(WATCH_DIR, "snapshots");
@@ -82,12 +82,14 @@ async function main() {
   const results: { key: string; current: string[] | null; detected: Detected | null }[] = [];
 
   for (const key of Object.keys(SOURCES) as SourceKey[]) {
-    const src: { name: string; url: string; linkOnly?: string; noisy?: string } = SOURCES[key];
+    const src: Source = SOURCES[key];
     if (src.linkOnly) continue;
     let lines: string[];
     let fullText = "";
+    let via: string | undefined;
     try {
-      const page = await fetchPageText(src.url);
+      const page = await sourcePageText(src);
+      via = page.via;
       if (page.pdf) {
         // Official PDFs (e.g. dMAT preparation materials): compare fingerprints; a new version needs a human review.
         const hashPath = join(SNAP_DIR, `${key}.sha256`);
@@ -126,7 +128,9 @@ async function main() {
       failed.push(`${key}: no readable text (JavaScript-only page?) — check ${src.url} manually`);
       continue;
     }
-    const snapPath = join(SNAP_DIR, `${key}.txt`);
+    // A page read through another official route (the federal law portal) has its own snapshot, so switching routes
+    // is never mistaken for a change of the law.
+    const snapPath = join(SNAP_DIR, via ? `${key}@portal.txt` : `${key}.txt`);
     const result: (typeof results)[number] = { key, current: lines, detected: null };
     results.push(result);
     if (!existsSync(snapPath) || rebaseline) {
@@ -134,7 +138,7 @@ async function main() {
       baselines++;
       continue;
     }
-    const before = readFileSync(snapPath, "utf-8").split("\n").filter(Boolean);
+    const before = readFileSync(snapPath, "utf-8").split(/\r?\n/).filter(Boolean);
     const beforeSet = new Set(before);
     const afterSet = new Set(lines);
     const added = lines.filter((l) => !beforeSet.has(l));
@@ -162,8 +166,8 @@ async function main() {
       sourceName: src.name,
       url: src.url,
       // Noisy pages only get here when a fact anchor broke; quote nothing else from them.
-      added: src.noisy ? [] : added,
-      removed: src.noisy ? [] : removed,
+      added: src.noisy ? [] : added.filter((l) => quotable(key, l)),
+      removed: src.noisy ? [] : removed.filter((l) => quotable(key, l)),
       brokenFacts: affectedFacts.filter((f) => f.brokenAnchors.length).map((f) => ({ id: f.id, title: f.title })),
     };
 

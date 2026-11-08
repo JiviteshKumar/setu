@@ -36,7 +36,8 @@ export async function fetchText(url: string, tries = 3): Promise<string> {
       return await res.text();
     } catch (err) {
       if (i >= tries) throw err;
-      await sleep(2000 * i);
+      // "Refused" or "too many requests" usually passes after a pause; a network blip after a short one.
+      await sleep(/HTTP (403|429|503)/.test((err as Error).message) ? 60_000 * i : 2000 * i);
     }
   }
 }
@@ -119,8 +120,52 @@ export async function fetchPageText(url: string, tries = 3): Promise<{ lines: st
       const html = new TextDecoder(charset.toLowerCase() === "iso-8859-1" ? "latin1" : charset).decode(buf);
       return { lines: htmlToText(html).split("\n"), pdf: false };
     } catch (e) {
-      if (i >= tries) throw e;
+      if (i >= tries) throw withCause(e);
       await sleep(3000 * i);
+    }
+  }
+}
+
+/** "fetch failed" alone says nothing; add the network error code (e.g. ECONNRESET, ETIMEDOUT) so logs show why. */
+function withCause(e: unknown): Error {
+  const err = e as Error & { cause?: { code?: string; message?: string } };
+  const why = err.cause?.code ?? err.cause?.message;
+  return why && !err.message.includes(why) ? new Error(`${err.message} (${why})`) : err;
+}
+
+const LAW_PORTAL = "https://testphase.rechtsinformationen.bund.de";
+
+/**
+ * The current text of one section of a federal law from the official legal information portal of the Federal
+ * Ministry of Justice. The portal's links contain the law's version date, so the current version is looked up first.
+ */
+export async function lawPortalText(law: string, article: string): Promise<string[]> {
+  const res = await fetch(`${LAW_PORTAL}/v1/legislation?searchTerm=${encodeURIComponent(law)}&size=20`, {
+    headers: { "User-Agent": USER_AGENT, Accept: "application/json" },
+    signal: AbortSignal.timeout(30_000),
+  });
+  if (!res.ok) throw new Error(`law portal: HTTP ${res.status}`);
+  type Item = { abbreviation?: string; legislationLegalForce?: string; encoding?: { encodingFormat: string; contentUrl: string }[] };
+  const items = ((await res.json()) as { member: { item: Item }[] }).member.map((m) => m.item);
+  const current = items.find((i) => i.abbreviation === law && i.legislationLegalForce === "InForce");
+  const html = current?.encoding?.find((e) => e.encodingFormat === "text/html")?.contentUrl;
+  if (!html) throw new Error(`law portal: ${law} not found`);
+  const page = await fetchPageText(LAW_PORTAL + html.replace(/\.html$/, `/${article}.html`));
+  return page.lines;
+}
+
+type Readable = { url: string; checkVia?: { law: string; article: string } };
+
+/** An official source's text: its own page, or — if that can't be reached — the same law text from the federal portal. */
+export async function sourcePageText(src: Readable, tries = 3): Promise<{ lines: string[]; pdf: boolean; sha256?: string; via?: string }> {
+  try {
+    return await fetchPageText(src.url, tries);
+  } catch (e) {
+    if (!src.checkVia) throw e;
+    try {
+      return { lines: await lawPortalText(src.checkVia.law, src.checkVia.article), pdf: false, via: "rechtsinformationen.bund.de" };
+    } catch (e2) {
+      throw new Error(`${(e as Error).message}; law portal: ${(e2 as Error).message}`);
     }
   }
 }

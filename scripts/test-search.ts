@@ -45,6 +45,11 @@ const dmat: [string, string, RegExp][] = [
   ["BCA", "not-included", /BCA/],
   ["B.Sc IT", "not-included", /B\.Sc\. Information Technology/],
   ["B.Sc Data Science", "not-included", /B\.Sc\. Data Science/],
+  // APS rules of 5 November 2026: hotel and tourism degrees are covered; BBA variants count as Business Administration.
+  ["Hotel Management", "tourism", /Hotel Management/],
+  ["BHM", "tourism", /BHM/],
+  ["BBA Aviation", "business", /BBA Aviation Management/],
+  ["Sports Management", "boundary", /Sports Management/],
 ];
 for (const [q, group, item] of dmat) {
   const r = first(q);

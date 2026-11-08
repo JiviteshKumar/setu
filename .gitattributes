@@ -1,0 +1,2 @@
+# The daily checks compare data files line by line: keep the same line endings on every computer.
+data/** text eol=lf
