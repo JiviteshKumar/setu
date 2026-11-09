@@ -106,14 +106,33 @@ export function isEuOnly(applicants: string): boolean {
   return /\bEU\b|\bGerman(y)?\b/i.test(applicants) && !/non-EU|all countries/i.test(applicants);
 }
 
+/**
+ * An application window: two dates joined directly ("1 April 2027 - 15 July 2027", "1 Dec to 15 Jan",
+ * "between 1 May and 15 June"). Loose word tests are not enough: "Early deadline: apply by 15 November …
+ * can expect to receive a letter by mid-February. Regular deadline: 15 May" contains "to" and a hyphen but
+ * names two deadlines, not an opening date.
+ */
+const DATE_RE = `\\d{1,2}\\.?\\s+(?:${MONTHS.join("|")})(?:\\s+\\d{4})?`;
+const RANGE_RE = new RegExp(
+  `(?:\\bbetween\\s+(?:the\\s+)?(${DATE_RE})\\s+and\\s+(?:the\\s+)?(${DATE_RE}))|(?:(${DATE_RE})\\s*(?:–|—|-|\\bto\\b|\\buntil\\b|\\btill\\b)\\s*(?:the\\s+)?(${DATE_RE}))`,
+  "gi",
+);
+/** Several rounds ("5 November – 28 February • 5 May – 15 July") span from the first opening to the last close. */
+export function applicationWindow(body: string): { from: string; until: string } | null {
+  const ranges = [...body.matchAll(RANGE_RE)].map((m) => (m[1] ? [m[1], m[2]] : [m[3], m[4]]));
+  if (!ranges.length) return null;
+  return { from: dayMonth(ranges[0][0])[0], until: dayMonth(ranges[ranges.length - 1][1])[0] };
+}
+
 /** Pull deadlines relevant to an Indian (non-EU) applicant. Returns [] when the text is not machine-readable. */
-function parseDeadlines(text: string | null): Deadline[] {
+export function parseDeadlines(text: string | null): Deadline[] {
   if (!text) return [];
   const segments = text.split(/The following is valid for applicants from:/i).map((s) => s.trim()).filter(Boolean);
   const out: Deadline[] = [];
   for (const seg of segments) {
-    const groupMatch = seg.match(/^(.*?)\s+For the (winter|summer) semester/i);
-    const applicants = groupMatch ? groupMatch[1].trim() : "all countries";
+    // The applicant group is whatever precedes the first "For the … semester" (often nothing at all).
+    const groupMatch = seg.match(/^([\s\S]*?)For the (?:winter|summer) semester/i);
+    const applicants = groupMatch?.[1].trim() || "all countries";
     // Skip sections that are only for EU / German applicants. DAAD often writes the group as a bullet list
     // ("• EU countries • Iceland • Norway …"), so look for the words anywhere, not just at the start.
     if (isEuOnly(applicants)) continue;
@@ -122,8 +141,8 @@ function parseDeadlines(text: string | null): Deadline[] {
       const body = part[2].trim();
       const dates = dayMonth(body);
       if (!dates.length) continue;
-      const isRange = /\bfrom\b|–|-|\bto\b/i.test(body) && dates.length >= 2;
-      out.push({ intake, applicants, from: isRange ? dates[0] : null, until: dates[dates.length - 1], text: body });
+      const window = applicationWindow(body);
+      out.push({ intake, applicants, from: window?.from ?? null, until: window?.until ?? dates[dates.length - 1], text: body });
     }
   }
   return out;

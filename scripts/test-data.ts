@@ -4,13 +4,31 @@ import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { FACTS } from "../src/content/facts.ts";
 import { SOURCES } from "../src/content/sources.ts";
-import { isEuOnly, type Programme } from "./build-programmes.ts";
+import { isEuOnly, parseDeadlines, type Programme } from "./build-programmes.ts";
 
 const DATA = join(import.meta.dirname, "..", "data");
 const read = <T,>(f: string): T => JSON.parse(readFileSync(join(DATA, f), "utf-8"));
 const problems: string[] = [];
 const fail = (m: string) => problems.push(m);
 const notes: string[] = [];
+
+// ── Deadline parser ──
+// Only two dates joined directly make an application window; anything else is a deadline with no opening date.
+const window = (text: string) => parseDeadlines(text).map((d) => [d.intake, d.from, d.until, d.applicants]);
+const expectWindow = (label: string, text: string, want: (string | null)[][]) => {
+  const got = window(text);
+  if (JSON.stringify(got) !== JSON.stringify(want)) fail(`deadline parser, ${label}: got ${JSON.stringify(got)}, want ${JSON.stringify(want)}`);
+};
+expectWindow(
+  "early + regular deadline is not a window (Saarland)",
+  "For the winter semester: Early deadline: Applicants who apply by 15 November for the following winter semester can expect to receive a letter of admission by mid-February. Regular deadline: 15 May. A decision can be expected in August.",
+  [["winter", null, "05-15", "all countries"]],
+);
+expectWindow("dash range with years", "For the winter semester: 1 April 2027 - 15 July 2027", [["winter", "04-01", "07-15", "all countries"]]);
+expectWindow("from … to", "For the summer semester: from 1 December to 15 January", [["summer", "12-01", "01-15", "all countries"]]);
+expectWindow("between … and", "For the winter semester: between 1 May and 15 June", [["winter", "05-01", "06-15", "all countries"]]);
+expectWindow("two rounds span first opening to last close", "For the winter semester: • 5 November – 28 February • 5 May – 15 July", [["winter", "11-05", "07-15", "all countries"]]);
+expectWindow("single deadline", "For the winter semester: 15 July", [["winter", null, "07-15", "all countries"]]);
 
 // ── Courses ──
 const { programmes } = read<{ programmes: Programme[] }>("programmes.json");
@@ -35,6 +53,9 @@ for (const p of programmes) {
   else if (!cities[p.city]) fail(`${at}: city ${p.city} is not on the map`);
   if (!p.languages.length) fail(`${at}: no teaching language`);
   if (!p.intakes.length && p.deadlines.length) fail(`${at}: deadlines but no intake`);
+  const reparsed = parseDeadlines(p.deadlinesText).map((d) => [d.intake, d.from, d.until]);
+  if (JSON.stringify(reparsed) !== JSON.stringify(p.deadlines.map((d) => [d.intake, d.from, d.until])))
+    fail(`${at}: stored deadlines don't match the current parser — run npm run data:build`);
   for (const d of p.deadlines) {
     if (isEuOnly(d.applicants)) fail(`${at}: EU-only deadline shown to Indian applicants`);
     if (d.until && !validMd(d.until)) fail(`${at}: impossible deadline ${d.until}`);

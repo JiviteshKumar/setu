@@ -17887,8 +17887,8 @@
    "deadlines": [
     {
      "intake": "summer",
-     "applicants": "For the winter semester : Early deadline: Applicants who apply by 15 November for the following winter semester can expect to receive a letter of admission by mid-February. Regular deadline: 15 May. A decision can be expected in August.",
-     "from": "05-15",
+     "applicants": "all countries",
+     "from": null,
      "until": "11-15",
      "text": "Early deadline: Applicants who apply by 15 May for the following summer semester can expect to receive a letter of admission by mid-July. Regular deadline: 15 November. A decision can be expected in January."
     }
@@ -19367,8 +19367,8 @@
    "deadlines": [
     {
      "intake": "summer",
-     "applicants": "For the winter semester : Early deadline: Applicants who apply by 15 November for the following winter semester are expected to receive a letter of admission by mid-February. Regular deadline: 15 May. A decision can be expected in August.",
-     "from": "05-15",
+     "applicants": "all countries",
+     "from": null,
      "until": "11-15",
      "text": "Early deadline: Applicants who apply by 15 May for the following summer semester are expected to receive a letter of admission by mid-July. Regular deadline: 15 November. A decision can be expected in January."
     }
@@ -20544,15 +20544,15 @@
    "deadlines": [
     {
      "intake": "winter",
-     "applicants": "For the winter semester: Early deadline: Applicants who apply by 15 November for the following winter semester can expect to receive a letter of admission by mid-February. Regular deadline: 15 May. A decision can be expected in August.",
-     "from": "11-15",
+     "applicants": "all countries",
+     "from": null,
      "until": "05-15",
      "text": "Early deadline: Applicants who apply by 15 November for the following winter semester can expect to receive a letter of admission by mid-February. Regular deadline: 15 May. A decision can be expected in August."
     },
     {
      "intake": "summer",
-     "applicants": "For the winter semester: Early deadline: Applicants who apply by 15 November for the following winter semester can expect to receive a letter of admission by mid-February. Regular deadline: 15 May. A decision can be expected in August.",
-     "from": "05-15",
+     "applicants": "all countries",
+     "from": null,
      "until": "11-15",
      "text": "Early deadline: Applicants who apply by 15 May for the following summer semester can expect to receive a letter of admission by mid-July. Regular deadline: 15 November. A decision can be expected in January."
     }
@@ -27300,14 +27300,14 @@
    "deadlines": [
     {
      "intake": "winter",
-     "applicants": "For the winter semester: • Application deadline with a degree earned in Germany: 15 July • Application deadline with a degree earned outside Germany: 31 March",
+     "applicants": "all countries",
      "from": null,
      "until": "03-31",
      "text": "• Application deadline with a degree earned in Germany: 15 July • Application deadline with a degree earned outside Germany: 31 March"
     },
     {
      "intake": "summer",
-     "applicants": "For the winter semester: • Application deadline with a degree earned in Germany: 15 July • Application deadline with a degree earned outside Germany: 31 March",
+     "applicants": "all countries",
      "from": null,
      "until": "02-01",
      "text": "• Application deadline with a degree earned in Germany: 1 February"
@@ -27663,8 +27663,8 @@
    "deadlines": [
     {
      "intake": "summer",
-     "applicants": "For the winter semester : Early deadline: Applicants who apply by 15 November for the following winter semester can expect to receive a letter of admission by mid-February. Regular deadline: 15 May. A decision can be expected in August.",
-     "from": "05-15",
+     "applicants": "all countries",
+     "from": null,
      "until": "11-15",
      "text": "Early deadline: Applicants who apply by 15 May for the following summer semester can expect to receive a letter of admission by mid-July. Regular deadline: 15 November. A decision can be expected in January."
     }
@@ -97698,8 +97698,8 @@
    "deadlines": [
     {
      "intake": "summer",
-     "applicants": "For the winter semester : Early deadline: Applicants who apply by 1 December for the following winter semester can expect to receive a letter of admission by January. Regular deadline: 31 May. A decision can be expected in June.",
-     "from": "06-01",
+     "applicants": "all countries",
+     "from": null,
      "until": "11-30",
      "text": "Early deadline: Applicants who apply by 1 June for the following summer semester can expect to receive a letter of admission by July. Regular deadline: 30 November. A decision can be expected in December."
     }
@@ -108764,8 +108764,8 @@
    "deadlines": [
     {
      "intake": "summer",
-     "applicants": "For the winter semester : Early deadline: Applicants who apply by 15 November for the following winter semester can expect to receive a letter of admission by mid-February. Regular deadline: 15 May. A decision can be expected in August.",
-     "from": "05-15",
+     "applicants": "all countries",
+     "from": null,
      "until": "11-15",
      "text": "Early deadline: Applicants who apply by 15 May for the following summer semester can expect to receive a letter of admission by mid-July. Regular deadline: 15 November. A decision can be expected in January."
     }
