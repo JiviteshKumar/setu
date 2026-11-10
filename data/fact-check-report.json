@@ -1,104 +1,79 @@
 {
- "checkedAt": "2026-11-09T11:58:13.205Z",
+ "checkedAt": "2026-11-10T11:27:46.269Z",
  "facts": 21,
  "sources": 30,
  "skipped": [
   "https://www.goethe.de/ins/in/en/spr/prf.html (goethe.de blocks automated requests)"
  ],
- "problems": [
-  {
-   "source": "https://www.gesetze-im-internet.de/bmg/__17.html",
-   "problem": "source unreachable: fetch failed (UND_ERR_CONNECT_TIMEOUT)"
-  },
-  {
-   "source": "https://www.gesetze-im-internet.de/sgb_5/__5.html",
-   "problem": "source unreachable: fetch failed (UND_ERR_CONNECT_TIMEOUT)"
-  },
-  {
-   "source": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/",
-   "problem": "source unreachable: HTTP 403"
-  },
-  {
-   "source": "https://www.gesetze-im-internet.de/vwgo/__70.html",
-   "problem": "source unreachable: fetch failed (UND_ERR_CONNECT_TIMEOUT)"
-  },
-  {
-   "source": "https://www.gesetze-im-internet.de/vwgo/__58.html",
-   "problem": "source unreachable: fetch failed (UND_ERR_CONNECT_TIMEOUT)"
-  },
-  {
-   "source": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/",
-   "problem": "source unreachable: HTTP 403"
-  }
- ],
+ "problems": [],
  "status": {
   "dmat-who": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "dmat-format": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "dmat-score": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "dmat-fee-dates": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "blocked-account": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "visa-portal-aps": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "remonstration": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "work-limit": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "job-search-after": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "anmeldung": {
-   "lastOk": "2026-11-08T13:51:49.312Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "student-insurance-30": {
-   "lastOk": "2026-11-08T13:51:49.312Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "bw-fees": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "tum-fees": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "aps-process": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "deutschlandstipendium": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "daad-scholarships": {
-   "lastOk": "2026-11-08T13:51:49.312Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "blue-card": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "final-fail": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "dw-german": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "objection-deadline": {
-   "lastOk": "2026-11-08T13:51:49.312Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "rundfunk-fee": {
-   "lastOk": "2026-11-09T11:58:13.205Z"
+   "lastOk": "2026-11-10T11:27:46.269Z"
   }
  },
  "live": {
   "dmat-who": {
-   "at": "2026-11-09T11:58:13.205Z",
+   "at": "2026-11-10T11:27:46.269Z",
    "sections": [
     {
      "source": "apsDmat",
@@ -120,7 +95,7 @@
    ]
   },
   "dmat-format": {
-   "at": "2026-11-09T11:58:13.205Z",
+   "at": "2026-11-10T11:27:46.269Z",
    "sections": [
     {
      "source": "dmatSite",
@@ -134,7 +109,7 @@
    ]
   },
   "dmat-score": {
-   "at": "2026-11-09T11:58:13.205Z",
+   "at": "2026-11-10T11:27:46.269Z",
    "sections": [
     {
      "source": "apsDmat",
@@ -148,7 +123,7 @@
    ]
   },
   "dmat-fee-dates": {
-   "at": "2026-11-09T11:58:13.205Z",
+   "at": "2026-11-10T11:27:46.269Z",
    "sections": [
     {
      "source": "dmatSite",
