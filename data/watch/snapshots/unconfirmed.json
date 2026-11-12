@@ -6,6 +6,15 @@
   "added": [],
   "removed": [],
   "brokenFacts": [],
-  "firstSeen": "2026-11-11T11:20:35.651Z"
+  "firstSeen": "2026-11-12T11:38:07.124Z"
+ },
+ "enbBremen": {
+  "key": "enbBremen",
+  "sourceName": "University of Bremen – definitively failed (endgültig nicht bestanden)",
+  "url": "https://www.uni-bremen.de/studium/starten-studieren/pruefungen/endgueltig-nicht-bestanden",
+  "added": [],
+  "removed": [],
+  "brokenFacts": [],
+  "firstSeen": "2026-11-12T11:38:07.124Z"
  }
 }
