@@ -1,19 +1,11 @@
 {
- "checkedAt": "2026-11-13T11:22:47.431Z",
+ "checkedAt": "2026-11-14T10:47:20.544Z",
  "facts": 21,
  "sources": 30,
  "skipped": [
   "https://www.goethe.de/ins/in/en/spr/prf.html (goethe.de blocks automated requests)"
  ],
  "problems": [
-  {
-   "source": "https://www.gesetze-im-internet.de/aufenthg_2004/__16b.html",
-   "problem": "source unreachable: fetch failed (UND_ERR_CONNECT_TIMEOUT); law portal: law portal: AufenthG not found"
-  },
-  {
-   "source": "https://www.gesetze-im-internet.de/aufenthg_2004/__20.html",
-   "problem": "source unreachable: fetch failed (UND_ERR_CONNECT_TIMEOUT); law portal: law portal: AufenthG not found"
-  },
   {
    "source": "https://www.gesetze-im-internet.de/bmg/__17.html",
    "problem": "source unreachable: fetch failed (UND_ERR_CONNECT_TIMEOUT)"
@@ -33,31 +25,31 @@
  ],
  "status": {
   "dmat-who": {
-   "lastOk": "2026-11-13T11:22:47.431Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "dmat-format": {
-   "lastOk": "2026-11-13T11:22:47.431Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "dmat-score": {
-   "lastOk": "2026-11-13T11:22:47.431Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "dmat-fee-dates": {
-   "lastOk": "2026-11-13T11:22:47.431Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "blocked-account": {
-   "lastOk": "2026-11-13T11:22:47.431Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "visa-portal-aps": {
-   "lastOk": "2026-11-13T11:22:47.431Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "remonstration": {
-   "lastOk": "2026-11-13T11:22:47.431Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "work-limit": {
-   "lastOk": "2026-11-12T11:38:07.351Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "job-search-after": {
-   "lastOk": "2026-11-12T11:38:07.351Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "anmeldung": {
    "lastOk": "2026-11-10T11:27:46.269Z"
@@ -66,39 +58,39 @@
    "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "bw-fees": {
-   "lastOk": "2026-11-13T11:22:47.431Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "tum-fees": {
-   "lastOk": "2026-11-13T11:22:47.431Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "aps-process": {
-   "lastOk": "2026-11-13T11:22:47.431Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "deutschlandstipendium": {
-   "lastOk": "2026-11-13T11:22:47.431Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "daad-scholarships": {
-   "lastOk": "2026-11-13T11:22:47.431Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "blue-card": {
-   "lastOk": "2026-11-13T11:22:47.431Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "final-fail": {
-   "lastOk": "2026-11-13T11:22:47.431Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "dw-german": {
-   "lastOk": "2026-11-13T11:22:47.431Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   },
   "objection-deadline": {
    "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "rundfunk-fee": {
-   "lastOk": "2026-11-13T11:22:47.431Z"
+   "lastOk": "2026-11-14T10:47:20.544Z"
   }
  },
  "live": {
   "dmat-who": {
-   "at": "2026-11-13T11:22:47.431Z",
+   "at": "2026-11-14T10:47:20.544Z",
    "sections": [
     {
      "source": "apsDmat",
@@ -120,7 +112,7 @@
    ]
   },
   "dmat-format": {
-   "at": "2026-11-13T11:22:47.431Z",
+   "at": "2026-11-14T10:47:20.544Z",
    "sections": [
     {
      "source": "dmatSite",
@@ -134,7 +126,7 @@
    ]
   },
   "dmat-score": {
-   "at": "2026-11-13T11:22:47.431Z",
+   "at": "2026-11-14T10:47:20.544Z",
    "sections": [
     {
      "source": "apsDmat",
@@ -148,7 +140,7 @@
    ]
   },
   "dmat-fee-dates": {
-   "at": "2026-11-13T11:22:47.431Z",
+   "at": "2026-11-14T10:47:20.544Z",
    "sections": [
     {
      "source": "dmatSite",
