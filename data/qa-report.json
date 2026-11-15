@@ -1,5 +1,5 @@
 {
- "builtAt": "2026-11-08T11:55:31.208Z",
+ "builtAt": "2026-11-15T12:25:52.524Z",
  "unmatchedOrFlagged": [
   {
    "id": 6527,
@@ -950,12 +950,6 @@
    "issue": "matched to Technische Universität München (München) via university link, but DAAD city is Freising — branch campus?"
   },
   {
-   "id": 11152,
-   "programme": "Optical System Engineering (MSc)",
-   "university": "Technische Hochschule Mittelhessen University of Applied Sciences",
-   "issue": "matched to Technische Hochschule Mittelhessen - THM (Gießen) via university link, but DAAD city is Friedberg (Hessen) — branch campus?"
-  },
-  {
    "id": 4801,
    "programme": "Organismic and Molecular Biodiversity",
    "university": "Dresden University of Technology",
@@ -1807,17 +1801,17 @@
    ]
   },
   {
-   "id": 9046,
+   "id": 10469,
    "name": "Data Science (MSc)",
-   "university": "Marburg University",
+   "university": "Technische Universität Ilmenau",
    "checks": [
     "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
    ]
   },
   {
-   "id": 10469,
+   "id": 9046,
    "name": "Data Science (MSc)",
-   "university": "Technische Universität Ilmenau",
+   "university": "Marburg University",
    "checks": [
     "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
    ]
@@ -3419,19 +3413,19 @@
    ]
   },
   {
-   "id": 3965,
-   "name": "Master of Science in Aerospace Engineering",
-   "university": "Technical University of Munich",
-   "checks": [
-    "This course appears to be taught in Singapore, not in Germany. Check the location on the course website."
-   ]
-  },
-  {
    "id": 7775,
    "name": "Master of Science in Aerospace Engineering",
    "university": "Technical University of Darmstadt",
    "checks": [
     "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
+   ]
+  },
+  {
+   "id": 3965,
+   "name": "Master of Science in Aerospace Engineering",
+   "university": "Technical University of Munich",
+   "checks": [
+    "This course appears to be taught in Singapore, not in Germany. Check the location on the course website."
    ]
   },
   {
@@ -4251,17 +4245,17 @@
    ]
   },
   {
-   "id": 9044,
+   "id": 3669,
    "name": "Mathematics (MSc)",
-   "university": "Marburg University",
+   "university": "University of Göttingen",
    "checks": [
     "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
    ]
   },
   {
-   "id": 3669,
+   "id": 9044,
    "name": "Mathematics (MSc)",
-   "university": "University of Göttingen",
+   "university": "Marburg University",
    "checks": [
     "The deadline is written as free text with conditions, so we don't convert it into a date. Read the original wording carefully and confirm on the course website."
    ]

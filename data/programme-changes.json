@@ -24,6 +24,14 @@
     "detectedAt": "2026-11-08T11:55:31.084Z"
    }
   ],
+  "3725": [
+   {
+    "field": "Admission requirements",
+    "before": "• Academic requirements include a German \"Diplom\" degree, a Bachelor's degree, or an equivalent qualification with three and a half years of study in a technical field such as electrical engineering, mechanical engineering, chemical engineering, natural sciences, information science, etc.\n• A minimum of one year of postgraduate full time work experience is compulsory.\n• Reliable and certified English language skills are required.\nApplicants originating from China, India, or Vietnam additionally have to hand in the original certificate of the academic assessment office issued by the German embassy (“Akademische Prüfstelle”). Your application cannot be processed without this certificate. You may find further information here:\n• Akademische Prüfstelle des Kulturreferates der Deutschen Botschaft Peking (APS) / academic assessment office at the German Embassy Peking/Beijing: https://www.aps.org.cn/\n• Academic Evaluation Center Science Section of the German Embassy New Delhi: https://aps-india.de/\n• Akademische Prüfstelle des Kulturreferates der Deutschen Botschaft Hanoi (APS) / academic assessment office at the German Embassy Hanoi: http://www.hanoi.diplo.de/",
+    "after": "• Academic requirements include a German \"Diplom\" degree, a Bachelor's degree, or an equivalent qualification with three and a half years of study in a technical field such as electrical engineering, mechanical engineering, chemical engineering, natural sciences, information science, etc.\n• A minimum of one year of postgraduate full time work experience is compulsory.\n• Reliable and certified English language skills are required.\nApplicants originating from China, India, or Vietnam additionally have to hand in the original certificate of the academic assessment office issued by the German embassy (“Akademische Prüfstelle”). Your application cannot be processed without this certificate. You may find further information here:\n• Akademische Prüfstelle des Kulturreferates der Deutschen Botschaft Peking (APS) / academic assessment office at the German Embassy Peking/Beijing: https://www.aps.org.cn/\n• Academic Evaluation Center Science Section of the German Embassy New Delhi: https://aps-india.de/\n• Akademische Prüfstelle des Kulturreferates der Deutschen Botschaft Hanoi (APS) / academic assessment office at the German Embassy Hanoi: http://www.hanoi.diplo.de/\ndMAT Test INDIA\nApplicants from India applying for the summer semester 2027 onwards are required to take the dMAT test. Further information on registration and authorised test centres can be found here: https://www.d-mat.de/en/dmat-in-india/ .",
+    "detectedAt": "2026-11-15T12:25:52.437Z"
+   }
+  ],
   "3820": [
    {
     "field": "Application deadline",
@@ -112,6 +120,14 @@
     "before": "The following is valid for applicants from: non-EU countries For the summer semester: until 15 January The following is valid for applicants from: non-EU countries For the winter semester: until 15 July",
     "after": "The following is valid for applicants from: all countries For the summer semester: until 15 January The following is valid for applicants from: all countries For the winter semester: until 15 July",
     "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "4671": [
+   {
+    "field": "How to apply",
+    "before": "Please apply via e-mail .",
+    "after": "Please check this website .",
+    "detectedAt": "2026-11-15T12:25:52.437Z"
    }
   ],
   "4776": [
@@ -208,6 +224,14 @@
     "before": "B2 required, please provide an official language certificate, e.g.: • TOEFL iBT (before 2026): 90 • TOEFL iBT (since 2026): 4.5 • IELTS Academic: 6.5",
     "after": "C1 required, please provide an official language certificate, e.g.: • TOEFL iBT (before 2026): 95 • Reading: 24 • Listening: 22 • Speaking: 25 • Writing: 24 • TOEFL iBT (since 2026): 5 • Reading: 5 • Listening: 5 • Speaking: 5 • Writing: 5 • IELTS Academic: 7",
     "detectedAt": "2026-11-01T11:50:59.137Z"
+   }
+  ],
+  "7054": [
+   {
+    "field": "Admission requirements",
+    "before": "• Academic requirements include a German \"Diplom\" degree, a Bachelor's degree, or an equivalent qualification with three and a half years of study in a technical field such as electrical engineering, mechanical engineering, chemical engineering, natural sciences, information science, etc.\n• A minimum of one year of postgraduate full time work experience is compulsory.\n• Reliable and certified English language skills are required.\nApplicants originating from China, India, or Vietnam additionally have to hand in the original certificate of the academic assessment office issued by the German embassy (“Akademische Prüfstelle”). Your application cannot be processed without this certificate. You may find further information here:\n• Akademische Prüfstelle des Kulturreferates der Deutschen Botschaft Peking (APS) / academic assessment office at the German Embassy Peking/Beijing: https://www.aps.org.cn/\n• Academic Evaluation Center Science Section of the German Embassy New Delhi: https://aps-india.de/\n• Akademische Prüfstelle des Kulturreferates der Deutschen Botschaft Hanoi (APS) / academic assessment office at the German Embassy Hanoi: http://www.hanoi.diplo.de/",
+    "after": "• Academic requirements include a German \"Diplom\" degree, a Bachelor's degree, or an equivalent qualification with three and a half years of study in a technical field such as electrical engineering, mechanical engineering, chemical engineering, natural sciences, information science, etc.\n• A minimum of one year of postgraduate full time work experience is compulsory.\n• Reliable and certified English language skills are required.\nApplicants originating from China, India, or Vietnam additionally have to hand in the original certificate of the academic assessment office issued by the German embassy (“Akademische Prüfstelle”). Your application cannot be processed without this certificate. You may find further information here:\n• Akademische Prüfstelle des Kulturreferates der Deutschen Botschaft Peking (APS) / academic assessment office at the German Embassy Peking/Beijing: https://www.aps.org.cn/\n• Academic Evaluation Center Science Section of the German Embassy New Delhi: https://aps-india.de/\n• Akademische Prüfstelle des Kulturreferates der Deutschen Botschaft Hanoi (APS) / academic assessment office at the German Embassy Hanoi: http://www.hanoi.diplo.de/\ndMAT Test INDIA\nApplicants from India applying for the summer semester 2027 onwards are required to take the dMAT test. Further information on registration and authorised test centres can be found here: https://www.d-mat.de/en/dmat-in-india/ .",
+    "detectedAt": "2026-11-15T12:25:52.437Z"
    }
   ],
   "7852": [
@@ -340,6 +364,22 @@
     "before": "The following is valid for applicants from: all countries For the winter semester: 1 May - 30 September The following is valid for applicants from: all countries For the summer semester: 1 November - 31 March",
     "after": "The following is valid for applicants from: all countries For the winter semester: 1 May - 15 July The following is valid for applicants from: all countries For the summer semester: 1 November - 15 January",
     "detectedAt": "2026-11-08T11:55:31.084Z"
+   }
+  ],
+  "11152": [
+   {
+    "field": "Listing",
+    "before": "Listed in the DAAD database",
+    "after": "No longer listed — check the university website",
+    "detectedAt": "2026-11-15T12:25:52.437Z"
+   }
+  ],
+  "11218": [
+   {
+    "field": "Application deadline",
+    "before": "The following is valid for applicants from: all countries For the summer semester: 1 November - 30 November",
+    "after": "The following is valid for applicants from: all countries For the summer semester: 1 November - 31 January",
+    "detectedAt": "2026-11-15T12:25:52.437Z"
    }
   ]
  }
