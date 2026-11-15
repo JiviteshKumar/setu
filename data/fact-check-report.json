@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-11-14T10:47:20.544Z",
+ "checkedAt": "2026-11-15T11:22:12.966Z",
  "facts": 21,
  "sources": 30,
  "skipped": [
@@ -25,31 +25,31 @@
  ],
  "status": {
   "dmat-who": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "dmat-format": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "dmat-score": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "dmat-fee-dates": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "blocked-account": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "visa-portal-aps": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "remonstration": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "work-limit": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "job-search-after": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "anmeldung": {
    "lastOk": "2026-11-10T11:27:46.269Z"
@@ -58,39 +58,39 @@
    "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "bw-fees": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "tum-fees": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "aps-process": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "deutschlandstipendium": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "daad-scholarships": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "blue-card": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "final-fail": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "dw-german": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   },
   "objection-deadline": {
    "lastOk": "2026-11-10T11:27:46.269Z"
   },
   "rundfunk-fee": {
-   "lastOk": "2026-11-14T10:47:20.544Z"
+   "lastOk": "2026-11-15T11:22:12.966Z"
   }
  },
  "live": {
   "dmat-who": {
-   "at": "2026-11-14T10:47:20.544Z",
+   "at": "2026-11-15T11:22:12.966Z",
    "sections": [
     {
      "source": "apsDmat",
@@ -112,7 +112,7 @@
    ]
   },
   "dmat-format": {
-   "at": "2026-11-14T10:47:20.544Z",
+   "at": "2026-11-15T11:22:12.966Z",
    "sections": [
     {
      "source": "dmatSite",
@@ -126,7 +126,7 @@
    ]
   },
   "dmat-score": {
-   "at": "2026-11-14T10:47:20.544Z",
+   "at": "2026-11-15T11:22:12.966Z",
    "sections": [
     {
      "source": "apsDmat",
@@ -140,7 +140,7 @@
    ]
   },
   "dmat-fee-dates": {
-   "at": "2026-11-14T10:47:20.544Z",
+   "at": "2026-11-15T11:22:12.966Z",
    "sections": [
     {
      "source": "dmatSite",
