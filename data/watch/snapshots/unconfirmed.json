@@ -1,11 +1,31 @@
 {
+ "blockedAccount": {
+  "key": "blockedAccount",
+  "sourceName": "German Missions in India – Studies visa (page dated 16 Feb 2026)",
+  "url": "https://india.diplo.de/in-en/service/2756350-2756350",
+  "added": [],
+  "removed": [],
+  "brokenFacts": [],
+  "firstSeen": "2026-11-16T11:53:33.033Z"
+ },
+ "indiaStudyVisa": {
+  "key": "indiaStudyVisa",
+  "sourceName": "German Missions in India – Studies visa",
+  "url": "https://india.diplo.de/in-en/service/2756350-2756350",
+  "added": [],
+  "removed": [],
+  "brokenFacts": [],
+  "firstSeen": "2026-11-16T11:53:33.033Z"
+ },
  "tumFees": {
   "key": "tumFees",
   "sourceName": "TUM – tuition fees for students from non-EU countries",
   "url": "https://www.tum.de/en/studies/fees/tuition",
-  "added": [],
+  "added": [
+   "A scholarship that connects"
+  ],
   "removed": [],
   "brokenFacts": [],
-  "firstSeen": "2026-11-15T11:22:12.806Z"
+  "firstSeen": "2026-11-16T11:53:33.033Z"
  }
 }
