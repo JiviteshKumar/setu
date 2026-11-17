@@ -170,6 +170,29 @@
      "If your degree falls into a boundary area, taking the dMAT is strongly advised to ensure your APS application can be processed without delay."
     ]
    }
+  },
+  {
+   "id": "auto-tumFees-2026-11-16",
+   "publishedAt": "2026-11-17T12:14:24.605Z",
+   "title": "Changed: TUM – tuition fees for students from non-EU countries",
+   "summary": "The official page changed (noticed on 16 Nov 2026 and still the same a day later). The changed lines are quoted below word for word; open the page for the full context.",
+   "severity": "info",
+   "audience": [
+    "planning"
+   ],
+   "sources": [
+    {
+     "name": "TUM – tuition fees for students from non-EU countries",
+     "url": "https://www.tum.de/en/studies/fees/tuition"
+    }
+   ],
+   "kind": "detected",
+   "quotes": {
+    "added": [
+     "A scholarship that connects"
+    ],
+    "removed": []
+   }
   }
  ]
 }

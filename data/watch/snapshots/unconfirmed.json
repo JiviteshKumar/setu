@@ -1,31 +1,20 @@
 {
- "blockedAccount": {
-  "key": "blockedAccount",
-  "sourceName": "German Missions in India – Studies visa (page dated 16 Feb 2026)",
-  "url": "https://india.diplo.de/in-en/service/2756350-2756350",
-  "added": [],
-  "removed": [],
-  "brokenFacts": [],
-  "firstSeen": "2026-11-16T11:53:33.033Z"
- },
- "indiaStudyVisa": {
-  "key": "indiaStudyVisa",
-  "sourceName": "German Missions in India – Studies visa",
-  "url": "https://india.diplo.de/in-en/service/2756350-2756350",
-  "added": [],
-  "removed": [],
-  "brokenFacts": [],
-  "firstSeen": "2026-11-16T11:53:33.033Z"
- },
  "tumFees": {
   "key": "tumFees",
   "sourceName": "TUM – tuition fees for students from non-EU countries",
   "url": "https://www.tum.de/en/studies/fees/tuition",
-  "added": [
-   "A scholarship that connects"
-  ],
+  "added": [],
   "removed": [],
   "brokenFacts": [],
-  "firstSeen": "2026-11-16T11:53:33.033Z"
+  "firstSeen": "2026-11-17T12:14:24.605Z"
+ },
+ "enbBremen": {
+  "key": "enbBremen",
+  "sourceName": "University of Bremen – definitively failed (endgültig nicht bestanden)",
+  "url": "https://www.uni-bremen.de/studium/starten-studieren/pruefungen/endgueltig-nicht-bestanden",
+  "added": [],
+  "removed": [],
+  "brokenFacts": [],
+  "firstSeen": "2026-11-17T12:14:24.605Z"
  }
 }
