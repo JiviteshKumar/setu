@@ -1,4 +1,13 @@
 {
+ "dmatSite": {
+  "key": "dmatSite",
+  "sourceName": "g.a.s.t. – dMAT in India",
+  "url": "https://www.d-mat.de/en/dmat-in-india/",
+  "added": [],
+  "removed": [],
+  "brokenFacts": [],
+  "firstSeen": "2026-11-18T12:03:46.128Z"
+ },
  "tumFees": {
   "key": "tumFees",
   "sourceName": "TUM – tuition fees for students from non-EU countries",
@@ -6,15 +15,17 @@
   "added": [],
   "removed": [],
   "brokenFacts": [],
-  "firstSeen": "2026-11-17T12:14:24.605Z"
+  "firstSeen": "2026-11-18T12:03:46.128Z"
  },
- "enbBremen": {
-  "key": "enbBremen",
-  "sourceName": "University of Bremen – definitively failed (endgültig nicht bestanden)",
-  "url": "https://www.uni-bremen.de/studium/starten-studieren/pruefungen/endgueltig-nicht-bestanden",
-  "added": [],
+ "apsProcess": {
+  "key": "apsProcess",
+  "sourceName": "APS India – APS process",
+  "url": "https://aps-india.de/aps-process/",
+  "added": [
+   "To request an update to an existing APS certificate, please contact APS India directly at info@aps-india.de , quoting your APS file number. A new online registration is not required."
+  ],
   "removed": [],
   "brokenFacts": [],
-  "firstSeen": "2026-11-17T12:14:24.605Z"
+  "firstSeen": "2026-11-18T12:03:46.128Z"
  }
 }
