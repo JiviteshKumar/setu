@@ -172,24 +172,24 @@
    }
   },
   {
-   "id": "auto-tumFees-2026-11-16",
-   "publishedAt": "2026-11-17T12:14:24.605Z",
-   "title": "Changed: TUM – tuition fees for students from non-EU countries",
-   "summary": "The official page changed (noticed on 16 Nov 2026 and still the same a day later). The changed lines are quoted below word for word; open the page for the full context.",
+   "id": "auto-apsProcess-2026-11-18",
+   "publishedAt": "2026-11-19T12:00:22.225Z",
+   "title": "Changed: APS India – APS process",
+   "summary": "The official page changed (noticed on 18 Nov 2026 and still the same a day later). The changed lines are quoted below word for word; open the page for the full context.",
    "severity": "info",
    "audience": [
     "planning"
    ],
    "sources": [
     {
-     "name": "TUM – tuition fees for students from non-EU countries",
-     "url": "https://www.tum.de/en/studies/fees/tuition"
+     "name": "APS India – APS process",
+     "url": "https://aps-india.de/aps-process/"
     }
    ],
    "kind": "detected",
    "quotes": {
     "added": [
-     "A scholarship that connects"
+     "To request an update to an existing APS certificate, please contact APS India directly at info@aps-india.de , quoting your APS file number. A new online registration is not required."
     ],
     "removed": []
    }

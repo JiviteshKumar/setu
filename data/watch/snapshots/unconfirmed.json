@@ -6,26 +6,26 @@
   "added": [],
   "removed": [],
   "brokenFacts": [],
-  "firstSeen": "2026-11-18T12:03:46.128Z"
+  "firstSeen": "2026-11-19T12:00:22.225Z"
  },
  "tumFees": {
   "key": "tumFees",
   "sourceName": "TUM – tuition fees for students from non-EU countries",
   "url": "https://www.tum.de/en/studies/fees/tuition",
   "added": [],
-  "removed": [],
-  "brokenFacts": [],
-  "firstSeen": "2026-11-18T12:03:46.128Z"
- },
- "apsProcess": {
-  "key": "apsProcess",
-  "sourceName": "APS India – APS process",
-  "url": "https://aps-india.de/aps-process/",
-  "added": [
-   "To request an update to an existing APS certificate, please contact APS India directly at info@aps-india.de , quoting your APS file number. A new online registration is not required."
+  "removed": [
+   "A scholarship that connects"
   ],
+  "brokenFacts": [],
+  "firstSeen": "2026-11-19T12:00:22.225Z"
+ },
+ "daadScholarships": {
+  "key": "daadScholarships",
+  "sourceName": "DAAD scholarship database",
+  "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/",
+  "added": [],
   "removed": [],
   "brokenFacts": [],
-  "firstSeen": "2026-11-18T12:03:46.128Z"
+  "firstSeen": "2026-11-19T12:00:22.225Z"
  }
 }
