@@ -193,6 +193,29 @@
     ],
     "removed": []
    }
+  },
+  {
+   "id": "auto-tumFees-2026-11-19",
+   "publishedAt": "2026-11-20T11:57:54.319Z",
+   "title": "Changed: TUM – tuition fees for students from non-EU countries",
+   "summary": "The official page changed (noticed on 19 Nov 2026 and still the same a day later). The changed lines are quoted below word for word; open the page for the full context.",
+   "severity": "info",
+   "audience": [
+    "planning"
+   ],
+   "sources": [
+    {
+     "name": "TUM – tuition fees for students from non-EU countries",
+     "url": "https://www.tum.de/en/studies/fees/tuition"
+    }
+   ],
+   "kind": "detected",
+   "quotes": {
+    "added": [],
+    "removed": [
+     "A scholarship that connects"
+    ]
+   }
   }
  ]
 }
